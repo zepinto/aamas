@@ -3,7 +3,7 @@ package ec.gep;
 import ec.EvolutionState;
 
 /**
- * Interface for different fitness functions
+ * Interface for different fitness functionsdd
  */
 public interface AamasFitness {
 
