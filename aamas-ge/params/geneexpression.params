@@ -24,7 +24,7 @@ pop.subpop.0.size =            50
 # ec.Species
 # ==============================
 
-gep.species.numgenes = 2
+gep.species.numgenes = 1
 gep.species.gene-headsize = 5
 gep.species.gene-linking-function = and
  
@@ -56,30 +56,28 @@ stat.file =           ../stat/out.stat
 
 # Statistics decorators that enable us to add and remove functionality from the final 
 # statistics in a very flexible way 
-stat.decorator.size = 2
-stat.decorator.0 = ec.gep.resultprinter.GraphvizDecorator
-stat.decorator.1 = ec.gep.resultprinter.RDecorator 
+# ==============================
+stat.decorator.size = 1
+stat.decorator.0 = ec.gep.resultprinter.RDecorator 
+#stat.decorator.1 = ec.gep.resultprinter.GraphvizDecorator
 
 # Graphviz decorator
 stat.decorator.graphviz.file =          ../stat/graph.dot
 
 # R decorator
 stat.decorator.r.file = 				../stat/r.txt
-stat.decorator.r.append = 				false
 
 # Fitness (by Rui Meireles)
 # ==============================
-
 # non-triviality conditions 
 multi.fitness.subsumption.subthreshold.0 = 1.00
 multi.fitness.subsumption.maxloss.0 = 0.00
-
-# Wheighted fitness (by Ze Pinto)
-# wheighted fitness params
-simple.fitness.wheighted.accuracy_wheight = 0.95
-simple.fitness.wheighted.size_wheight = 0.05
 
 # control the threshold that will say when we start looking at lower priority optimizations  
 multi.fitness.subsumption.subthreshold.1 = 0.80
 # acceptable loss in the higher priority objective when improving the lower priority one
 multi.fitness.subsumption.maxloss.1 = 0.04
+
+# Weighted fitness (by Ze Pinto)
+simple.fitness.weighted.accuracy_weight = 0.95
+simple.fitness.weighted.size_weight = 0.05
