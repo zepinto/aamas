@@ -5,7 +5,7 @@ import ec.simple.SimpleFitness;
 import ec.util.Parameter;
 
 
-public class WheightedFitness extends SimpleFitness implements AamasFitness {
+public class WheightedFitness extends SimpleFitness implements IAamasFitness {
 	private static final String P_WHEIGHTED = "wheighted";
 	private static final String P_ACC_WEIGHT = "accuracy_wheight";
 	private static final String P_SIZE_WEIGHT = "size_wheight";
