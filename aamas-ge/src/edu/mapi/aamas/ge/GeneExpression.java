@@ -3,7 +3,7 @@ package edu.mapi.aamas.ge;
 import ec.EvolutionState;
 import ec.Fitness;
 import ec.Individual;
-import ec.gep.AamasFitness;
+import ec.gep.IAamasFitness;
 import ec.gep.GEPFitnessFunction2;
 import ec.gep.GEPIndividual;
 import ec.gep.GEPProblem;
@@ -38,9 +38,9 @@ public class GeneExpression extends GEPProblem implements SimpleProblemForm {
 	
 	
 	private void evaluate(EvolutionState state, GEPIndividual ind, int threadnum) {
-		if (ind.fitness instanceof AamasFitness) {
+		if (ind.fitness instanceof IAamasFitness) {
 
-			((AamasFitness)ind.fitness).computeFitness(ind, state);
+			((IAamasFitness)ind.fitness).computeFitness(ind, state);
 			ind.evaluated = true;
 
 		} else

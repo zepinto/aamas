@@ -3,9 +3,9 @@ package ec.gep;
 import ec.EvolutionState;
 
 /**
- * Interface for different fitness functionsdd
+ * Interface for different fitness functions
  */
-public interface AamasFitness {
+public interface IAamasFitness {
 
 	/**
 	 * The description to be used in the exported R table

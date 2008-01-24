@@ -2,7 +2,7 @@ package ec.multiobjective;
 
 import ec.EvolutionState;
 import ec.Fitness;
-import ec.gep.AamasFitness;
+import ec.gep.IAamasFitness;
 import ec.gep.GEPFitnessFunction2;
 import ec.gep.GEPIndividual;
 import ec.multiobjective.MultiObjectiveFitness;
@@ -19,7 +19,7 @@ import ec.util.Parameter;
  * @author Rui Meireles
  * 
  */
-public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness implements AamasFitness {
+public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness implements IAamasFitness {
 
 	private static final long serialVersionUID = 1L;
 	
