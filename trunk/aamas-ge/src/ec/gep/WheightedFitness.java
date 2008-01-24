@@ -18,22 +18,25 @@ public class WheightedFitness extends SimpleFitness implements IAamasFitness {
 	
 	float fitness = 0.0f;
 	
-	@Override
+	
 	public void computeFitness(GEPIndividual individual, EvolutionState state) {
 		SimpleFitness f = new SimpleFitness();
 		
 		
 		
-		double size_fit = GEPFitnessFunction2.NTSfitness(individual);
+		double size_fit = GEPFitnessFunction2.TSfitness(individual);
 		double acc_fit = GEPFitnessFunction2.BACCfitness(individual);
 		
 		fitness = (float)(acc_fit * acc_wheight + size_fit * size_wheight);
-		
+		accuracy = acc_fit;
 		f.setFitness(state, fitness(), (size_fit == 1.0 && acc_fit == 1.0));
 		
 	}
 	
-	@Override
+	public String getDescription() {		
+		return "type=Wheighted,accuracyWheight="+acc_wheight+",sizeWheight="+size_wheight;
+	}
+	
 	public double getAccuracy() {	
 		return accuracy;
 	}
@@ -64,8 +67,6 @@ public class WheightedFitness extends SimpleFitness implements IAamasFitness {
 		size_wheight = state.parameters.getDouble(base.push(P_SIZE_WEIGHT), def.push(P_SIZE_WEIGHT), 0, 1);
 	}
 	
-	@Override
-	public String getDescription() {		
-		return "type=Wheighted,accuracyWheight="+acc_wheight+",sizeWheight="+size_wheight;
-	}
+	
+	
 }

@@ -133,7 +133,7 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness impl
 		return abeatsb;
 	}
 	
-	@Override
+	
 	public void computeFitness(GEPIndividual individual, EvolutionState state) {
 		double ntFitness = GEPFitnessFunction2.NTfitness(individual);
 		double accFitness = GEPFitnessFunction2.BSACCfitness(individual);
@@ -144,12 +144,12 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness impl
 		multifitness[2] = (float) ntsFitness;
 	}
 	
-	@Override
+	
 	public String getDescription() {
 		return "type=Subsumption";
 	}
 	
-	@Override
+	
 	public double getAccuracy() {
 		return accuracy;
 	}
