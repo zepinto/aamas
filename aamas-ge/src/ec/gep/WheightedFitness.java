@@ -1,6 +1,7 @@
 package ec.gep;
 
 import ec.EvolutionState;
+import ec.Fitness;
 import ec.simple.SimpleFitness;
 import ec.util.Parameter;
 
@@ -15,20 +16,38 @@ public class WheightedFitness extends SimpleFitness implements IAamasFitness {
 	
 	private double accuracy = 0.0;
 	
+	float fitness = 0.0f;
 	
 	@Override
 	public void computeFitness(GEPIndividual individual, EvolutionState state) {
 		SimpleFitness f = new SimpleFitness();
 		
-		double size_fit = GEPFitnessFunction2.NTSrawFitness(individual);
+		
+		
+		double size_fit = GEPFitnessFunction2.NTSfitness(individual);
 		double acc_fit = GEPFitnessFunction2.BACCfitness(individual);
 		
-		f.setFitness(state, (float)(acc_fit * acc_wheight + size_fit * size_wheight), (size_fit == 1.0 && acc_fit == 1.0));
+		fitness = (float)(acc_fit * acc_wheight + size_fit * size_wheight);
+		
+		f.setFitness(state, fitness(), (size_fit == 1.0 && acc_fit == 1.0));
+		
 	}
 	
 	@Override
 	public double getAccuracy() {	
 		return accuracy;
+	}
+	
+	@Override
+	public float fitness() {
+		
+		return fitness;
+	}
+	
+	@Override
+	public boolean betterThan(Fitness _fitness) {
+		
+		return _fitness.fitness() < fitness();
 	}
 	
 	@Override
@@ -41,7 +60,6 @@ public class WheightedFitness extends SimpleFitness implements IAamasFitness {
 		super.setup(state, base);
 		
 		Parameter def = defaultBase();
-		
 		acc_wheight = state.parameters.getDouble(base.push(P_ACC_WEIGHT), def.push(P_ACC_WEIGHT), 0, 1);
 		size_wheight = state.parameters.getDouble(base.push(P_SIZE_WEIGHT), def.push(P_SIZE_WEIGHT), 0, 1);
 	}
