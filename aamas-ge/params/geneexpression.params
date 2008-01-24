@@ -57,9 +57,9 @@ stat.file =           ../stat/out.stat
 # Statistics decorators that enable us to add and remove functionality from the final 
 # statistics in a very flexible way 
 # ==============================
-stat.decorator.size = 1
-stat.decorator.0 = ec.gep.resultprinter.RDecorator 
-#stat.decorator.1 = ec.gep.resultprinter.GraphvizDecorator
+stat.decorator.size = 2
+stat.decorator.0 = ec.gep.statsprinter.RDecorator 
+stat.decorator.1 = ec.gep.statsprinter.GraphvizDecorator
 
 # Graphviz decorator
 stat.decorator.graphviz.file =          ../stat/graph.dot
@@ -67,8 +67,9 @@ stat.decorator.graphviz.file =          ../stat/graph.dot
 # R decorator
 stat.decorator.r.file = 				../stat/r.txt
 
-# Fitness (by Rui Meireles)
+# Fitnesses
 # ==============================
+# Subsumption fitness
 # non-triviality conditions 
 multi.fitness.subsumption.subthreshold.0 = 1.00
 multi.fitness.subsumption.maxloss.0 = 0.00
@@ -78,6 +79,6 @@ multi.fitness.subsumption.subthreshold.1 = 0.80
 # acceptable loss in the higher priority objective when improving the lower priority one
 multi.fitness.subsumption.maxloss.1 = 0.04
 
-# Weighted fitness (by Ze Pinto)
+# Weighted fitness
 simple.fitness.weighted.accuracy_weight = 0.95
 simple.fitness.weighted.size_weight = 0.05
