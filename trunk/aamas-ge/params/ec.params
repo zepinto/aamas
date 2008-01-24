@@ -80,7 +80,7 @@ evalthreads = 				1
 breedthreads = 				1
 
 # a good random seed for thread 0
-seed.0 = 				4357
+seed.0 = 				46789
 
 
 

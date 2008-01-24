@@ -19,10 +19,11 @@ import ec.util.Parameter;
  * @author Rui Meireles
  * 
  */
-public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness implements IAamasFitness {
+public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness
+		implements IAamasFitness {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	// for reading parameters
 	private static final String P_SUBSUMPTION = "subsumption";
 	private static final String P_SUBTHRESHOLD = "subthreshold";
@@ -31,8 +32,6 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness impl
 	private double[] subsumptionThreshold;
 	private double[] maxLoss;
 
-	private double accuracy = 0.0;
-	
 	@Override
 	public Parameter defaultBase() {
 		return super.defaultBase().push(P_SUBSUMPTION);
@@ -132,26 +131,23 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness impl
 
 		return abeatsb;
 	}
-	
-	
+
 	public void computeFitness(GEPIndividual individual, EvolutionState state) {
-		double ntFitness = GEPFitnessFunction2.NTfitness(individual);
-		double accFitness = GEPFitnessFunction2.BSACCfitness(individual);
+		//double ntFitness = GEPFitnessFunction2.NTfitness(individual);
+		double accFitness = GEPFitnessFunction2.BACCfitness(individual);
 		double ntsFitness = GEPFitnessFunction2.TSfitness(individual);
 
-		multifitness[0] = (float) ntFitness;
-		multifitness[1] = (float) accFitness;
-		multifitness[2] = (float) ntsFitness;
+		//multifitness[0] = (float) ntFitness;
+		multifitness[0] = (float) accFitness;
+		multifitness[1] = (float) ntsFitness;
 	}
-	
-	
+
 	public String getDescription() {
 		return "type=Subsumption";
 	}
-	
-	
+
 	public double getAccuracy() {
-		return accuracy;
+		return multifitness[0];
 	}
 
 	private MultiObjectiveFitness toMultiObjectiveFitness(Fitness _fitness) {
