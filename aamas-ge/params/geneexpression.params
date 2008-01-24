@@ -1,0 +1,84 @@
+# This parameter file supports the boolean network problem.
+#
+# The data (including variable names) are stored in data files.
+
+# My parent:
+parent.0 =                       gep.params
+    
+# Problem
+#===============================
+eval.problem = edu.mapi.aamas.ge.GeneExpression
+
+# run for 100 generations, quit prematurely if I find something ideal
+generations =                    100
+quit-on-run-complete =           true
+
+# ec.Subpopulation
+# ==============================
+
+# subpop size is 50 individuals
+# we use subpop.0 because we could have other sub-populations but don't
+pop.subpop.0.size =            50
+
+
+# ec.Species
+# ==============================
+
+gep.species.numgenes = 2
+gep.species.gene-headsize = 5
+gep.species.gene-linking-function = and
+ 
+# Problem type must be one of: functionfinding, classification, timeseries, logical
+# Set default to be 'unknown' so user is forced to specify in the problem params file 
+gep.species.problemtype = logical
+
+# specify the symbols ... functions and terminals (variables)
+#
+# the terminal symbols (variable names) will be obtained from the training data file (1st row)
+gep.species.symbolset.terminalfilename = data/p2.txt
+# here, we specify the testing data to be different than the training data 
+gep.species.symbolset.testingdatafilename = data/p2-test.txt
+# 3 functions And Or Not  are used in this problem
+gep.species.symbolset.functionsize = 3
+gep.species.symbolset.function.0 = And
+gep.species.symbolset.function.0.weight = 1
+gep.species.symbolset.function.1 = Or
+gep.species.symbolset.function.1.weight = 1
+gep.species.symbolset.function.2 = Not
+gep.species.symbolset.function.2.weight = 1
+
+# Statistics
+# ==============================
+
+# output statistics to a file in the stat directory
+stat =                ec.gep.GEPSimpleStatistics2
+stat.file =           ../stat/out.stat
+
+# Statistics decorators that enable us to add and remove functionality from the final 
+# statistics in a very flexible way 
+stat.decorator.size = 2
+stat.decorator.0 = ec.gep.resultprinter.GraphvizDecorator
+stat.decorator.1 = ec.gep.resultprinter.RDecorator 
+
+# Graphviz decorator
+stat.decorator.graphviz.file =          ../stat/graph.dot
+
+# R decorator
+stat.decorator.r.file = 				../stat/r.txt
+stat.decorator.r.append = 				false
+
+# Fitness (by Rui Meireles)
+# ==============================
+
+# non-triviality conditions 
+multi.fitness.subsumption.subthreshold.0 = 1.00
+multi.fitness.subsumption.maxloss.0 = 0.00
+
+# wheighted fitness params
+wheighted.accuracy_wheight = 0.98
+wheighted.size_wheight = 0.02
+
+# control the threshold that will say when we start looking at lower priority optimizations  
+multi.fitness.subsumption.subthreshold.1 = 0.80
+# acceptable loss in the higher priority objective when improving the lower priority one
+multi.fitness.subsumption.maxloss.1 = 0.04
