@@ -35,9 +35,9 @@ gep.species.problemtype = logical
 # specify the symbols ... functions and terminals (variables)
 #
 # the terminal symbols (variable names) will be obtained from the training data file (1st row)
-gep.species.symbolset.terminalfilename = data/p2.txt
+gep.species.symbolset.terminalfilename = data/p4.txt
 # here, we specify the testing data to be different than the training data 
-gep.species.symbolset.testingdatafilename = data/p2-test.txt
+gep.species.symbolset.testingdatafilename = data/p4-test.txt
 # 3 functions And Or Not  are used in this problem
 gep.species.symbolset.functionsize = 3
 gep.species.symbolset.function.0 = And
@@ -74,9 +74,10 @@ stat.decorator.r.append = 				false
 multi.fitness.subsumption.subthreshold.0 = 1.00
 multi.fitness.subsumption.maxloss.0 = 0.00
 
+# Wheighted fitness (by Ze Pinto)
 # wheighted fitness params
-simple.fitness.wheighted.accuracy_wheight = 0.98
-simple.fitness.wheighted.size_wheight = 0.02
+simple.fitness.wheighted.accuracy_wheight = 0.95
+simple.fitness.wheighted.size_wheight = 0.05
 
 # control the threshold that will say when we start looking at lower priority optimizations  
 multi.fitness.subsumption.subthreshold.1 = 0.80
