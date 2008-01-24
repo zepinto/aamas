@@ -1,0 +1,49 @@
+# This parameter file overrides some of the parameters in geneexpression.params
+# so that we can automate executing different scenarios in an easier way.
+
+
+# My parent:
+parent.0 =                       geneexpression.params
+
+
+# GP related parameters
+# ========================
+generations =			50
+pop.subpop.0.size =     256
+
+# Fitness related parameters
+# ========================
+pop.subpop.0.species.fitness = ec.gep.WeightedFitness 
+#ec.multiobjective.SubsumptionMultiObjectiveFitness
+
+# Subsumption fitness parameters 
+multi.fitness.subsumption.subthreshold.0 = 0.80
+multi.fitness.subsumption.maxloss.0 = 0.05
+
+# Weighted fitness parameters
+simple.fitness.weighted.accuracy_weight = 1.0
+simple.fitness.weighted.size_weight = 0.0
+
+# Operator related parameters
+# ========================
+gep.species.symbolset.functionsize = 3
+gep.species.symbolset.function.0 = And
+gep.species.symbolset.function.0.weight = 1
+gep.species.symbolset.function.1 = Or
+gep.species.symbolset.function.1.weight = 1
+gep.species.symbolset.function.2 = Not
+gep.species.symbolset.function.2.weight = 1
+
+# Input data related parameters
+# ========================
+gep.species.symbolset.terminalfilename = data/p2.txt 
+gep.species.symbolset.testingdatafilename = data/p2-test.txt
+
+# Output related parameters
+# ========================
+stat.decorator.r.file = ../stat/1.txt
+stat.decorator.graphviz.file =  ../stat/1.dot
+
+# Run related parameters
+# ========================
+stat.decorator.r.runid = 123
