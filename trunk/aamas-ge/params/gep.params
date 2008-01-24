@@ -172,7 +172,7 @@ pop.subpop.0.species.ind = 		ec.gep.GEPIndividual2
 # use SubsumptionMultiObjectiveFitness for the subpop
 #pop.subpop.0.species.fitness =			ec.multiobjective.SubsumptionMultiObjectiveFitness
 #pop.subpop.0.species.fitness.numobjectives = 3
-pop.subpop.0.species.fitness =			ec.gep.WheightedFitness
+pop.subpop.0.species.fitness =			ec.gep.WeightedFitness
 
 
 # ec.Species
