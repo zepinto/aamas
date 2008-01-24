@@ -9,7 +9,6 @@ import ec.gep.GEPIndividual;
 import ec.gep.GEPProblem;
 import ec.multiobjective.MultiObjectiveFitness;
 import ec.simple.SimpleProblemForm;
-import ec.util.Parameter;
 
 /**
  * The problem here is to find logical expressions that satisfy an input boolean
