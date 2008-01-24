@@ -75,8 +75,8 @@ multi.fitness.subsumption.subthreshold.0 = 1.00
 multi.fitness.subsumption.maxloss.0 = 0.00
 
 # wheighted fitness params
-wheighted.accuracy_wheight = 0.98
-wheighted.size_wheight = 0.02
+simple.fitness.wheighted.accuracy_wheight = 0.98
+simple.fitness.wheighted.size_wheight = 0.02
 
 # control the threshold that will say when we start looking at lower priority optimizations  
 multi.fitness.subsumption.subthreshold.1 = 0.80

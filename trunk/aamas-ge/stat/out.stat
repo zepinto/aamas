@@ -9,39 +9,143 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: 0.0
+Fitness: 0.5956579
 Linking function: and
 Gene 0
-not.and.g4.not.g10.g14.g15.g13.g6.g16.g10
+not.and.not.and.not.g10.g14.g16.g0.g16.g6
 Gene 1
-and.or.and.or.not.g11.g17.g13.g9.g11.g3
+or.or.or.or.g12.g11.g18.g15.g4.g10.g13
 
-(not (g4 and (not g10))) and (((g13 or g9) or (not g11)) and (g11 and g17))
+(not ((not (not g16)) and (g10 and g14))) and (((g15 or g4) or g12) or (g11 or g18))
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: 0.76578945
+Linking function: and
+Gene 0
+not.and.not.and.not.g10.g5.g2.g1.g3.g6
+Gene 1
+not.not.not.g2.or.g13.g12.g7.g1.g4.g14
+
+(not ((not (not g2)) and (g10 and g5))) and (not (not (not g2)))
+
+
+Generation: 2
+Best Individual:
+Evaluated: T
+Fitness: 0.77078944
+Linking function: and
+Gene 0
+not.not.not.g2.or.g10.g14.g16.g0.g16.g6
+Gene 1
+not.not.not.g2.or.g13.g12.g7.g1.g4.g14
+
+(not (not (not g2))) and (not (not (not g2)))
+
+
+Generation: 4
+Best Individual:
+Evaluated: T
+Fitness: 0.7899123
+Linking function: and
+Gene 0
+or.g17.or.g11.not.g1.g14.g11.g1.g3.g15
+Gene 1
+not.and.not.and.not.g7.g15.g18.g7.g11.g6
+
+(g17 or (g11 or (not g1))) and (not ((not (not g18)) and (g7 and g15)))
+
+
+Generation: 9
+Best Individual:
+Evaluated: T
+Fitness: 0.81736845
+Linking function: and
+Gene 0
+not.and.g15.g18.or.g7.g0.g18.g7.g11.g5
+Gene 1
+or.g7.g16.and.or.g7.g15.g19.g2.g8.g13
+
+(not (g15 and g18)) and (g7 or g16)
+
+
+Generation: 15
+Best Individual:
+Evaluated: T
+Fitness: 0.89307016
+Linking function: and
+Gene 0
+not.and.g15.g18.g10.g9.g18.g11.g2.g9.g13
+Gene 1
+or.g17.or.or.g8.g1.g14.g14.g1.g3.g15
+
+(not (g15 and g18)) and (g17 or ((g1 or g14) or g8))
+
+
+Generation: 21
+Best Individual:
+Evaluated: T
+Fitness: 0.89373684
+Linking function: and
+Gene 0
+or.or.g14.g8.g17.g9.g18.g11.g2.g9.g2
+Gene 1
+not.and.g15.g18.g10.g9.g18.g11.g2.g9.g13
+
+((g8 or g17) or g14) and (not (g15 and g18))
+
+
+Generation: 33
+Best Individual:
+Evaluated: T
+Fitness: 0.8947368
+Linking function: and
+Gene 0
+not.and.g18.g15.g18.g9.g18.g11.g2.g15.g15
+Gene 1
+not.and.g18.g15.g18.g9.g15.g11.g2.g2.g13
+
+(not (g18 and g15)) and (not (g18 and g15))
+
+
+Generation: 34
+Best Individual:
+Evaluated: T
+Fitness: 0.93508774
+Linking function: and
+Gene 0
+not.and.g18.g15.g18.g9.g17.g1.g0.g4.g13
+Gene 1
+not.g2.g18.or.g7.g3.g16.g13.g1.g7.g3
+
+(not (g18 and g15)) and (not g2)
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 34
 Evaluated: T
-Fitness: 0.0
+Fitness: 0.93508774
 Linking function: and
 Gene 0
-not.and.g4.not.g10.g14.g15.g13.g6.g16.g10
+not.and.g18.g15.g18.g9.g17.g1.g0.g4.g13
 Gene 1
-and.or.and.or.not.g11.g17.g13.g9.g11.g3
+not.g2.g18.or.g7.g3.g16.g13.g1.g7.g3
 
-(not (g4 and (not g10))) and (((g13 or g9) or (not g11)) and (g11 and g17))
+(not (g18 and g15)) and (not g2)
 
-Size of program: 15
-Variables used(count): g4(1), g9(1), g10(1), g11(2), g13(1), g17(1)
+Size of program: 6
+Variables used(count): g2(1), g15(1), g18(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  8	|  48
+            Yes|  52	|  4
 Actual Value   |----------------
-            No |  2	|  18
+            No |  0	|  20
                |----------------
 
 
@@ -51,164 +155,164 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  8	|  51
+            Yes|  53	|  6
 Actual Value   |----------------
             No |  0	|  17
                |----------------
 
 Observed	Computed
 0.0	1.0
-1.0	0.0
 1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
 0.0	0.0
 0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
-0.0	0.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
+1.0	0.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
+0.0	1.0
 1.0	0.0
+0.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
+0.0	1.0
 
 1.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
 0.0	1.0
 1.0	0.0
 1.0	0.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	1.0
-1.0	0.0
-1.0	0.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
 1.0	0.0
 0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
 1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
+0.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
