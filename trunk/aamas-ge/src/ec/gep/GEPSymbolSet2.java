@@ -41,6 +41,10 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 	public static boolean isComplete() {
 		return isComplete;
 	}
+	
+	public static String getDependentGene() {
+		return "G"+dependentVarIdx;
+	}
 
 	/**
 	 * Computes the index for the next dependent variable.
