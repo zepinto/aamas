@@ -1,22 +1,21 @@
 Problem	Run	Gene	Fitness	Operators	NGenerations	PopSize	Accuracy	Size	Depth
-
-data/p1.txt,	0.95652174949646
-
-data/p1.txt,	1.0
-
-data/p1.txt,	0.782608687877655
-
-data/p1.txt,	0.6521739363670349
-
-data/p1.txt,	0.8260869383811951
-
-data/p1.txt,	0.8260869383811951
-
-data/p1.txt,	0.782608687877655
-
-data/p1.txt,	0.695652186870575
-
-data/p1.txt,	1.0
-
-data/p1.txt,	1.0
-
+data/p2.txt	0	G0	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.907895	9	?
+data/p2.txt	0	G1	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	1.000000	7	?
+data/p2.txt	0	G2	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	1.000000	7	?
+data/p2.txt	0	G3	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.881579	6	?
+data/p2.txt	0	G4	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	1.000000	8	?
+data/p2.txt	0	G5	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.881579	9	?
+data/p2.txt	0	G6	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.921053	7	?
+data/p2.txt	0	G7	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.894737	5	?
+data/p2.txt	0	G8	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.907895	2	?
+data/p2.txt	0	G9	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.947368	4	?
+data/p2.txt	0	G10	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	1.000000	4	?
+data/p2.txt	0	G11	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.973684	7	?
+data/p2.txt	0	G12	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.855263	6	?
+data/p2.txt	0	G13	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.855263	6	?
+data/p2.txt	0	G14	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.881579	7	?
+data/p2.txt	0	G15	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.789474	6	?
+data/p2.txt	0	G16	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.855263	8	?
+data/p2.txt	0	G17	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.776316	6	?
+data/p2.txt	0	G18	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	1.000000	6	?
+data/p2.txt	0	G19	type=Weighted,accuracyWeight=1.0,sizeWeight=0.0	?	50	256	0.973684	4	?

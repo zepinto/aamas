@@ -5,6 +5,8 @@ import java.io.IOException;
 
 import ec.EvolutionState;
 import ec.Individual;
+import ec.gep.GEPIndividual2;
+import ec.gep.GEPSymbolSet2;
 import ec.gep.IAamasFitness;
 import ec.multiobjective.SubsumptionMultiObjectiveFitness;
 import ec.simple.SimpleStatistics;
@@ -22,6 +24,9 @@ import ec.util.Parameter;
 public class RDecorator extends StatsPrinterDecorator {
 
 	private static final String P_INPUT_FILENAME = "gep.species.symbolset.terminalfilename";
+	private static final String P_POP_SIZE = "pop.subpop.0.size";
+	private static final String P_NUM_GENERATIONS = "generations";
+	
 	public static final String P_R = "r";
 	/* filename parameter */
 	public static final String P_FILE = "file";
@@ -63,10 +68,34 @@ public class RDecorator extends StatsPrinterDecorator {
 			if (ind[x].fitness instanceof IAamasFitness) {
 				double accuracy = ((IAamasFitness) ind[x].fitness)
 						.getAccuracy();
+				String description = ((IAamasFitness) ind[x].fitness).getDescription();
+				
 				String problem = state.parameters.getString(new Parameter(
 						P_INPUT_FILENAME), null);
-				state.output.println(String.format("%s,	%s\n", problem,
-						accuracy), Output.V_NO_GENERAL, rlog);
+				long generations = state.parameters.getLong(new Parameter(
+						P_NUM_GENERATIONS), null);
+				long popsize = state.parameters.getLong(new Parameter(
+						P_POP_SIZE), null);
+				
+				long size = ((GEPIndividual2)ind[x]).size();
+				
+				
+				
+				//"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tAccuracy\tSize\tDepth\n"
+				
+				state.output.println(String.format("%s\t%d\t%s\t%s\t%s\t%d\t%d\t%f\t%d\t%s", 
+						problem, 
+						/*FIXME*/0,
+						GEPSymbolSet2.getDependentGene(),
+						description,
+						"?",
+						generations,
+						popsize,
+						accuracy,
+						size,
+						"?"
+						
+					), Output.V_NO_GENERAL, rlog);
 
 			} else
 				throw new IllegalArgumentException(
@@ -138,7 +167,7 @@ public class RDecorator extends StatsPrinterDecorator {
 		// Measures: accuracy, size (tree), depth (tree)
 		state.output
 				.println(
-						"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tAccuracy\tSize\tDepth\n",
+						"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tAccuracy\tSize\tDepth",
 						Output.V_NO_GENERAL, rlog);
 	}
 
