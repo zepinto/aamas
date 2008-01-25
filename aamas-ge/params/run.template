@@ -26,13 +26,7 @@ simple.fitness.weighted.size_weight = 0.0
 
 # Operator related parameters
 # ========================
-gep.species.symbolset.functionsize = 3
-gep.species.symbolset.function.0 = And
-gep.species.symbolset.function.0.weight = 1
-gep.species.symbolset.function.1 = Or
-gep.species.symbolset.function.1.weight = 1
-gep.species.symbolset.function.2 = Not
-gep.species.symbolset.function.2.weight = 1
+{5}
 
 # Input data related parameters
 # ========================
