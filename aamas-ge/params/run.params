@@ -13,8 +13,9 @@ pop.subpop.0.size =     256
 
 # Fitness related parameters
 # ========================
-pop.subpop.0.species.fitness = ec.gep.WeightedFitness 
-#ec.multiobjective.SubsumptionMultiObjectiveFitness
+pop.subpop.0.species.fitness = ec.multiobjective.SubsumptionMultiObjectiveFitness 
+#ec.gep.WeightedFitness 
+#
 
 # Subsumption fitness parameters 
 multi.fitness.subsumption.subthreshold.0 = 0.80

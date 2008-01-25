@@ -81,9 +81,9 @@ public class RDecorator extends StatsPrinterDecorator {
 				
 				
 				
-				//"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tAccuracy\tSize\tDepth\n"
+				//"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tGeneration\tAccuracy\tSize\tDepth\n"
 				
-				state.output.println(String.format("%s\t%d\t%s\t%s\t%s\t%d\t%d\t%f\t%d\t%s", 
+				state.output.println(String.format("%s\t%d\t%s\t%s\t%s\t%d\t%d\t%d\t%f\t%d\t%s", 
 						problem, 
 						/*FIXME*/0,
 						GEPSymbolSet2.getDependentGene(),
@@ -91,6 +91,7 @@ public class RDecorator extends StatsPrinterDecorator {
 						"?",
 						generations,
 						popsize,
+						state.generation,
 						accuracy,
 						size,
 						"?"
@@ -167,7 +168,7 @@ public class RDecorator extends StatsPrinterDecorator {
 		// Measures: accuracy, size (tree), depth (tree)
 		state.output
 				.println(
-						"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tAccuracy\tSize\tDepth",
+						"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tGeneration\tAccuracy\tSize\tDepth",
 						Output.V_NO_GENERAL, rlog);
 	}
 

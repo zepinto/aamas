@@ -32,7 +32,7 @@ public class GeneExpression extends GEPProblem implements SimpleProblemForm {
 										"Evaluation function: Unexpected individual object %s (expecting %s).",
 										ind.getClass().getName(),
 										GEPIndividual.class.getName()));
-		}
+		}				
 	}
 	
 	

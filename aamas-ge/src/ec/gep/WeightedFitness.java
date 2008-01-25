@@ -12,7 +12,7 @@ public class WeightedFitness extends SimpleFitness implements IAamasFitness {
 	private static final long serialVersionUID = 1L;
 	private static final String P_WEIGHTED = "weighted";
 	private static final String P_ACC_WEIGHT = "accuracy_weight";
-	private static final String P_SIZE_WEIGHT = "size_weight";
+	//private static final String P_SIZE_WEIGHT = "size_weight";
 
 	private double acc_weight = 1.0;
 	private double size_weight = 0.0;
@@ -66,8 +66,7 @@ public class WeightedFitness extends SimpleFitness implements IAamasFitness {
 		Parameter def = defaultBase();
 		acc_weight = state.parameters.getDouble(base.push(P_ACC_WEIGHT), def
 				.push(P_ACC_WEIGHT), 0, 1);
-		size_weight = state.parameters.getDouble(base.push(P_SIZE_WEIGHT), def
-				.push(P_SIZE_WEIGHT), 0, 1);
+		size_weight = 1 - acc_weight;
 	}
 
 }
