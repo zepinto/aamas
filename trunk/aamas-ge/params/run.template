@@ -8,29 +8,29 @@ parent.0 =                       geneexpression.params
 
 # GP related parameters
 # ========================
-generations =			{3}
-pop.subpop.0.size =     {4}
+generations =			{generations}
+pop.subpop.0.size =     {population}
 
 # Fitness related parameters
 # ========================
-pop.subpop.0.species.fitness = {1} 
+pop.subpop.0.species.fitness = {fitness_func} 
 #ec.multiobjective.SubsumptionMultiObjectiveFitness
 
 # Subsumption fitness parameters 
-multi.fitness.subsumption.subthreshold.0 = 0.80
-multi.fitness.subsumption.maxloss.0 = 0.05
+multi.fitness.subsumption.subthreshold.0 = {subs_threshold}
+multi.fitness.subsumption.maxloss.0 = {subs_maxloss}
 
 # Weighted fitness parameters
-simple.fitness.weighted.accuracy_weight = 0.95
+simple.fitness.weighted.accuracy_weight = {acc_weight}
 
 # Operator related parameters
 # ========================
-{5}
+{operators}
 
 # Input data related parameters
 # ========================
-gep.species.symbolset.terminalfilename = data/p{2}.txt
-gep.species.symbolset.testingdatafilename = data/p{2}-test.txt  
+gep.species.symbolset.terminalfilename = data/p{problem}.txt
+gep.species.symbolset.testingdatafilename = data/p{problem}-test.txt  
 
 # Output related parameters
 # ========================
