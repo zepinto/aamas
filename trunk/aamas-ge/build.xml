@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="aamas3" default="test_distribution" basedir=".">
+	<property name="libs.dir" value="../ecj16-gep" />
+	
+    <target name="test_distribution" depends="one_jar" description="Create a zip file with jar a run scripts">
+    	<mkdir dir="toTest"/>
+    	<mkdir dir="toTest/params"/>
+    	<mkdir dir="toTest/data"/>
+    	<mkdir dir="toTest/stat"/>
+    	<move file="gep.jar" todir="toTest"></move>
+    	<copydir dest="toTest/params" src="params" excludes="**/.svn/*"/>    		
+    	<copydir dest="toTest/data" src="data" excludes="**/.svn/*"/>    	
+    </target>
+	
+	<target name="one_jar" description="Create a single jar containing all required class files">
+		<mkdir dir="jar_tmp"/>
+		<unjar src="${libs.dir}/itext-2.0.6.jar" dest="jar_tmp" ></unjar>
+		<unjar src="${libs.dir}/jcommon-1.0.12.jar" dest="jar_tmp" ></unjar>
+		<unjar src="${libs.dir}/jfreechart-1.0.9.jar" dest="jar_tmp" ></unjar>
+		<unjar src="${libs.dir}/javacsv.jar" dest="jar_tmp" ></unjar>
+		<jar destfile="gep.jar" basedir="bin" excludes="**/.svn/*">
+			<fileset dir="../ecj16-gep/bin"></fileset>
+			<fileset dir="jar_tmp"></fileset>
+			<manifest>
+				<attribute name="Main-Class" value="ec.Evolve"/>
+			</manifest>
+		</jar>
+		<deltree dir="jar_tmp"/>
+	</target>
+
+</project>

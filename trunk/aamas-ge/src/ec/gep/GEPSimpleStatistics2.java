@@ -56,6 +56,7 @@ public class GEPSimpleStatistics2 extends GEPSimpleStatistics {
 	public void postEvaluationStatistics(EvolutionState state) {
 		super.postEvaluationStatistics(state);
 
+		
 		// Do we have anything interesting to print?
 		// for now we just print the best fitness per subpopulation.
         Individual[] best_i = new Individual[state.population.subpops.length];  // quiets compiler complaints
@@ -70,6 +71,10 @@ public class GEPSimpleStatistics2 extends GEPSimpleStatistics {
             // print it ... we only print the best of generation if it becomes the new
             // best of run
             boolean newBestOfRun = false;
+            if (state.generation == 1) {
+            	best_of_run[x]=null;
+            }
+            
             if (best_of_run[x]==null || best_i[x].fitness.betterThan(best_of_run[x].fitness))
             {
                 best_of_run[x] = (Individual)(best_i[x].clone());
@@ -79,9 +84,10 @@ public class GEPSimpleStatistics2 extends GEPSimpleStatistics {
             // TODO
             if (newBestOfRun /*&& not last generation*/)
             {
-            	
+            	System.out.println("New best at generation "+state.generation+"!!!");
+            	//System.out.println("new best");
             	// pass on the torch
-        		resultPrinter.printStatistics(state, null);
+        		resultPrinter.printStatistics(state, best_of_run);
                 // print the best-of-generation individual
                 state.output.println("\nGeneration: " + state.generation,Output.V_NO_GENERAL,statisticslog);
                 state.output.println("Best Individual:",Output.V_NO_GENERAL,statisticslog);

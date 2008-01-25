@@ -21,8 +21,7 @@ multi.fitness.subsumption.subthreshold.0 = 0.80
 multi.fitness.subsumption.maxloss.0 = 0.05
 
 # Weighted fitness parameters
-simple.fitness.weighted.accuracy_weight = 1.0
-simple.fitness.weighted.size_weight = 0.0
+simple.fitness.weighted.accuracy_weight = 0.95
 
 # Operator related parameters
 # ========================
