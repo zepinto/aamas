@@ -27,7 +27,7 @@ public class SubsumptionFitness extends SubsumptionMultiObjectiveFitness
 
 	public String getDescription() {
 		return String.format("type=Subsumption,minAccuracy=%s,maxLoss=%s",
-				subsumptionThreshold[1], maxLoss[1]);
+				subsumptionThreshold[0], maxLoss[0]);
 	}
 	
 	public double getAccuracy() {
