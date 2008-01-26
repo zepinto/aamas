@@ -1,7 +1,6 @@
 package edu.mapi.aamas.ge.fitness;
 
 import ec.EvolutionState;
-import ec.Fitness;
 import ec.gep.GEPIndividual;
 import ec.simple.SimpleFitness;
 import ec.util.Parameter;
@@ -13,7 +12,6 @@ public class WeightedFitness extends SimpleFitness implements IFitness {
 	private static final long serialVersionUID = 1L;
 	private static final String P_WEIGHTED = "weighted";
 	private static final String P_ACC_WEIGHT = "accuracy_weight";
-	//private static final String P_SIZE_WEIGHT = "size_weight";
 
 	private float acc_weight = 1.0f;
 	private float size_weight = 0.0f;
@@ -49,12 +47,7 @@ public class WeightedFitness extends SimpleFitness implements IFitness {
 		return fitness;
 	}
 
-	@Override
-	public boolean betterThan(Fitness _fitness) {
-
-		return _fitness.fitness() < fitness();
-	}
-
+	
 	@Override
 	public Parameter defaultBase() {
 		return super.defaultBase().push(P_WEIGHTED);

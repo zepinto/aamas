@@ -23,14 +23,13 @@ public class SubsumptionFitness extends SubsumptionMultiObjectiveFitness
 		multifitness[0] = (float) FitnessPrimitives.BACCfitness(individual);
 		// then comes the tree size
 		multifitness[1] = (float) FitnessPrimitives.TSfitness(individual);
-
 	}
 
 	public String getDescription() {
 		return String.format("type=Subsumption,minAccuracy=%s,maxLoss=%s",
-				subsumptionThreshold[0], maxLoss[0]);
+				subsumptionThreshold[1], maxLoss[1]);
 	}
-
+	
 	public double getAccuracy() {
 		// the accuracy is stored on index zero of the multifitness array
 		return multifitness[0];

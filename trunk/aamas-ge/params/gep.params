@@ -168,7 +168,7 @@ pop.subpop.0.size =			30
 
 # You might change this, but it must be a GEPSpeciesForm!
 pop.subpop.0.species = 			ec.gep.GEPSpecies
-pop.subpop.0.species.ind = 		ec.gep.GEPIndividual
+pop.subpop.0.species.ind = 		ec.gep.GEPIndividual2
 pop.subpop.0.species.fitness =	ec.simple.SimpleFitness
 pop.subpop.0.species.fitness.numobjectives = 2
 

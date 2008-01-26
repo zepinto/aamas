@@ -218,7 +218,7 @@ public class FitnessPrimitives {
 		if (ind.parsedGeneExpressions == null)
 			ind.parseGenes();
 
-		// compute dependencies for all genomes
+		// compute dependencies for all gene expressions
 		for (GEPExpressionTreeNode parsedGeneExpression : ind.parsedGeneExpressions)
 			if (isNonTrivial(parsedGeneExpression))
 				return 1.0;
