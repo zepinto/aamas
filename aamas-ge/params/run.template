@@ -3,7 +3,7 @@
 
 
 # My parent:
-parent.0 =                       geneexpression.params
+parent.0 = geneexpression.params
 
 
 # GP related parameters
@@ -13,8 +13,7 @@ pop.subpop.0.size =     {population}
 
 # Fitness related parameters
 # ========================
-pop.subpop.0.species.fitness = {fitness_func} 
-#ec.multiobjective.SubsumptionMultiObjectiveFitness
+pop.subpop.0.species.fitness = {fitness_func}
 
 # Subsumption fitness parameters 
 multi.fitness.subsumption.subthreshold.0 = {subs_threshold}
@@ -35,8 +34,6 @@ gep.species.symbolset.testingdatafilename = data/p{problem}-test.txt
 # Output related parameters
 # ========================
 stat.decorator.r.file = ../stat/{count}.txt
+stat.decorator.r.runid = {count}
 stat.decorator.graphviz.file =  ../stat/{count}.dot
 
-# Run related parameters
-# ========================
-stat.decorator.r.runid = {count}

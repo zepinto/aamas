@@ -168,12 +168,9 @@ pop.subpop.0.size =			30
 
 # You might change this, but it must be a GEPSpeciesForm!
 pop.subpop.0.species = 			ec.gep.GEPSpecies
-pop.subpop.0.species.ind = 		ec.gep.GEPIndividual2
-# use SubsumptionMultiObjectiveFitness for the subpop
-#pop.subpop.0.species.fitness =			ec.multiobjective.SubsumptionMultiObjectiveFitness
+pop.subpop.0.species.ind = 		ec.gep.GEPIndividual
+pop.subpop.0.species.fitness =	ec.simple.SimpleFitness
 pop.subpop.0.species.fitness.numobjectives = 2
-pop.subpop.0.species.fitness =			ec.gep.WeightedFitness
-
 
 # ec.Species
 # ==============================

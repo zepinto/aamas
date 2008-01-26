@@ -13,11 +13,10 @@ pop.subpop.0.size =     256
 
 # Fitness related parameters
 # ========================
-pop.subpop.0.species.fitness = ec.multiobjective.SubsumptionMultiObjectiveFitness 
-#ec.gep.WeightedFitness 
-#
+pop.subpop.0.species.fitness = edu.mapi.aamas.ge.fitness.SubsumptionFitness 
+#edu.mapi.aamas.ge.fitness.WeightedFitness 
 
-# Subsumption fitness parameters 
+# Subsumption fitness parameters
 multi.fitness.subsumption.subthreshold.0 = 0.80
 multi.fitness.subsumption.maxloss.0 = 0.05
 
@@ -43,8 +42,5 @@ gep.species.symbolset.testingdatafilename = data/p2-test.txt
 # Output related parameters
 # ========================
 stat.decorator.r.file = ../stat/1.txt
-stat.decorator.graphviz.file =  ../stat/1.dot
-
-# Run related parameters
-# ========================
 stat.decorator.r.runid = 123
+stat.decorator.graphviz.file =  ../stat/1.dot

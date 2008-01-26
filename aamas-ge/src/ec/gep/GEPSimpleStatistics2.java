@@ -7,6 +7,7 @@ import ec.gep.statsprinter.SimpleStatsPrinter;
 import ec.gep.statsprinter.StatsPrinterDecorator;
 import ec.util.Output;
 import ec.util.Parameter;
+import edu.mapi.aamas.ge.fitness.FitnessPrimitives;
 
 /**
  * Class that extends GEPSimpleStatistics by printing the best individual to an
@@ -128,7 +129,7 @@ public class GEPSimpleStatistics2 extends GEPSimpleStatistics {
 					.println(
 							"                Predicted Value\n               |  Yes\t|  No\n               |----------------",
 							Output.V_NO_GENERAL, statisticslog);
-			int confusionMatrix[] = GEPFitnessFunction2
+			int confusionMatrix[] = FitnessPrimitives
 					.getConfusionMatrixValues(ind);
 			state.output.println("            Yes|  " + confusionMatrix[0]
 					+ "\t|  " + confusionMatrix[1], Output.V_NO_GENERAL,
