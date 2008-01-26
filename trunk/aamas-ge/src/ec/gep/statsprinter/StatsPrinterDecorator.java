@@ -1,5 +1,12 @@
 package ec.gep.statsprinter;
 
+/**
+ * Implements the decorator pattern by wrapping a StatsPrinter object and adding
+ * new functionality to it.
+ * 
+ * @author Rui Meireles
+ * 
+ */
 public abstract class StatsPrinterDecorator implements IStatsPrinter {
 
 	public static final String P_DECORATOR = "decorator";

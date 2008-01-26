@@ -5,7 +5,7 @@ GENERATE_SH = 0
 
 startnumber = 0
 
-fitness_funcs = ['ec.multiobjective.SubsumptionMultiObjectiveFitness','ec.gep.WeightedFitness']
+fitness_funcs = ['edu.mapi.aamas.ge.fitness.SubsumptionFitness','edu.mapi.aamas.ge.fitness.WeightedFitness']
 
 problems = ['1','2','3','4']
 

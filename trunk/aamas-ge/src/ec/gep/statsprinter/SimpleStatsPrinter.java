@@ -5,7 +5,7 @@ import ec.Individual;
 import ec.util.Parameter;
 
 /**
- * A simple, empty result printer that serves as a stepping stone for all other
+ * A simple, empty statistics printer that serves as a stepping stone for all other
  * decorators.
  * 
  * @author Rui Meireles

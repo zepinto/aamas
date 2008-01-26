@@ -41,9 +41,14 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 	public static boolean isComplete() {
 		return isComplete;
 	}
-	
+
+	/**
+	 * Makes the gene being currently evaluated available.
+	 * 
+	 * @return
+	 */
 	public static String getDependentGene() {
-		return "G"+dependentVarIdx;
+		return GEPDependentVariable.symbol;
 	}
 
 	/**
@@ -590,15 +595,14 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 													.elementAt(m) + "'.\n" + e);
 						}
 					// Rui
-					if (i == depVarIdx){ // choose the correct index to set
-											// the
-										// testing values for the dependent
-										// variable
+					if (i == depVarIdx) { // choose the correct index to set
+						// the
+						// testing values for the dependent
+						// variable
 						GEPDependentVariable.setTestingValues(v);
 						((GEPTerminalSymbol) symbols[numberOfFunctions + i])
-						.setTestingValues(v);
-					}
-					else
+								.setTestingValues(v);
+					} else
 						((GEPTerminalSymbol) symbols[numberOfFunctions + i])
 								.setTestingValues(v);
 				}
@@ -665,7 +669,7 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 		}
 		// For Logical problems all independent variable values must be 0 or 1
 		if (species.problemType == GEPSpecies.PT_LOGICAL) { // for each
-															// independent
+			// independent
 			// variable symbol
 			for (int i = numberOfFunctions; i < numberOfSymbolsWithoutConstantSymbol; i++) {
 				double ivVals[] = ((GEPTerminalSymbol) symbols[i]).values;

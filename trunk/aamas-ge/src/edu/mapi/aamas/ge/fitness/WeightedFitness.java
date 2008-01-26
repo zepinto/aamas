@@ -1,11 +1,12 @@
-package ec.gep;
+package edu.mapi.aamas.ge.fitness;
 
 import ec.EvolutionState;
 import ec.Fitness;
+import ec.gep.GEPIndividual;
 import ec.simple.SimpleFitness;
 import ec.util.Parameter;
 
-public class WeightedFitness extends SimpleFitness implements IAamasFitness {
+public class WeightedFitness extends SimpleFitness implements IFitness {
 	/**
 	 * 
 	 */
@@ -24,8 +25,8 @@ public class WeightedFitness extends SimpleFitness implements IAamasFitness {
 	public void computeFitness(GEPIndividual individual, EvolutionState state) {
 		SimpleFitness f = new SimpleFitness();
 
-		double size_fit = GEPFitnessFunction2.TSfitness(individual);
-		double acc_fit = GEPFitnessFunction2.BACCfitness(individual);
+		double size_fit = FitnessPrimitives.TSfitness(individual);
+		double acc_fit = FitnessPrimitives.BACCfitness(individual);
 
 		fitness = (float) (acc_fit * acc_weight + size_fit * size_weight);
 		accuracy = acc_fit;

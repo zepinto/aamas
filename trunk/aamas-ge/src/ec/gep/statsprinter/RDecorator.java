@@ -5,16 +5,16 @@ import java.io.IOException;
 
 import ec.EvolutionState;
 import ec.Individual;
-import ec.gep.GEPIndividual2;
+import ec.gep.GEPIndividual;
 import ec.gep.GEPSymbolSet2;
-import ec.gep.IAamasFitness;
 import ec.multiobjective.SubsumptionMultiObjectiveFitness;
 import ec.simple.SimpleStatistics;
 import ec.util.Output;
 import ec.util.Parameter;
+import edu.mapi.aamas.ge.fitness.IFitness;
 
 /**
- * A class to decorate result printers with functionality for exporting data
+ * A class to decorate statistics printers with functionality for exporting data
  * suitable for later analysis with R, the environment for statistical
  * computing.
  * 
@@ -65,10 +65,10 @@ public class RDecorator extends StatsPrinterDecorator {
 		// us think about the future here)
 		for (int x = 0; x < state.population.subpops.length; x++)
 
-			if (ind[x].fitness instanceof IAamasFitness) {
-				double accuracy = ((IAamasFitness) ind[x].fitness)
+			if (ind[x].fitness instanceof IFitness) {
+				double accuracy = ((IFitness) ind[x].fitness)
 						.getAccuracy();
-				String description = ((IAamasFitness) ind[x].fitness).getDescription();
+				String description = ((IFitness) ind[x].fitness).getDescription();
 				
 				String problem = state.parameters.getString(new Parameter(
 						P_INPUT_FILENAME), null);
@@ -77,7 +77,7 @@ public class RDecorator extends StatsPrinterDecorator {
 				long popsize = state.parameters.getLong(new Parameter(
 						P_POP_SIZE), null);
 				
-				long size = ((GEPIndividual2)ind[x]).size();
+				long size = ((GEPIndividual)ind[x]).size();
 				
 				
 				

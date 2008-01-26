@@ -2,11 +2,16 @@ package ec.gep.statsprinter;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collection;
+import java.util.HashSet;
 
 import ec.EvolutionState;
 import ec.Individual;
-import ec.gep.GEPIndividual2;
+import ec.gep.GEPExpressionTreeNode;
+import ec.gep.GEPFunctionSymbol;
+import ec.gep.GEPIndividual;
 import ec.gep.GEPSymbolSet2;
+import ec.gep.GEPTerminalSymbol;
 import ec.simple.SimpleStatistics;
 import ec.util.Output;
 import ec.util.Parameter;
@@ -23,6 +28,8 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 	public static final String P_GRAPHVIZ = "graphviz";
 	/* graph filename parameter */
 	public static final String P_FILE = "file";
+	/* string used to denote dependency in the Graphviz format*/
+	private static final String GRAPHVIZ_SEPARATOR = "->";
 	/* graph log handler */
 	public static int graphlog;
 
@@ -55,16 +62,8 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 		// iterate through all sub-populations (there will be only one, but let
 		// us think about the future here)
 		for (int x = 0; x < state.population.subpops.length; x++)
-			if (ind[x] instanceof GEPIndividual2) {
-				((GEPIndividual2) ind[x]).printIndividualForGraph(
-						state, graphlog, Output.V_NO_GENERAL);
-			} else
-				throw new IllegalArgumentException(
-						String
-								.format(
-										"Final statistics function: Unexpected individual object %s (expecting %s).",
-										ind[x].getClass().getName(),
-										GEPIndividual2.class.getName()));
+			
+			printIndividualForGraph(state, ((GEPIndividual)ind[x]), graphlog, Output.V_NO_GENERAL);
 
 		// print the footer in the last iteration
 		if (GEPSymbolSet2.isComplete())
@@ -133,6 +132,66 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 	 */
 	private void writeGraphFileFooter(EvolutionState state) {
 		state.output.println("}\n", Output.V_NO_GENERAL, graphlog);
+	}
+
+	/**
+	 * Print an individual in a way that is adequate for using with GraphViz: g1 =
+	 * g2 and (g3 or not(g4))
+	 * 
+	 * @param state
+	 * @param log
+	 * @param verbosity
+	 */
+	public void printIndividualForGraph(EvolutionState state, GEPIndividual ind, int log,
+			int verbosity) {
+
+		/* store all the dependencies */
+		HashSet<String> dependencies = new HashSet<String>();
+
+		// make sure we have the parsed expression to work with
+		if (ind.parsedGeneExpressions == null)
+			ind.parseGenes();
+
+		// compute dependencies for all genomes
+		for (GEPExpressionTreeNode parsedGeneExpression : ind.parsedGeneExpressions)
+			dependencies
+					.addAll(computeDependenciesFromNode(parsedGeneExpression));
+
+		// loop to print all the dependencies we found
+		for (String dependency : dependencies)
+			state.output.println(String.format("%s%s%s\n",
+					GEPSymbolSet2.getDependentGene(), GRAPHVIZ_SEPARATOR, dependency), verbosity, log);
+	}
+
+	/**
+	 * Return a Collection with all symbols on
+	 * @param exprNode
+	 * @return
+	 */
+	private Collection<? extends String> computeDependenciesFromNode(
+			GEPExpressionTreeNode exprNode) {
+
+		HashSet<String> nodeDependencies = new HashSet<String>();
+
+		// is it a constant node
+		if (exprNode.isConstantNode)
+			return nodeDependencies;
+		// a terminal symbol?
+    	if (exprNode.symbol instanceof GEPTerminalSymbol)
+    	{
+    		nodeDependencies.add(((GEPTerminalSymbol)exprNode.symbol).symbol);
+        	return nodeDependencies;
+    	}
+    	// must be a function then...
+    	GEPFunctionSymbol fs = (GEPFunctionSymbol)(exprNode.symbol);
+    	if (fs.arity == 0)
+    		return nodeDependencies;
+    	
+    	// Recursive call for the function arguments/parameters
+    	for (GEPExpressionTreeNode arg : exprNode.parameters)
+        	nodeDependencies.addAll(computeDependenciesFromNode(arg));		
+
+		return nodeDependencies;
 	}
 
 }

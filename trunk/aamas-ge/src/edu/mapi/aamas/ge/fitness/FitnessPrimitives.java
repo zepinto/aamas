@@ -1,8 +1,13 @@
-package ec.gep;
+package edu.mapi.aamas.ge.fitness;
 
+import ec.gep.GEPDependentVariable;
+import ec.gep.GEPExpressionTreeNode;
+import ec.gep.GEPFunctionSymbol;
 import ec.gep.GEPIndividual;
+import ec.gep.GEPSymbolSet2;
+import ec.gep.GEPTerminalSymbol;
 
-public class GEPFitnessFunction2 {
+public class FitnessPrimitives {
 
 	// ************************* BACC (Binary Accuracy) *****************
 
@@ -236,7 +241,7 @@ public class GEPFitnessFunction2 {
 			return false;
 		// a terminal symbol?
 		if (exprNode.symbol instanceof GEPTerminalSymbol)
-			if (exprNode.symbol.symbol.equals(GEPDependentVariable.symbol))
+			if (exprNode.symbol.symbol.equals(GEPSymbolSet2.getDependentGene()))
 				return false;
 			else
 				return true;

@@ -70,11 +70,7 @@ stat.decorator.r.file = 				../stat/r.txt
 # Fitnesses
 # ==============================
 # Subsumption fitness
-# non-triviality conditions 
-multi.fitness.subsumption.subthreshold.0 = 1.00
-multi.fitness.subsumption.maxloss.0 = 0.00
-
-# control the threshold that will say when we start looking at lower priority optimizations  
+# threshold that controls when we start looking at lower priority fitness criteria  
 multi.fitness.subsumption.subthreshold.1 = 0.80
 # acceptable loss in the higher priority objective when improving the lower priority one
 multi.fitness.subsumption.maxloss.1 = 0.04

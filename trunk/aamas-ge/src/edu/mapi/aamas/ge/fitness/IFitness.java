@@ -1,11 +1,12 @@
-package ec.gep;
+package edu.mapi.aamas.ge.fitness;
 
 import ec.EvolutionState;
+import ec.gep.GEPIndividual;
 
 /**
  * Interface for different fitness functions
  */
-public interface IAamasFitness {
+public interface IFitness {
 
 	/**
 	 * The description to be used in the exported R table
