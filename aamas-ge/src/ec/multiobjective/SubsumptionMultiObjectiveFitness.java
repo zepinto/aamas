@@ -46,15 +46,14 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness {
 		// fill the threshold arrays. Basically the defaults mean no subsumption
 		// and no loss admissible
 		Parameter def = defaultBase();
-		for (int i = 0; i < subsumptionThreshold.length - 1; i++) {
+		for (int i = 0; i < subsumptionThreshold.length; i++) {
 			String iString = String.format("%d", i);
-			subsumptionThreshold[i + 1] = state.parameters.getDouble(base.push(
+			subsumptionThreshold[i] = state.parameters.getDouble(base.push(
 					P_SUBTHRESHOLD).push(iString), def.push(P_SUBTHRESHOLD)
 					.push(iString), 0, 1);
-			if ((maxLoss[i + 1] = state.parameters.getDouble(base.push(
-					P_MAXLOSS).push(iString),
-					def.push(P_MAXLOSS).push(iString), 0, 1)) < 0)
-				maxLoss[i + 1] = 0; // insure we do not get a negative maxLoss
+			if ((maxLoss[i] = state.parameters.getDouble(base.push(P_MAXLOSS)
+					.push(iString), def.push(P_MAXLOSS).push(iString), 0, 1)) < 0)
+				maxLoss[i] = 0; // insure we do not get a negative maxLoss
 		}
 	}
 
@@ -108,19 +107,20 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness {
 
 			// we only care about lower priority measures when the higher ones
 			// are properly satisfied
-			if (multifitness[i] < subsumptionThreshold[i])
+			if (multifitness[i] < subsumptionThreshold[i]
+					|| moFitness.multifitness[i] < subsumptionThreshold[i])
 				break;
 
 			// two ways to be beaten...
 			// either it is better than me on index i...
-			if (multifitness[i] < moFitness.multifitness[i]
+			if (multifitness[i] < moFitness.multifitness[i] ||
 			// or we are both good enough on index i and he has better fitness
 					// for index i+1 while loosing less than maxLoss on index i
-					|| (i + 1 != fitnessLenght
-							&& multifitness[i] > subsumptionThreshold[i]
-							&& moFitness.multifitness[i] > subsumptionThreshold[i]
-							&& moFitness.multifitness[i + 1] > multifitness[i + 1] && Math.abs(multifitness[i]
-							- moFitness.multifitness[i]) <= maxLoss[i]))
+					(i + 1 < fitnessLenght
+							&& multifitness[i] >= subsumptionThreshold[i]
+							&& moFitness.multifitness[i] >= subsumptionThreshold[i]
+							&& moFitness.multifitness[i + 1] > multifitness[i + 1] && Math
+							.abs(multifitness[i] - moFitness.multifitness[i]) <= maxLoss[i]))
 				return false;
 		}
 
