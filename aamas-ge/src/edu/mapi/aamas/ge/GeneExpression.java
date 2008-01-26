@@ -34,8 +34,8 @@ public class GeneExpression extends GEPProblem implements SimpleProblemForm {
 	}
 
 	private void evaluate(EvolutionState state, GEPIndividual ind, int threadnum) {
+		
 		if (ind.fitness instanceof IFitness) {
-
 			((IFitness) ind.fitness).computeFitness(ind, state);
 			ind.evaluated = true;
 

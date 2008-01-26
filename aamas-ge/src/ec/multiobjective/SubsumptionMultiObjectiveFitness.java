@@ -119,8 +119,8 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness {
 					|| (i + 1 != fitnessLenght
 							&& multifitness[i] > subsumptionThreshold[i]
 							&& moFitness.multifitness[i] > subsumptionThreshold[i]
-							&& moFitness.multifitness[i + 1] > multifitness[i + 1] && multifitness[i]
-							- moFitness.multifitness[i] > maxLoss[i]))
+							&& moFitness.multifitness[i + 1] > multifitness[i + 1] && Math.abs(multifitness[i]
+							- moFitness.multifitness[i]) <= maxLoss[i]))
 				return false;
 		}
 

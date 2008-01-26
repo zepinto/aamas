@@ -71,10 +71,9 @@ stat.decorator.r.file = 				../stat/r.txt
 # ==============================
 # Subsumption fitness
 # threshold that controls when we start looking at lower priority fitness criteria  
-multi.fitness.subsumption.subthreshold.1 = 0.80
+multi.fitness.subsumption.subthreshold.0 = 1.0
 # acceptable loss in the higher priority objective when improving the lower priority one
-multi.fitness.subsumption.maxloss.1 = 0.04
+multi.fitness.subsumption.maxloss.0 = 0.0
 
 # Weighted fitness
-simple.fitness.weighted.accuracy_weight = 0.95
-simple.fitness.weighted.size_weight = 0.05
+simple.fitness.weighted.accuracy_weight = 1.0

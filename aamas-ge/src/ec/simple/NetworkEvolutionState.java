@@ -57,11 +57,10 @@ public class NetworkEvolutionState extends SimpleEvolutionState {
 
 		// start iterating all over again
 		generation = 0;
-		
+
 		// POPULATION INITIALIZATION
 		statistics.preInitializationStatistics(this);
-		output.message(String.format(
-				"Initializing Generation 0 for solving index %s", i));
+		output.message(String.format("Solving for index %s", i));
 		population = initializer.initialPopulation(this, 0); // single-threaded
 		statistics.postInitializationStatistics(this);
 

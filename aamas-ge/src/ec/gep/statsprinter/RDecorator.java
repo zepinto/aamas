@@ -6,8 +6,8 @@ import java.io.IOException;
 import ec.EvolutionState;
 import ec.Individual;
 import ec.gep.GEPIndividual;
+import ec.gep.GEPIndividual2;
 import ec.gep.GEPSymbolSet2;
-import ec.multiobjective.SubsumptionMultiObjectiveFitness;
 import ec.simple.SimpleStatistics;
 import ec.util.Output;
 import ec.util.Parameter;
@@ -15,8 +15,7 @@ import edu.mapi.aamas.ge.fitness.IFitness;
 
 /**
  * A class to decorate statistics printers with functionality for exporting data
- * suitable for later analysis with R, the environment for statistical
- * computing.
+ * suitable for later analysis with R statistical computing environment.
  * 
  * @author Rui Meireles
  * 
@@ -26,7 +25,7 @@ public class RDecorator extends StatsPrinterDecorator {
 	private static final String P_INPUT_FILENAME = "gep.species.symbolset.terminalfilename";
 	private static final String P_POP_SIZE = "pop.subpop.0.size";
 	private static final String P_NUM_GENERATIONS = "generations";
-	
+
 	public static final String P_R = "r";
 	/* filename parameter */
 	public static final String P_FILE = "file";
@@ -35,6 +34,13 @@ public class RDecorator extends StatsPrinterDecorator {
 	/* r file handler */
 	public static int rlog;
 
+	/*
+	 * variables whose value don't change during a run are defined here so we
+	 * only need to compute them once
+	 */
+	String problemDesc = null, fitnessDesc = null, operatorsDesc = null;
+	long nGenerations = 0, popSize = 0, runid = 0;
+
 	public RDecorator() {
 	}
 
@@ -42,12 +48,17 @@ public class RDecorator extends StatsPrinterDecorator {
 		super(decoratedResultPrinter);
 	}
 
-	public void printStatistics(EvolutionState state, Individual[] ind) {
+	public void postEvaluationStatistics(EvolutionState state, Individual[] ind) {
 		// do my own thing
 		myPrintStatistics(state, ind);
 
 		// pass on the torch
-		decoratedResultPrinter.printStatistics(state, ind);
+		decoratedResultPrinter.postEvaluationStatistics(state, ind);
+	}
+	
+	public void finalStatistics(EvolutionState state, Individual[] ind) {
+		// just pass on the torch
+		decoratedResultPrinter.finalStatistics(state, ind);
 	}
 
 	/**
@@ -66,37 +77,32 @@ public class RDecorator extends StatsPrinterDecorator {
 		for (int x = 0; x < state.population.subpops.length; x++)
 
 			if (ind[x].fitness instanceof IFitness) {
-				double accuracy = ((IFitness) ind[x].fitness)
-						.getAccuracy();
-				String description = ((IFitness) ind[x].fitness).getDescription();
-				
-				String problem = state.parameters.getString(new Parameter(
-						P_INPUT_FILENAME), null);
-				long generations = state.parameters.getLong(new Parameter(
-						P_NUM_GENERATIONS), null);
-				long popsize = state.parameters.getLong(new Parameter(
-						P_POP_SIZE), null);
-				
-				long size = ((GEPIndividual)ind[x]).size();
-				
-				
-				
-				//"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tGeneration\tAccuracy\tSize\tDepth\n"
-				
-				state.output.println(String.format("%s\t%d\t%s\t%s\t%s\t%d\t%d\t%d\t%f\t%d\t%s", 
-						problem, 
-						/*FIXME*/0,
-						GEPSymbolSet2.getDependentGene(),
-						description,
-						"?",
-						generations,
-						popsize,
-						state.generation,
-						accuracy,
-						size,
-						"?"
-						
-					), Output.V_NO_GENERAL, rlog);
+
+				String gene = GEPSymbolSet2.getDependentGene();
+				String fitnessDesc = ((IFitness) ind[x].fitness)
+						.getDescription();
+				double accuracy = ((IFitness) ind[x].fitness).getAccuracy();
+				long treeSize = ind[x].size();
+
+				// only GEPIndividual2 can give us tree depth information
+				long treeDepth = -1;
+				if (ind[x] instanceof GEPIndividual)
+					treeDepth = ((GEPIndividual2) ind[x]).depth();
+				else
+					throw new IllegalArgumentException(
+							String
+									.format(
+											"Final statistics function: Unexpected individual object %s (expecting %s).",
+											ind[x].getClass().getName(),
+											GEPIndividual2.class.getName()));
+
+				// Problem Run Gene Fitness Operators NGenerations PopSize
+				// Generation Accuracy Size Depth
+				state.output.println(String.format(
+						"%s\t%d\t%s\t%s\t%s\t%d\t%d\t%d\t%f\t%d\t%s",
+						problemDesc, runid, gene, fitnessDesc, operatorsDesc,
+						nGenerations, popSize, state.generation+1, accuracy,
+						treeSize, treeDepth), Output.V_NO_GENERAL, rlog);
 
 			} else
 				throw new IllegalArgumentException(
@@ -104,8 +110,7 @@ public class RDecorator extends StatsPrinterDecorator {
 								.format(
 										"Final statistics function: Unexpected fitness object %s (expecting %s).",
 										ind[x].fitness.getClass().getName(),
-										SubsumptionMultiObjectiveFitness.class
-												.getName()));
+										IFitness.class.getName()));
 
 	}
 
@@ -133,6 +138,17 @@ public class RDecorator extends StatsPrinterDecorator {
 	 */
 	private void mySetup(EvolutionState state, Parameter base) {
 
+		// compute variables whose valuable remains constant
+		this.problemDesc = state.parameters.getString(new Parameter(
+				P_INPUT_FILENAME), null);
+		this.runid = state.parameters.getLong(base.push(P_DECORATOR).push(P_R)
+				.push(P_RUNID), null);
+		this.nGenerations = state.parameters.getLong(new Parameter(
+				P_NUM_GENERATIONS), null);
+		this.popSize = state.parameters
+				.getLong(new Parameter(P_POP_SIZE), null);
+		this.operatorsDesc = GEPSymbolSet2.getFunctionsDesc();
+
 		// create the file handler
 		File outFile = state.parameters.getFile(base.push(P_DECORATOR)
 				.push(P_R).push(P_FILE), null);
@@ -144,8 +160,6 @@ public class RDecorator extends StatsPrinterDecorator {
 								.getBoolean(base
 										.push(SimpleStatistics.P_COMPRESS),
 										null, false), false);
-				// outFile, Output.V_NO_GENERAL, false,
-				// append);
 			} catch (IOException i) {
 				state.output
 						.fatal("An IOException occurred while trying to create the log "
@@ -154,11 +168,10 @@ public class RDecorator extends StatsPrinterDecorator {
 
 		// write the header
 		writeRFileHeader(state);
-
 	}
 
 	/**
-	 * Writes the header for the graph file, which is a constant, fixed value.
+	 * Writes the header for the R file, which is a constant, fixed value.
 	 * 
 	 * @param state
 	 */

@@ -13,7 +13,11 @@ import ec.util.Parameter;
  */
 public class SimpleStatsPrinter implements IStatsPrinter {
 
-	public void printStatistics(EvolutionState state, Individual[] ind) {
+	public void postEvaluationStatistics(EvolutionState state, Individual[] ind) {
+		// does nothing
+	}
+	
+	public void finalStatistics(EvolutionState state, Individual[] ind) {
 		// does nothing
 	}
 

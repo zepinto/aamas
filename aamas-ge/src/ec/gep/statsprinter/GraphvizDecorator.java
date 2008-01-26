@@ -28,7 +28,7 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 	public static final String P_GRAPHVIZ = "graphviz";
 	/* graph filename parameter */
 	public static final String P_FILE = "file";
-	/* string used to denote dependency in the Graphviz format*/
+	/* string used to denote dependency in the Graphviz format */
 	private static final String GRAPHVIZ_SEPARATOR = "->";
 	/* graph log handler */
 	public static int graphlog;
@@ -40,14 +40,18 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 	public GraphvizDecorator(IStatsPrinter decoratedResultPrinter) {
 		super(decoratedResultPrinter);
 	}
-	
 
-	public void printStatistics(EvolutionState state, Individual[] ind) {
+	public void postEvaluationStatistics(EvolutionState state, Individual[] ind) {
+		// pass on the torch
+		decoratedResultPrinter.postEvaluationStatistics(state, ind);
+	}
+	
+	public void finalStatistics(EvolutionState state, Individual[] ind) {
 		// do my own thing
 		myPrintStatistics(state, ind);
 
 		// pass on the torch
-		decoratedResultPrinter.printStatistics(state, ind);
+		decoratedResultPrinter.finalStatistics(state, ind);
 	}
 
 	/**
@@ -56,14 +60,22 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 	 * @param state
 	 * @param ind
 	 */
-	public void myPrintStatistics(EvolutionState state,
-			Individual[] ind) {
+	public void myPrintStatistics(EvolutionState state, Individual[] ind) {
 
 		// iterate through all sub-populations (there will be only one, but let
 		// us think about the future here)
-		for (int x = 0; x < state.population.subpops.length; x++)
-			
-			printIndividualForGraph(state, ((GEPIndividual)ind[x]), graphlog, Output.V_NO_GENERAL);
+		for (int x = 0; x < state.population.subpops.length; x++) {
+			if (ind[x] instanceof GEPIndividual)
+				printIndividualForGraph(state, ((GEPIndividual) ind[x]),
+						graphlog, Output.V_NO_GENERAL);
+			else
+				throw new IllegalArgumentException(
+						String
+								.format(
+										"Evaluation function: Unexpected individual object %s (expecting %s).",
+										ind.getClass().getName(),
+										GEPIndividual.class.getName()));
+		}
 
 		// print the footer in the last iteration
 		if (GEPSymbolSet2.isComplete())
@@ -142,8 +154,8 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 	 * @param log
 	 * @param verbosity
 	 */
-	public void printIndividualForGraph(EvolutionState state, GEPIndividual ind, int log,
-			int verbosity) {
+	public void printIndividualForGraph(EvolutionState state,
+			GEPIndividual ind, int log, int verbosity) {
 
 		/* store all the dependencies */
 		HashSet<String> dependencies = new HashSet<String>();
@@ -159,12 +171,14 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 
 		// loop to print all the dependencies we found
 		for (String dependency : dependencies)
-			state.output.println(String.format("%s%s%s\n",
-					GEPSymbolSet2.getDependentGene(), GRAPHVIZ_SEPARATOR, dependency), verbosity, log);
+			state.output.println(String.format("%s%s%s\n", GEPSymbolSet2
+					.getDependentGene(), GRAPHVIZ_SEPARATOR, dependency),
+					verbosity, log);
 	}
 
 	/**
 	 * Return a Collection with all symbols on
+	 * 
 	 * @param exprNode
 	 * @return
 	 */
@@ -177,19 +191,18 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 		if (exprNode.isConstantNode)
 			return nodeDependencies;
 		// a terminal symbol?
-    	if (exprNode.symbol instanceof GEPTerminalSymbol)
-    	{
-    		nodeDependencies.add(((GEPTerminalSymbol)exprNode.symbol).symbol);
-        	return nodeDependencies;
-    	}
-    	// must be a function then...
-    	GEPFunctionSymbol fs = (GEPFunctionSymbol)(exprNode.symbol);
-    	if (fs.arity == 0)
-    		return nodeDependencies;
-    	
-    	// Recursive call for the function arguments/parameters
-    	for (GEPExpressionTreeNode arg : exprNode.parameters)
-        	nodeDependencies.addAll(computeDependenciesFromNode(arg));		
+		if (exprNode.symbol instanceof GEPTerminalSymbol) {
+			nodeDependencies.add(((GEPTerminalSymbol) exprNode.symbol).symbol);
+			return nodeDependencies;
+		}
+		// must be a function then...
+		GEPFunctionSymbol fs = (GEPFunctionSymbol) (exprNode.symbol);
+		if (fs.arity == 0)
+			return nodeDependencies;
+
+		// Recursive call for the function arguments/parameters
+		for (GEPExpressionTreeNode arg : exprNode.parameters)
+			nodeDependencies.addAll(computeDependenciesFromNode(arg));
 
 		return nodeDependencies;
 	}

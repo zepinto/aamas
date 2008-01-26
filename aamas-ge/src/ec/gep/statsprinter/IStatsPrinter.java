@@ -22,15 +22,23 @@ public interface IStatsPrinter {
 	public void setup(EvolutionState state, Parameter base);
 
 	/**
-	 * Print the statistics for the actual result.
+	 * Print statistics when a new, better solution is found.
 	 * 
 	 * @param state
-	 * @param best_of_run
-	 * @param best_of_run_generation
-	 * @param result
+	 * @param ind
 	 */
-	public void printStatistics(final EvolutionState state,
+	public void postEvaluationStatistics(final EvolutionState state,
 			final Individual[] ind);
+	
+	/**
+	 * Print the statistics at the end of the run.
+	 * 
+	 * @param state
+	 * @param ind
+	 */
+	public void finalStatistics(final EvolutionState state,
+			final Individual[] ind);
+
 
 	/**
 	 * Get an human-understandable description of the printer.

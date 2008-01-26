@@ -13,12 +13,11 @@ pop.subpop.0.size =     256
 
 # Fitness related parameters
 # ========================
-pop.subpop.0.species.fitness = edu.mapi.aamas.ge.fitness.SubsumptionFitness 
-#edu.mapi.aamas.ge.fitness.WeightedFitness 
+pop.subpop.0.species.fitness = edu.mapi.aamas.ge.fitness.SubsumptionFitness  
 
 # Subsumption fitness parameters
-multi.fitness.subsumption.subthreshold.0 = 0.80
-multi.fitness.subsumption.maxloss.0 = 0.05
+multi.fitness.subsumption.subthreshold.0 = 1.0
+multi.fitness.subsumption.maxloss.0 = 0.0
 
 # Weighted fitness parameters
 simple.fitness.weighted.accuracy_weight = 1.0
@@ -36,11 +35,11 @@ gep.species.symbolset.function.2.weight = 1
 
 # Input data related parameters
 # ========================
-gep.species.symbolset.terminalfilename = data/p2.txt 
-gep.species.symbolset.testingdatafilename = data/p2-test.txt
+gep.species.symbolset.terminalfilename = data/p4.txt 
+gep.species.symbolset.testingdatafilename = data/p4-test.txt
 
 # Output related parameters
 # ========================
 stat.decorator.r.file = ../stat/1.txt
-stat.decorator.r.runid = 123
+stat.decorator.r.runid = 1
 stat.decorator.graphviz.file =  ../stat/1.dot

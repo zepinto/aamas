@@ -26,6 +26,8 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 	private static boolean isComplete = false;
 	/* saves the current index value for the dependent value */
 	private static int dependentVarIdx = -1;
+	/* stores a human-readable representation of the currently loaded operators */
+	private static String functionsDesc = "";
 
 	public static void reset() {
 		isComplete = false;
@@ -49,6 +51,10 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 	 */
 	public static String getDependentGene() {
 		return GEPDependentVariable.symbol;
+	}
+
+	public static String getFunctionsDesc() {
+		return functionsDesc;
 	}
 
 	/**
@@ -235,6 +241,7 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 		Hashtable<String, String> terminalHT = new Hashtable<String, String>();
 
 		// process the functions
+		functionsDesc = "";
 		for (int x = 0; x < numberOfFunctions; x++) {
 			Parameter pp = pFunction.push("" + x);
 			Parameter ppdef = pdefFunction.push("" + x);
@@ -249,8 +256,10 @@ public class GEPSymbolSet2 extends GEPSymbolSet {
 						.fatal("Function '"
 								+ function
 								+ "' was specified more than once in list of function symbols");
-			else
+			else {
 				functionHT.put(function, function);
+				functionsDesc = functionsDesc.concat(function);
+			}
 			GEPFunctionSymbol fs = null;
 			try {
 				Class classDefinition = Class
