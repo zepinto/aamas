@@ -144,7 +144,7 @@ public class GreedyOverselection extends SelectionMethod
         int y=0;
         for(int x=sortedPop.length-boundary;x<sortedPop.length;x++)
             {
-            sortedFitOver[y] = (i[sortedPop[x]]).fitness.fitness();
+            sortedFitOver[y] = (i[sortedPop[x]]).fitness.getFitness();
             if (sortedFitOver[y] < 0) // uh oh
                 s.output.fatal("Discovered a negative fitness value.  Greedy Overselection requires that all fitness values be non-negative (offending subpopulation #" + subpopulation + ")");
             y++;
@@ -155,7 +155,7 @@ public class GreedyOverselection extends SelectionMethod
         y=0;
         for(int x=0;x<sortedPop.length-boundary;x++)
             {
-            sortedFitUnder[y] = (i[sortedPop[x]]).fitness.fitness();
+            sortedFitUnder[y] = (i[sortedPop[x]]).fitness.getFitness();
             if (sortedFitUnder[y] < 0) // uh oh
                 s.output.fatal("Discovered a negative fitness value.  Greedy Overselection requires that all fitness values be non-negative (offending subpopulation #" + subpopulation + ")");
             y++;

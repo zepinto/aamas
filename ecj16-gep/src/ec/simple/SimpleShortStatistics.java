@@ -230,19 +230,19 @@ public class SimpleShortStatistics extends Statistics
                     best_i[x] = state.population.subpops[x].individuals[y];
 
                 // mean fitness for population
-                meanFitness += state.population.subpops[x].individuals[y].fitness.fitness();
+                meanFitness += state.population.subpops[x].individuals[y].fitness.getFitness();
                 }
             
             // compute fitness stats
             meanFitness /= state.population.subpops[x].individuals.length;
-            state.output.print("" + meanFitness + " " + best_i[x].fitness.fitness() + " ",
+            state.output.print("" + meanFitness + " " + best_i[x].fitness.getFitness() + " ",
                                Output.V_NO_GENERAL, statisticslog);
 
             // now test to see if it's the new best_of_run_a[x]
             if (best_of_run_a[x]==null || best_i[x].fitness.betterThan(best_of_run_a[x].fitness))
                 best_of_run_a[x] = (Individual)(best_i[x].clone());
             
-            state.output.print("" + best_of_run_a[x].fitness.fitness() + " ",
+            state.output.print("" + best_of_run_a[x].fitness.getFitness() + " ",
                                Output.V_NO_GENERAL, statisticslog);
 
             if( doFull )

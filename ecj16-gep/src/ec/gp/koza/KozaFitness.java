@@ -90,7 +90,7 @@ public class KozaFitness extends Fitness
         fitness to the half-open interval (0,1], where 1 is ideal and
         0 is worst.  Same as adjustedFitness().  */
 
-    public final float fitness()
+    public final float getFitness()
         {
         return 1.0f/(1.0f+fitness);     
         }

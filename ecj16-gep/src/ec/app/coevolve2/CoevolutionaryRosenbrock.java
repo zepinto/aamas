@@ -56,12 +56,12 @@ public class CoevolutionaryRosenbrock extends Problem implements GroupedProblemF
 
         if( updateFitness[0] )
             {
-            if( functionValue > ind1.fitness.fitness() )
+            if( functionValue > ind1.fitness.getFitness() )
                 ((SimpleFitness)(ind1.fitness)).setFitness( state, (float)functionValue, false );
             }
         if( updateFitness[1] )
             {
-            if( functionValue > ind2.fitness.fitness() )
+            if( functionValue > ind2.fitness.getFitness() )
                 ((SimpleFitness)(ind2.fitness)).setFitness( state, (float)functionValue, false );
             }
         }

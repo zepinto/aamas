@@ -65,8 +65,8 @@ public class CompetitiveMaxOne extends Problem implements GroupedProblemForm
         if( value1 == value2 )
             firstWinsIfDraw = state.random[threadnum].nextBoolean( 0.5 );
 
-        float prevFit1 = ((SimpleFitness)(ind[0].fitness)).fitness();
-        float prevFit2 = ((SimpleFitness)(ind[1].fitness)).fitness();
+        float prevFit1 = ((SimpleFitness)(ind[0].fitness)).getFitness();
+        float prevFit2 = ((SimpleFitness)(ind[1].fitness)).getFitness();
 
         if( updateFitness[0] )
             {

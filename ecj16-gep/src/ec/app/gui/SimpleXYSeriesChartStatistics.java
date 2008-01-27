@@ -46,7 +46,7 @@ public class SimpleXYSeriesChartStatistics
                     bestFit = fit;
                 }
 
-            addDataPoint(seriesID[subPop], state.generation, bestFit.fitness());
+            addDataPoint(seriesID[subPop], state.generation, bestFit.getFitness());
             }
     }
     }

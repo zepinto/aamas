@@ -70,7 +70,7 @@ public class SimpleFitness extends Fitness
         isIdeal = _isIdeal;
         }
 
-    public float fitness()
+    public float getFitness()
         {
         return fitness;
         }
@@ -87,22 +87,22 @@ public class SimpleFitness extends Fitness
 
     public boolean equivalentTo(final Fitness _fitness)
         {
-        return ((SimpleFitness)_fitness).fitness() == fitness();
+        return ((SimpleFitness)_fitness).getFitness() == getFitness();
         }
 
     public boolean betterThan(final Fitness _fitness)
         {
-        return ((SimpleFitness)_fitness).fitness() < fitness();
+        return ((SimpleFitness)_fitness).getFitness() < getFitness();
         }
 
     public String fitnessToString()
         {
-        return FITNESS_PREAMBLE + Code.encode(fitness());
+        return FITNESS_PREAMBLE + Code.encode(getFitness());
         }
         
     public String fitnessToStringForHumans()
         {
-        return FITNESS_PREAMBLE + fitness();
+        return FITNESS_PREAMBLE + getFitness();
         }
 
     /** Presently does not decode the fact that the fitness is ideal or not */

@@ -74,7 +74,7 @@ public class MultiObjectiveFitness extends Fitness
     /** Returns the Max() of multifitnesses, which adheres to Fitness.java's
         protocol for this method. Though you should not rely on a selection
         or statistics method which requires this.  */
-    public float fitness()
+    public float getFitness()
         {
         float fit = multifitness[0];
         for(int x=1;x<multifitness.length;x++)
