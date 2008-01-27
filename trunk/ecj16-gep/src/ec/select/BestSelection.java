@@ -121,10 +121,10 @@ public class BestSelection extends SelectionMethod
         sortedFit = new float[Math.min(sortedPop.length,bestn)];
         if (pickWorst)
             for(int x=0;x<sortedFit.length;x++)
-                sortedFit[x] = ((Individual)(i[sortedPop[x]])).fitness.fitness();
+                sortedFit[x] = ((Individual)(i[sortedPop[x]])).fitness.getFitness();
         else
             for(int x=0;x<sortedFit.length;x++)
-                sortedFit[x] = ((Individual)(i[sortedPop[sortedPop.length-x-1]])).fitness.fitness();
+                sortedFit[x] = ((Individual)(i[sortedPop[sortedPop.length-x-1]])).fitness.getFitness();
 
         for(int x=0;x<sortedFit.length;x++)
             {

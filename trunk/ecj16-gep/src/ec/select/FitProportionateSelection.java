@@ -62,7 +62,7 @@ public class FitProportionateSelection extends SelectionMethod
         sortedFit = new float[s.population.subpops[subpopulation].individuals.length];
         for(int x=0;x<sortedFit.length;x++)
             {
-            sortedFit[x] = ((Individual)(s.population.subpops[subpopulation].individuals[x])).fitness.fitness();
+            sortedFit[x] = ((Individual)(s.population.subpops[subpopulation].individuals[x])).fitness.getFitness();
             if (sortedFit[x] < 0) // uh oh
                 s.output.fatal("Discovered a negative fitness value.  FitProportionateSelection requires that all fitness values be non-negative(offending subpopulation #" + subpopulation + ")");
             }
