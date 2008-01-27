@@ -18,36 +18,24 @@ public class WeightedFitness extends SimpleFitness implements IFitness {
 
 	private double accuracy = 0.0;
 
-	float fitness = 0.0f;
-
 	public void computeFitness(GEPIndividual individual, EvolutionState state) {
-		SimpleFitness f = new SimpleFitness();
 
 		double size_fit = FitnessPrimitives.TSfitness(individual);
 		double acc_fit = FitnessPrimitives.BACCfitness(individual);
 
 		fitness = (float) (acc_fit * acc_weight + size_fit * size_weight);
 		accuracy = acc_fit;
-		f.setFitness(state, fitness(), (size_fit == 1.0 && acc_fit == 1.0));
-
 	}
 
 	public String getDescription() {
-		return "type=Weighted,accuracyWeight=" + acc_weight + ",sizeWeight="
-				+ size_weight;
+		return String.format("type=Weighted,accuracyWeight=%s,sizeWeight=%s",
+				acc_weight, size_weight);
 	}
 
 	public double getAccuracy() {
 		return accuracy;
 	}
 
-	@Override
-	public float fitness() {
-
-		return fitness;
-	}
-
-	
 	@Override
 	public Parameter defaultBase() {
 		return super.defaultBase().push(P_WEIGHTED);

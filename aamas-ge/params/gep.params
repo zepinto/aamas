@@ -330,7 +330,7 @@ gep.RIStransposition.source.0 = ec.gep.breed.IStranspositionPipeline
 gep.IStransposition.source.0 = ec.gep.breed.InversionPipeline
 gep.inversion.source.0 = ec.gep.breed.MutationPipeline
 # FitProportionateSelection (roulette selection) is used exclusively by Ferreira - could be changed
-gep.mutation.source.0 = ec.select.FitProportionateSelection
+gep.mutation.source.0 = ec.select.TournamentSelection
 
 # 1 is the default and only value used by Ferreira
 breed.elite.0 = 			1

@@ -23,6 +23,7 @@ import edu.mapi.aamas.ge.fitness.IFitness;
 public class RDecorator extends StatsPrinterDecorator {
 
 	private static final String P_INPUT_FILENAME = "gep.species.symbolset.terminalfilename";
+	private static final String P_TOURNAMENT_SIZE = "select.tournament.size";
 	private static final String P_POP_SIZE = "pop.subpop.0.size";
 	private static final String P_NUM_GENERATIONS = "generations";
 
@@ -39,7 +40,7 @@ public class RDecorator extends StatsPrinterDecorator {
 	 * only need to compute them once
 	 */
 	String problemDesc = null, fitnessDesc = null, operatorsDesc = null;
-	long nGenerations = 0, popSize = 0, runid = 0;
+	long nGenerations = 0, popSize = 0, runid = 0, tournamentSize = 0;
 
 	public RDecorator() {
 	}
@@ -55,8 +56,9 @@ public class RDecorator extends StatsPrinterDecorator {
 		// pass on the torch
 		decoratedResultPrinter.postEvaluationStatistics(state, ind);
 	}
-	
+
 	public void finalStatistics(EvolutionState state, Individual[] ind) {
+
 		// just pass on the torch
 		decoratedResultPrinter.finalStatistics(state, ind);
 	}
@@ -97,12 +99,14 @@ public class RDecorator extends StatsPrinterDecorator {
 											GEPIndividual2.class.getName()));
 
 				// Problem Run Gene Fitness Operators NGenerations PopSize
+				// TourSize
 				// Generation Accuracy Size Depth
 				state.output.println(String.format(
-						"%s\t%d\t%s\t%s\t%s\t%d\t%d\t%d\t%f\t%d\t%s",
+						"%s\t%d\t%s\t%s\t%s\t%d\t%d\t%d\t%d\t%f\t%d\t%s",
 						problemDesc, runid, gene, fitnessDesc, operatorsDesc,
-						nGenerations, popSize, state.generation+1, accuracy,
-						treeSize, treeDepth), Output.V_NO_GENERAL, rlog);
+						nGenerations, popSize, tournamentSize,
+						state.generation + 1, accuracy, treeSize, treeDepth),
+						Output.V_NO_GENERAL, rlog);
 
 			} else
 				throw new IllegalArgumentException(
@@ -147,6 +151,8 @@ public class RDecorator extends StatsPrinterDecorator {
 				P_NUM_GENERATIONS), null);
 		this.popSize = state.parameters
 				.getLong(new Parameter(P_POP_SIZE), null);
+		this.tournamentSize = state.parameters.getLong(new Parameter(
+				P_TOURNAMENT_SIZE), null);
 		this.operatorsDesc = GEPSymbolSet2.getFunctionsDesc();
 
 		// create the file handler
@@ -177,11 +183,11 @@ public class RDecorator extends StatsPrinterDecorator {
 	 */
 	private void writeRFileHeader(EvolutionState state) {
 		// Factors: problem, run, gene, fitness, operators, ngenerations,
-		// popsize
+		// popsize, toursize
 		// Measures: accuracy, size (tree), depth (tree)
 		state.output
 				.println(
-						"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tGeneration\tAccuracy\tSize\tDepth",
+						"Problem\tRun\tGene\tFitness\tOperators\tNGenerations\tPopSize\tTournSize\tGeneration\tAccuracy\tSize\tDepth",
 						Output.V_NO_GENERAL, rlog);
 	}
 
