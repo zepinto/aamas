@@ -20,48 +20,26 @@ and.not.g15.not.or.g3.g45.g20.g22.g31.g11
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1062877889|0.852459| f1042983595|0.16666667|
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g3.and.not.g15.g3.g45.g20.g22.g31.g0
+g3.or.and.g2.g18.g29.g37.g25.g17.g28.g14
 
-(g3 or ((not g3) and g15))
-
-
-Generation: 2
-Best Individual:
-Evaluated: T
-Fitness: [f1063152925|0.86885244| f1051372203|0.33333334|
-Linking function: and
-Gene 0
-or.g3.g9.and.and.g12.g19.g22.g18.g22.g5
-
-(g3 or g9)
-
-
-Generation: 5
-Best Individual:
-Evaluated: T
-Fitness: [f1064803143|0.9672131| f1040187392|0.125|
-Linking function: and
-Gene 0
-and.or.g3.or.not.g3.g9.g47.g6.g14.g26
-
-(((g3 or g9) or (not g47)) and g3)
+g3
 
 
 Best Individual of Run:
-Found at Generation: 5
+Found at Generation: 1
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1040187392|0.125|
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.or.g3.or.not.g3.g9.g47.g6.g14.g26
+g3.or.and.g2.g18.g29.g37.g25.g17.g28.g14
 
-(((g3 or g9) or (not g47)) and g3)
+g3
 
-Size of program: 8
-Variables used(count): g3(2), g9(1), g47(1)
+Size of program: 1
+Variables used(count): g3(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -227,48 +205,26 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1042983595|0.16666667|
+Fitness: [f1064253071|0.93442625| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.or.g37.not.g2.g15.g29.g18.g48.g16.g6
+or.g10.g11.and.and.g19.g33.g6.g15.g32.g39
 
-(((not g15) or g2) or g37)
-
-
-Generation: 6
-Best Individual:
-Evaluated: T
-Fitness: [f1064528107|0.9508197| f1038323257|0.11111111|
-Linking function: and
-Gene 0
-or.or.or.g31.or.g12.g22.g31.g20.g4.g26
-
-((g31 or (g31 or g20)) or (g12 or g22))
-
-
-Generation: 49
-Best Individual:
-Evaluated: T
-Fitness: [f1064803143|0.9672131| f1035611788|0.09090909|
-Linking function: and
-Gene 0
-or.and.or.or.and.g7.g22.g35.g45.g30.g36
-
-(((g35 or g45) and (g30 and g36)) or (g7 or g22))
+(g10 or g11)
 
 
 Best Individual of Run:
-Found at Generation: 49
+Found at Generation: 0
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1035611788|0.09090909|
+Fitness: [f1064253071|0.93442625| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.and.or.or.and.g7.g22.g35.g45.g30.g36
+or.g10.g11.and.and.g19.g33.g6.g15.g32.g39
 
-(((g35 or g45) and (g30 and g36)) or (g7 or g22))
+(g10 or g11)
 
-Size of program: 11
-Variables used(count): g7(1), g22(1), g30(1), g35(1), g36(1), g45(1)
+Size of program: 3
+Variables used(count): g10(1), g11(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -277,7 +233,7 @@ Confusion Matrix:
                |----------------
             Yes|  57	|  0
 Actual Value   |----------------
-            No |  2	|  2
+            No |  4	|  0
                |----------------
 
 
@@ -287,9 +243,9 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  58	|  2
+            Yes|  42	|  18
 Actual Value   |----------------
-            No |  0	|  6
+            No |  3	|  3
                |----------------
 
 Observed	Computed
@@ -302,36 +258,36 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -357,71 +313,71 @@ Observed	Computed
 1.0	1.0
 
 0.0	1.0
-1.0	0.0
 1.0	1.0
 1.0	0.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
 0.0	0.0
 1.0	1.0
 1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+0.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
+1.0	0.0
+1.0	1.0
+0.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
@@ -434,57 +390,57 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063427962|0.8852459| f1042983595|0.16666667|
+Fitness: [f1063427962|0.8852459| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-or.g1.and.not.g35.g45.g39.g24.g1.g12.g2
+or.or.or.g34.or.g33.g25.g36.g47.g44.g18
 
-(g1 or ((not g45) and g35))
+((g34 or (g36 or g47)) or (g33 or g25))
 
 
 Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1063702998|0.90163934| f1041385765|0.14285715|
+Fitness: [f1063702998|0.90163934| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-not.and.g15.not.and.g0.g29.g39.g39.g40.g5
+not.and.not.not.g46.g40.g25.g33.g24.g9.g3
 
-(not (g15 and (not (g0 and g29))))
+(not ((not g46) and (not g40)))
 
 
-Generation: 5
+Generation: 3
 Best Individual:
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1040187392|0.125|
+Fitness: [f1063702998|0.90163934| f1045220557|0.2|
 Linking function: and
 Gene 0
-not.not.not.and.and.g15.g16.g18.g13.g39.g25
+not.and.g17.not.g46.g40.g25.g33.g24.g9.g24
 
-(not (not (not ((g16 and g18) and g15))))
+(not (g17 and (not g46)))
 
 
 Best Individual of Run:
-Found at Generation: 5
+Found at Generation: 3
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1040187392|0.125|
+Fitness: [f1063702998|0.90163934| f1045220557|0.2|
 Linking function: and
 Gene 0
-not.not.not.and.and.g15.g16.g18.g13.g39.g25
+not.and.g17.not.g46.g40.g25.g33.g24.g9.g24
 
-(not (not (not ((g16 and g18) and g15))))
+(not (g17 and (not g46)))
 
-Size of program: 8
-Variables used(count): g15(1), g16(1), g18(1)
+Size of program: 5
+Variables used(count): g17(1), g46(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  53	|  0
+            Yes|  51	|  2
 Actual Value   |----------------
-            No |  5	|  3
+            No |  4	|  4
                |----------------
 
 
@@ -501,8 +457,18 @@ Actual Value   |----------------
 
 Observed	Computed
 1.0	0.0
+0.0	0.0
 0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
@@ -511,34 +477,24 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
-0.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
 1.0	1.0
@@ -563,6 +519,8 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
+1.0	1.0
+1.0	0.0
 1.0	0.0
 1.0	1.0
 1.0	1.0
@@ -577,8 +535,6 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -599,7 +555,6 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -614,11 +569,6 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -628,7 +578,13 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
+1.0	0.0
 1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
 1.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
@@ -641,43 +597,43 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063152925|0.86885244| f1036831949|0.1|
+Fitness: [f1063152925|0.86885244| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-or.or.and.or.not.g43.g49.g48.g23.g29.g21
+or.and.and.and.g1.g29.g48.g20.g17.g33.g25
 
-(((g48 or g23) or (not g29)) or (g43 and g49))
+(((g20 and g17) and g1) or (g29 and g48))
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
+Fitness: [f1063978034|0.91803277| f1040187392|0.125|
 Linking function: and
 Gene 0
-or.g48.g33.not.and.g36.g15.g8.g23.g44.g4
+or.not.and.g38.or.g48.g19.g29.g19.g10.g0
 
-(g48 or g33)
+((not g38) or ((g19 or g29) and g48))
 
 
-Generation: 3
+Generation: 2
 Best Individual:
 Evaluated: T
 Fitness: [f1064528107|0.9508197| f1065353216|1.0|
 Linking function: and
 Gene 0
-g48.or.g24.or.or.g44.g37.g30.g18.g31.g17
+g48.and.g41.and.or.g23.g25.g29.g25.g48.g42
 
 g48
 
 
 Best Individual of Run:
-Found at Generation: 3
+Found at Generation: 2
 Evaluated: T
 Fitness: [f1064528107|0.9508197| f1065353216|1.0|
 Linking function: and
 Gene 0
-g48.or.g24.or.or.g44.g37.g30.g18.g31.g17
+g48.and.g41.and.or.g23.g25.g29.g25.g48.g42
 
 g48
 
@@ -848,48 +804,59 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
+Fitness: [f1062602853|0.8360656| f1040187392|0.125|
+Linking function: and
+Gene 0
+and.or.g20.not.or.g39.g45.g23.g37.g29.g1
+
+(((not g39) or (g45 or g23)) and g20)
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
 Fitness: [f1063427962|0.8852459| f1040187392|0.125|
 Linking function: and
 Gene 0
-and.not.and.not.not.g20.g42.g23.g30.g9.g32
+and.or.g20.not.or.g39.g45.g39.g9.g40.g40
 
-((not (not g42)) and ((not g23) and g20))
+(((not g39) or (g45 or g39)) and g20)
 
 
-Generation: 6
+Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1063702998|0.90163934| f1040187392|0.125|
+Fitness: [f1063978034|0.91803277| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.and.g20.not.and.g42.g21.g17.g14.g41.g2
+and.or.g20.not.not.g11.g31.g37.g3.g4.g39
 
-(((not g42) and (g21 and g17)) or g20)
+(((not g11) or (not g31)) and g20)
 
 
-Generation: 10
+Generation: 4
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1042983595|0.16666667|
+Fitness: [f1064253071|0.93442625| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.and.g20.not.g31.g41.g26.g22.g14.g41.g2
+or.g20.not.not.and.g11.g31.g37.g3.g4.g39
 
-(((not g41) and g31) or g20)
+(g20 or (not (not (g11 and g31))))
 
 
 Best Individual of Run:
-Found at Generation: 10
+Found at Generation: 4
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1042983595|0.16666667|
+Fitness: [f1064253071|0.93442625| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.and.g20.not.g31.g41.g26.g22.g14.g41.g2
+or.g20.not.not.and.g11.g31.g37.g3.g4.g39
 
-(((not g41) and g31) or g20)
+(g20 or (not (not (g11 and g31))))
 
-Size of program: 6
-Variables used(count): g20(1), g31(1), g41(1)
+Size of program: 7
+Variables used(count): g11(1), g20(1), g31(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -908,7 +875,7 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  24	|  30
+            Yes|  39	|  15
 Actual Value   |----------------
             No |  5	|  7
                |----------------
@@ -977,15 +944,44 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 
-1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	0.0
+0.0	1.0
 1.0	1.0
 1.0	1.0
 0.0	0.0
 0.0	1.0
 1.0	1.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
 1.0	1.0
-0.0	0.0
-0.0	0.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+0.0	1.0
 1.0	1.0
 0.0	1.0
 1.0	0.0
@@ -996,54 +992,25 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
 1.0	1.0
-1.0	0.0
-1.0	0.0
 1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	1.0
-0.0	0.0
-1.0	1.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
 1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
 1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -1055,26 +1022,48 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1040187392|0.125|
+Fitness: [f1063702998|0.90163934| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.or.g33.and.and.g45.g25.g10.g4.g22.g20
+not.g45.not.g27.not.g30.g30.g31.g0.g16.g39
 
-(not (g33 or ((g25 and g10) and g45)))
+(not g45)
+
+
+Generation: 2
+Best Individual:
+Evaluated: T
+Fitness: [f1063978034|0.91803277| f1056964608|0.5|
+Linking function: and
+Gene 0
+not.g33.and.g12.not.g30.g48.g48.g45.g16.g33
+
+(not g33)
+
+
+Generation: 6
+Best Individual:
+Evaluated: T
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
+Linking function: and
+Gene 0
+g30.g33.g9.not.not.g30.g30.g9.g15.g16.g33
+
+g30
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 6
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1040187392|0.125|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-not.or.g33.and.and.g45.g25.g10.g4.g22.g20
+g30.g33.g9.not.not.g30.g30.g9.g15.g16.g33
 
-(not (g33 or ((g25 and g10) and g45)))
+g30
 
-Size of program: 8
-Variables used(count): g10(1), g25(1), g33(1), g45(1)
+Size of program: 1
+Variables used(count): g30(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -1083,7 +1072,7 @@ Confusion Matrix:
                |----------------
             Yes|  52	|  1
 Actual Value   |----------------
-            No |  2	|  6
+            No |  3	|  5
                |----------------
 
 
@@ -1093,13 +1082,13 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  16	|  0
+            Yes|  15	|  1
 Actual Value   |----------------
-            No |  0	|  50
+            No |  49	|  1
                |----------------
 
 Observed	Computed
-1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -1118,31 +1107,31 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
+0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 0.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -1162,73 +1151,73 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-1.0	1.0
+1.0	0.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
 1.0	1.0
-1.0	0.0
+0.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
+1.0	1.0
 0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -1240,46 +1229,57 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063152925|0.86885244| f1040187392|0.125|
+Fitness: [f1062877889|0.852459| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-or.g26.and.and.not.g13.g33.g44.g31.g13.g25
+or.and.g26.not.g4.g47.g1.g34.g15.g35.g0
 
-(g26 or ((g13 and g33) and (not g44)))
+(((not g47) and g4) or g26)
 
 
-Generation: 4
+Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1063702998|0.90163934| f1040187392|0.125|
+Fitness: [f1063152925|0.86885244| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g26.or.not.and.g43.g12.g25.g33.g12.g18
+not.not.g26.not.or.g47.g1.g34.g15.g34.g0
 
-(g26 and ((not g43) or (g12 and g25)))
+(not (not g26))
+
+
+Generation: 9
+Best Individual:
+Evaluated: T
+Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+or.g26.g34.g26.g29.g47.g1.g34.g29.g2.g0
+
+(g26 or g34)
 
 
 Best Individual of Run:
-Found at Generation: 4
+Found at Generation: 9
 Evaluated: T
-Fitness: [f1063702998|0.90163934| f1040187392|0.125|
+Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g26.or.not.and.g43.g12.g25.g33.g12.g18
+or.g26.g34.g26.g29.g47.g1.g34.g29.g2.g0
 
-(g26 and ((not g43) or (g12 and g25)))
+(g26 or g34)
 
-Size of program: 8
-Variables used(count): g12(1), g25(1), g26(1), g43(1)
+Size of program: 3
+Variables used(count): g26(1), g34(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  12	|  3
+            Yes|  15	|  0
 Actual Value   |----------------
-            No |  3	|  43
+            No |  6	|  40
                |----------------
 
 
@@ -1291,7 +1291,7 @@ Confusion Matrix:
                |----------------
             Yes|  2	|  1
 Actual Value   |----------------
-            No |  37	|  26
+            No |  49	|  14
                |----------------
 
 Observed	Computed
@@ -1302,13 +1302,8 @@ Observed	Computed
 1.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-1.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	1.0
@@ -1316,19 +1311,24 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
 0.0	0.0
 0.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
@@ -1338,7 +1338,7 @@ Observed	Computed
 0.0	1.0
 1.0	1.0
 1.0	1.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
@@ -1364,46 +1364,44 @@ Observed	Computed
 1.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
 0.0	1.0
 0.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	1.0
 0.0	0.0
 0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	1.0
 0.0	1.0
@@ -1414,15 +1412,17 @@ Observed	Computed
 0.0	1.0
 0.0	1.0
 0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
 0.0	1.0
 0.0	1.0
 0.0	1.0
 0.0	1.0
 0.0	1.0
-0.0	0.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
 0.0	1.0
 0.0	1.0
 Maximum number of generations in this run: 50
@@ -1436,57 +1436,101 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1061227671|0.75409836| f1042983595|0.16666667|
+Fitness: [f1060952635|0.73770493| f1040187392|0.125|
 Linking function: and
 Gene 0
-and.g27.not.or.g22.g21.g12.g37.g17.g33.g13
+and.not.and.g9.or.g36.g36.g48.g18.g27.g12
 
-(g27 and (not (g22 or g21)))
+((not g9) and ((g36 or g48) and g36))
 
 
-Generation: 7
+Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1061777744|0.78688526| f1041385765|0.14285715|
+Fitness: [f1061227671|0.75409836| f1035611788|0.09090909|
 Linking function: and
 Gene 0
-and.g27.not.or.not.g24.g16.g31.g45.g40.g43
+and.or.and.or.and.g16.g5.g36.g15.g40.g25
 
-(g27 and (not ((not g16) or g24)))
+(((g36 or g15) or (g40 and g25)) and (g16 and g5))
 
 
-Generation: 32
+Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1062602853|0.8360656| f1041385765|0.14285715|
+Fitness: [f1061502707|0.7704918| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-and.g5.not.not.or.g24.g16.g31.g34.g4.g19
+not.or.and.not.g28.g21.g36.g23.g10.g13.g8
 
-(g5 and (not (not (g24 or g16))))
+(not ((g28 and g21) or (not g36)))
+
+
+Generation: 5
+Best Individual:
+Evaluated: T
+Fitness: [f1062602853|0.8360656| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+not.or.and.not.or.g21.g36.g4.g10.g13.g8
+
+(not (((g4 or g10) and g21) or (not g36)))
+
+
+Generation: 8
+Best Individual:
+Evaluated: T
+Fitness: [f1063152925|0.86885244| f1040187392|0.125|
+Linking function: and
+Gene 0
+and.g16.not.or.and.g21.g36.g4.g10.g17.g8
+
+(g16 and (not ((g36 and g4) or g21)))
+
+
+Generation: 20
+Best Individual:
+Evaluated: T
+Fitness: [f1063978034|0.91803277| f1040187392|0.125|
+Linking function: and
+Gene 0
+and.g16.not.or.and.g24.g36.g4.g4.g17.g48
+
+(g16 and (not ((g36 and g4) or g24)))
+
+
+Generation: 23
+Best Individual:
+Evaluated: T
+Fitness: [f1063978034|0.91803277| f1042983595|0.16666667|
+Linking function: and
+Gene 0
+and.g16.not.or.g4.g24.g36.g4.g21.g22.g48
+
+(g16 and (not (g4 or g24)))
 
 
 Best Individual of Run:
-Found at Generation: 32
+Found at Generation: 23
 Evaluated: T
-Fitness: [f1062602853|0.8360656| f1041385765|0.14285715|
+Fitness: [f1063978034|0.91803277| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-and.g5.not.not.or.g24.g16.g31.g34.g4.g19
+and.g16.not.or.g4.g24.g36.g4.g21.g22.g48
 
-(g5 and (not (not (g24 or g16))))
+(g16 and (not (g4 or g24)))
 
-Size of program: 7
-Variables used(count): g5(1), g16(1), g24(1)
+Size of program: 6
+Variables used(count): g4(1), g16(1), g24(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  24	|  2
+            Yes|  21	|  5
 Actual Value   |----------------
-            No |  8	|  27
+            No |  0	|  35
                |----------------
 
 
@@ -1496,55 +1540,55 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  3	|  4
+            Yes|  7	|  0
 Actual Value   |----------------
-            No |  8	|  51
+            No |  0	|  59
                |----------------
 
 Observed	Computed
-0.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
+0.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	0.0
-0.0	0.0
-1.0	1.0
-0.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-0.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
 0.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -1565,51 +1609,51 @@ Observed	Computed
 1.0	1.0
 1.0	0.0
 
-1.0	1.0
+1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	0.0
 0.0	0.0
-1.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
 1.0	1.0
-1.0	1.0
-0.0	0.0
-1.0	1.0
-0.0	0.0
+1.0	0.0
 0.0	1.0
+1.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -1646,29 +1690,29 @@ Evaluated: T
 Fitness: [f1065353216|1.0| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g37.g33.or.g45.g14.g4.g10.g40.g14.g32
+and.g8.g7.and.or.g14.g16.g30.g16.g48.g47
 
-(g37 and g33)
+(g8 and g7)
 
 
-Generation: 14
+Generation: 1
 Best Individual:
 Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g32.and.g24.and.g13.g25.g35.g20.g38.g7.g44
+g32.g11.or.not.or.g13.g4.g0.g10.g1.g22
 
 g32
 
 
 Best Individual of Run:
-Found at Generation: 14
+Found at Generation: 1
 Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g32.and.g24.and.g13.g25.g35.g20.g38.g7.g44
+g32.g11.or.not.or.g13.g4.g0.g10.g1.g22
 
 g32
 
@@ -1839,35 +1883,35 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1036831949|0.1|
+Fitness: [f1063427962|0.8852459| f1056964608|0.5|
 Linking function: and
 Gene 0
-and.or.not.or.or.g49.g32.g14.g20.g25.g32
+not.g47.or.and.g47.g25.g21.g37.g33.g10.g46
 
-(((g32 or g14) or (g20 or g25)) and (not g49))
+(not g47)
 
 
 Best Individual of Run:
 Found at Generation: 0
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1036831949|0.1|
+Fitness: [f1063427962|0.8852459| f1056964608|0.5|
 Linking function: and
 Gene 0
-and.or.not.or.or.g49.g32.g14.g20.g25.g32
+not.g47.or.and.g47.g25.g21.g37.g33.g10.g46
 
-(((g32 or g14) or (g20 or g25)) and (not g49))
+(not g47)
 
-Size of program: 10
-Variables used(count): g14(1), g20(1), g25(1), g32(1), g49(1)
+Size of program: 2
+Variables used(count): g47(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  8	|  0
+            Yes|  1	|  7
 Actual Value   |----------------
-            No |  3	|  50
+            No |  0	|  53
                |----------------
 
 
@@ -1877,55 +1921,55 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  4	|  0
+            Yes|  1	|  3
 Actual Value   |----------------
-            No |  17	|  45
+            No |  1	|  61
                |----------------
 
 Observed	Computed
 0.0	1.0
 1.0	0.0
 0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-1.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 1.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -1948,70 +1992,70 @@ Observed	Computed
 
 0.0	1.0
 1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
 0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-1.0	1.0
-0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-1.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
 0.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
@@ -2024,32 +2068,32 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1038323257|0.11111111|
+Fitness: [f1064528107|0.9508197| f1040187392|0.125|
 Linking function: and
 Gene 0
-or.not.or.not.or.g24.g15.g17.g38.g6.g4
+or.not.g16.and.or.g33.g13.g40.g35.g20.g41
 
-((not (not g15)) or ((g17 or g38) or g24))
+((not ((g13 or g40) and g33)) or g16)
 
 
-Generation: 3
+Generation: 8
 Best Individual:
 Evaluated: T
 Fitness: [f1065078180|0.9836066| f1065353216|1.0|
 Linking function: and
 Gene 0
-g38.and.g35.or.not.g25.g0.g25.g47.g40.g35
+g38.g33.g17.not.g18.g29.g24.g41.g23.g8.g33
 
 g38
 
 
 Best Individual of Run:
-Found at Generation: 3
+Found at Generation: 8
 Evaluated: T
 Fitness: [f1065078180|0.9836066| f1065353216|1.0|
 Linking function: and
 Gene 0
-g38.and.g35.or.not.g25.g0.g25.g47.g40.g35
+g38.g33.g17.not.g18.g29.g24.g41.g23.g8.g33
 
 g38
 
@@ -2220,46 +2264,46 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1056964608|0.5|
+Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-not.g45.g29.not.and.g18.g0.g34.g13.g26.g24
+not.not.g30.g23.or.g18.g31.g40.g19.g44.g12
 
-(not g45)
+(not (not g30))
 
 
-Generation: 33
+Generation: 4
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1048576000|0.25|
+Fitness: [f1063702998|0.90163934| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g41.not.g45.g7.g41.g5.g32.g45.g32.g10
+g30.g30.g30.and.or.g18.g31.g40.g19.g44.g12
 
-(g41 or (not g45))
+g30
 
 
 Best Individual of Run:
-Found at Generation: 33
+Found at Generation: 4
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1048576000|0.25|
+Fitness: [f1063702998|0.90163934| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g41.not.g45.g7.g41.g5.g32.g45.g32.g10
+g30.g30.g30.and.or.g18.g31.g40.g19.g44.g12
 
-(g41 or (not g45))
+g30
 
-Size of program: 4
-Variables used(count): g41(1), g45(1)
+Size of program: 1
+Variables used(count): g30(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  51	|  0
+            Yes|  50	|  1
 Actual Value   |----------------
-            No |  3	|  7
+            No |  5	|  5
                |----------------
 
 
@@ -2284,27 +2328,27 @@ Observed	Computed
 1.0	0.0
 0.0	1.0
 1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -2317,8 +2361,8 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-0.0	1.0
-1.0	0.0
+0.0	0.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -2338,9 +2382,9 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-1.0	1.0
+1.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -2416,21 +2460,32 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
+Fitness: [f1063152925|0.86885244| f1056964608|0.5|
+Linking function: and
+Gene 0
+not.g41.g46.g17.and.g38.g48.g17.g29.g3.g6
+
+(not g41)
+
+
+Generation: 2
+Best Individual:
+Evaluated: T
 Fitness: [f1064803143|0.9672131| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g9.and.and.not.g10.g25.g37.g2.g8.g40
+not.g9.and.or.g28.g13.g25.g44.g16.g35.g18
 
 (not g9)
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 2
 Evaluated: T
 Fitness: [f1064803143|0.9672131| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g9.and.and.not.g10.g25.g37.g2.g8.g40
+not.g9.and.or.g28.g13.g25.g44.g16.g35.g18
 
 (not g9)
 
@@ -2601,59 +2656,26 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1041385765|0.14285715|
+Fitness: [f1064528107|0.9508197| f1056964608|0.5|
 Linking function: and
 Gene 0
-and.g44.and.g4.and.g8.g14.g47.g39.g38.g25
+not.g27.and.not.g16.g38.g17.g47.g33.g25.g4
 
-(g44 and (g4 and (g8 and g14)))
-
-
-Generation: 1
-Best Individual:
-Evaluated: T
-Fitness: [f1064253071|0.93442625| f1040187392|0.125|
-Linking function: and
-Gene 0
-not.or.g49.or.or.g8.g2.g17.g4.g10.g0
-
-(not (g49 or ((g2 or g17) or g8)))
-
-
-Generation: 11
-Best Individual:
-Evaluated: T
-Fitness: [f1064528107|0.9508197| f1036831949|0.1|
-Linking function: and
-Gene 0
-not.or.and.or.and.g2.g8.g22.g27.g2.g28
-
-(not (((g27 and g2) and g2) or (g8 or g22)))
-
-
-Generation: 25
-Best Individual:
-Evaluated: T
-Fitness: [f1064803143|0.9672131| f1048576000|0.25|
-Linking function: and
-Gene 0
-not.or.g22.g27.and.g38.g4.g31.g8.g33.g46
-
-(not (g22 or g27))
+(not g27)
 
 
 Best Individual of Run:
-Found at Generation: 25
+Found at Generation: 0
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1048576000|0.25|
+Fitness: [f1064528107|0.9508197| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.or.g22.g27.and.g38.g4.g31.g8.g33.g46
+not.g27.and.not.g16.g38.g17.g47.g33.g25.g4
 
-(not (g22 or g27))
+(not g27)
 
-Size of program: 4
-Variables used(count): g22(1), g27(1)
+Size of program: 2
+Variables used(count): g27(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -2662,7 +2684,7 @@ Confusion Matrix:
                |----------------
             Yes|  5	|  0
 Actual Value   |----------------
-            No |  2	|  54
+            No |  3	|  53
                |----------------
 
 
@@ -2674,12 +2696,12 @@ Confusion Matrix:
                |----------------
             Yes|  0	|  0
 Actual Value   |----------------
-            No |  1	|  65
+            No |  2	|  64
                |----------------
 
 Observed	Computed
 0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
@@ -2743,7 +2765,7 @@ Observed	Computed
 
 1.0	0.0
 0.0	1.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -2819,59 +2841,48 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1041385765|0.14285715|
+Fitness: [f1064528107|0.9508197| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g13.not.and.not.g46.g39.g44.g16.g33.g17
+and.g41.g31.not.g28.g26.g45.g16.g37.g15.g28
 
-(g13 and (not ((not g39) and g46)))
+(g41 and g31)
 
 
-Generation: 5
+Generation: 7
 Best Individual:
 Evaluated: T
-Fitness: [f1065078180|0.9836066| f1048576000|0.25|
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g13.not.g7.g38.g46.g39.g44.g16.g33.g17
+and.g13.g38.not.g31.g26.g45.g16.g37.g18.g38
 
-(g13 and (not g7))
+(g13 and g38)
 
 
-Generation: 6
+Generation: 12
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1040187392|0.125|
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.g13.not.and.and.g46.g0.g44.g16.g17.g37
+g13.and.g45.g8.g37.g5.g45.g8.g37.g15.g29
 
-(g13 and (not ((g0 and g44) and g46)))
-
-
-Generation: 9
-Best Individual:
-Evaluated: T
-Fitness: [f1065353216|1.0| f1051372203|0.33333334|
-Linking function: and
-Gene 0
-and.g13.g21.g18.not.g1.g19.g43.g26.g41.g38
-
-(g13 and g21)
+g13
 
 
 Best Individual of Run:
-Found at Generation: 9
+Found at Generation: 12
 Evaluated: T
-Fitness: [f1065353216|1.0| f1051372203|0.33333334|
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.g13.g21.g18.not.g1.g19.g43.g26.g41.g38
+g13.and.g45.g8.g37.g5.g45.g8.g37.g15.g29
 
-(g13 and g21)
+g13
 
-Size of program: 3
-Variables used(count): g13(1), g21(1)
+Size of program: 1
+Variables used(count): g13(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -2880,7 +2891,7 @@ Confusion Matrix:
                |----------------
             Yes|  3	|  0
 Actual Value   |----------------
-            No |  0	|  58
+            No |  2	|  56
                |----------------
 
 
@@ -2901,7 +2912,7 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -2916,7 +2927,7 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
@@ -3040,54 +3051,54 @@ Evaluated: T
 Fitness: [f1063427962|0.8852459| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-and.not.g3.not.or.g42.g42.g38.g10.g1.g42
+and.or.g3.not.not.g9.g6.g21.g17.g1.g14
 
-((not (not (g42 or g42))) and g3)
-
-
-Generation: 21
-Best Individual:
-Evaluated: T
-Fitness: [f1063702998|0.90163934| f1042983595|0.16666667|
-Linking function: and
-Gene 0
-and.and.g44.not.g3.g32.g18.g14.g47.g1.g47
-
-(((not g32) and g3) and g44)
+(((not g9) or (not g6)) and g3)
 
 
-Generation: 34
+Generation: 1
 Best Individual:
 Evaluated: T
 Fitness: [f1063978034|0.91803277| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-and.or.g3.g18.not.g22.g8.g24.g15.g10.g20
+and.not.g3.not.not.g9.g6.g21.g17.g1.g14
 
-((g18 or (not g22)) and g3)
+((not (not (not g9))) and g3)
+
+
+Generation: 5
+Best Individual:
+Evaluated: T
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+and.g2.g3.not.not.g9.g6.g21.g17.g1.g25
+
+(g2 and g3)
 
 
 Best Individual of Run:
-Found at Generation: 34
+Found at Generation: 5
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1042983595|0.16666667|
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.or.g3.g18.not.g22.g8.g24.g15.g10.g20
+and.g2.g3.not.not.g9.g6.g21.g17.g1.g25
 
-((g18 or (not g22)) and g3)
+(g2 and g3)
 
-Size of program: 6
-Variables used(count): g3(1), g18(1), g22(1)
+Size of program: 3
+Variables used(count): g2(1), g3(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  14	|  4
+            Yes|  18	|  0
 Actual Value   |----------------
-            No |  1	|  42
+            No |  2	|  41
                |----------------
 
 
@@ -3097,26 +3108,16 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  1	|  9
+            Yes|  10	|  0
 Actual Value   |----------------
-            No |  8	|  48
+            No |  9	|  47
                |----------------
 
 Observed	Computed
 1.0	1.0
 1.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
@@ -3125,34 +3126,17 @@ Observed	Computed
 0.0	1.0
 1.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	1.0
+0.0	1.0
 1.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
+1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -3160,6 +3144,33 @@ Observed	Computed
 0.0	1.0
 1.0	1.0
 1.0	0.0
+0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	0.0
@@ -3180,10 +3191,10 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
@@ -3192,24 +3203,24 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 0.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	1.0
 0.0	0.0
 0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+0.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-1.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
@@ -3218,7 +3229,7 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	1.0
 0.0	0.0
 0.0	0.0
@@ -3230,205 +3241,9 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-1.0	1.0
-0.0	0.0
-Maximum number of generations in this run: 50
-Size of population in this run: 256
-Number of genes per chromosome: 1
-Size of gene head: 5
-Seed(s) used in this job: 4357
-Problem type: logical
-
-
-Generation: 0
-Best Individual:
-Evaluated: T
-Fitness: [f1063427962|0.8852459| f1040187392|0.125|
-Linking function: and
-Gene 0
-or.not.g25.or.or.g5.g35.g25.g40.g8.g2
-
-((not ((g35 or g25) or g5)) or g25)
-
-
-Generation: 3
-Best Individual:
-Evaluated: T
-Fitness: [f1065078180|0.9836066| f1041385765|0.14285715|
-Linking function: and
-Gene 0
-or.not.g25.or.not.g5.g35.g25.g40.g18.g2
-
-((not ((not g35) or g5)) or g25)
-
-
-Best Individual of Run:
-Found at Generation: 3
-Evaluated: T
-Fitness: [f1065078180|0.9836066| f1041385765|0.14285715|
-Linking function: and
-Gene 0
-or.not.g25.or.not.g5.g35.g25.g40.g18.g2
-
-((not ((not g35) or g5)) or g25)
-
-Size of program: 7
-Variables used(count): g5(1), g25(1), g35(1)
-
-***** TRAINING data results *****
-Confusion Matrix: 
-                Predicted Value
-               |  Yes	|  No
-               |----------------
-            Yes|  30	|  0
-Actual Value   |----------------
-            No |  1	|  30
-               |----------------
-
-
-***** TEST data results *****
-Number of Calculation Errors: 0 out of 67 test sets
-Confusion Matrix: 
-                Predicted Value
-               |  Yes	|  No
-               |----------------
-            Yes|  43	|  11
-Actual Value   |----------------
-            No |  3	|  9
-               |----------------
-
-Observed	Computed
-1.0	0.0
-0.0	0.0
 0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
 1.0	1.0
 0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-
-1.0	0.0
-0.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -3443,43 +3258,54 @@ Evaluated: T
 Fitness: [f1063152925|0.86885244| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-and.g11.or.g3.and.g20.g21.g4.g31.g4.g35
+and.g47.or.and.g25.g33.g7.g45.g17.g8.g6
 
-(g11 and (g3 or (g20 and g21)))
+(g47 and ((g33 and g7) or g25))
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1065353216|1.0|
+Fitness: [f1063427962|0.8852459| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-g3.and.g43.g21.g23.g18.g8.g33.g0.g8.g35
+and.g47.or.and.g25.g33.g32.g11.g17.g8.g6
 
-g3
+(g47 and ((g33 and g32) or g25))
+
+
+Generation: 6
+Best Individual:
+Evaluated: T
+Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+or.g43.g25.or.g43.g12.g32.g11.g46.g26.g43
+
+(g43 or g25)
 
 
 Best Individual of Run:
-Found at Generation: 1
+Found at Generation: 6
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1065353216|1.0|
+Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-g3.and.g43.g21.g23.g18.g8.g33.g0.g8.g35
+or.g43.g25.or.g43.g12.g32.g11.g46.g26.g43
 
-g3
+(g43 or g25)
 
-Size of program: 1
-Variables used(count): g3(1)
+Size of program: 3
+Variables used(count): g25(1), g43(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  21	|  0
+            Yes|  26	|  4
 Actual Value   |----------------
-            No |  4	|  36
+            No |  2	|  29
                |----------------
 
 
@@ -3489,7 +3315,203 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  19	|  16
+            Yes|  50	|  4
+Actual Value   |----------------
+            No |  4	|  8
+               |----------------
+
+Observed	Computed
+1.0	1.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	0.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+
+1.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	0.0
+Maximum number of generations in this run: 50
+Size of population in this run: 256
+Number of genes per chromosome: 1
+Size of gene head: 5
+Seed(s) used in this job: 4357
+Problem type: logical
+
+
+Generation: 0
+Best Individual:
+Evaluated: T
+Fitness: [f1063427962|0.8852459| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+or.not.not.not.not.g43.g3.g24.g5.g21.g21
+
+((not (not g43)) or (not (not g3)))
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1064528107|0.9508197| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+and.g3.or.g48.or.g1.g6.g14.g10.g13.g29
+
+(g3 and (g48 or (g1 or g6)))
+
+
+Best Individual of Run:
+Found at Generation: 1
+Evaluated: T
+Fitness: [f1064528107|0.9508197| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+and.g3.or.g48.or.g1.g6.g14.g10.g13.g29
+
+(g3 and (g48 or (g1 or g6)))
+
+Size of program: 7
+Variables used(count): g1(1), g3(1), g6(1), g48(1)
+
+***** TRAINING data results *****
+Confusion Matrix: 
+                Predicted Value
+               |  Yes	|  No
+               |----------------
+            Yes|  21	|  0
+Actual Value   |----------------
+            No |  3	|  37
+               |----------------
+
+
+***** TEST data results *****
+Number of Calculation Errors: 0 out of 67 test sets
+Confusion Matrix: 
+                Predicted Value
+               |  Yes	|  No
+               |----------------
+            Yes|  18	|  17
 Actual Value   |----------------
             No |  2	|  29
                |----------------
@@ -3534,7 +3556,7 @@ Observed	Computed
 1.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -3582,7 +3604,7 @@ Observed	Computed
 1.0	0.0
 1.0	0.0
 0.0	0.0
-1.0	1.0
+1.0	0.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
@@ -3636,57 +3658,90 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1060127526|0.6885246| f1042983595|0.16666667|
+Fitness: [f1060952635|0.73770493| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-or.and.g19.g14.not.g20.g5.g45.g6.g22.g30
+or.and.and.g49.and.g0.g19.g19.g35.g12.g49
 
-((g14 and (not g20)) or g19)
+((g49 and (g19 and g35)) or (g0 and g19))
 
 
 Generation: 3
 Best Individual:
 Evaluated: T
-Fitness: [f1060402562|0.704918| f1045220557|0.2|
+Fitness: [f1061502707|0.7704918| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-and.g49.and.g1.g19.g5.g29.g46.g17.g12.g43
+and.g49.and.or.and.g0.g19.g19.g35.g12.g49
 
-(g49 and (g1 and g19))
+(g49 and ((g0 or g19) and (g19 and g35)))
 
 
-Generation: 7
+Generation: 4
 Best Individual:
 Evaluated: T
-Fitness: [f1061227671|0.75409836| f1051372203|0.33333334|
+Fitness: [f1061777744|0.78688526| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-and.g35.g19.g47.g46.g32.g15.g20.g35.g9.g10
+or.and.and.g49.and.g36.g9.g19.g35.g12.g36
 
-(g35 and g19)
+((g49 and (g19 and g35)) or (g36 and g9))
+
+
+Generation: 8
+Best Individual:
+Evaluated: T
+Fitness: [f1062052780|0.8032787| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+or.and.and.g49.and.g20.g9.g19.g35.g46.g36
+
+((g49 and (g19 and g35)) or (g20 and g9))
+
+
+Generation: 12
+Best Individual:
+Evaluated: T
+Fitness: [f1062327816|0.8196721| f1035611788|0.09090909|
+Linking function: and
+Gene 0
+or.and.and.and.or.g20.g9.g19.g35.g46.g36
+
+(((g19 and g35) and (g46 or g36)) or (g20 and g9))
+
+
+Generation: 26
+Best Individual:
+Evaluated: T
+Fitness: [f1062602853|0.8360656| f1035611788|0.09090909|
+Linking function: and
+Gene 0
+or.and.and.and.or.g20.g9.g19.g35.g46.g9
+
+(((g19 and g35) and (g46 or g9)) or (g20 and g9))
 
 
 Best Individual of Run:
-Found at Generation: 7
+Found at Generation: 26
 Evaluated: T
-Fitness: [f1061227671|0.75409836| f1051372203|0.33333334|
+Fitness: [f1062602853|0.8360656| f1035611788|0.09090909|
 Linking function: and
 Gene 0
-and.g35.g19.g47.g46.g32.g15.g20.g35.g9.g10
+or.and.and.and.or.g20.g9.g19.g35.g46.g9
 
-(g35 and g19)
+(((g19 and g35) and (g46 or g9)) or (g20 and g9))
 
-Size of program: 3
-Variables used(count): g19(1), g35(1)
+Size of program: 11
+Variables used(count): g9(2), g19(1), g20(1), g35(1), g46(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  22	|  7
+            Yes|  24	|  5
 Actual Value   |----------------
-            No |  8	|  24
+            No |  5	|  27
                |----------------
 
 
@@ -3698,28 +3753,28 @@ Confusion Matrix:
                |----------------
             Yes|  1	|  23
 Actual Value   |----------------
-            No |  6	|  36
+            No |  7	|  35
                |----------------
 
 Observed	Computed
-1.0	1.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	1.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
 0.0	0.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
+0.0	1.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	0.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
 1.0	1.0
 0.0	1.0
 1.0	0.0
@@ -3735,10 +3790,10 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	0.0
+1.0	1.0
 1.0	1.0
 0.0	0.0
 0.0	0.0
@@ -3766,7 +3821,7 @@ Observed	Computed
 1.0	1.0
 
 1.0	1.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -3843,43 +3898,43 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1045220557|0.2|
+Fitness: [f1062052780|0.8032787| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-or.not.not.g1.g3.g9.g11.g18.g43.g47.g38
+or.or.not.not.and.g3.g40.g27.g41.g14.g47
 
-((not g1) or (not g3))
+(((not g40) or (g27 and g41)) or (not g3))
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1063152925|0.86885244| f1048576000|0.25|
+Linking function: and
+Gene 0
+not.or.g3.g6.or.g39.g14.g20.g11.g34.g18
+
+(not (g3 or g6))
 
 
 Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1048576000|0.25|
-Linking function: and
-Gene 0
-and.not.g2.g3.not.g48.g23.g34.g2.g3.g38
-
-((not g3) and g2)
-
-
-Generation: 4
-Best Individual:
-Evaluated: T
 Fitness: [f1064803143|0.9672131| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g3.or.not.g3.g9.g11.g18.g9.g25.g8
+not.g3.and.or.or.g29.g33.g40.g43.g14.g47
 
 (not g3)
 
 
 Best Individual of Run:
-Found at Generation: 4
+Found at Generation: 2
 Evaluated: T
 Fitness: [f1064803143|0.9672131| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g3.or.not.g3.g9.g11.g18.g9.g25.g8
+not.g3.and.or.or.g29.g33.g40.g43.g14.g47
 
 (not g3)
 
@@ -4050,48 +4105,48 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063427962|0.8852459| f1040187392|0.125|
+Fitness: [f1063152925|0.86885244| f1040187392|0.125|
 Linking function: and
 Gene 0
-or.g34.and.not.or.g40.g22.g11.g46.g15.g40
+or.not.and.or.g45.g7.g10.g12.g39.g30.g49
 
-(g34 or ((not g40) and (g22 or g11)))
+((not (g10 or g12)) or (g45 and g7))
 
 
-Generation: 2
+Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1036831949|0.1|
+Fitness: [f1064528107|0.9508197| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.not.and.or.and.g17.g40.g33.g32.g33.g35
+and.or.not.g42.not.g40.g14.g4.g2.g26.g21
 
-((not (g40 or g33)) or ((g32 and g33) and g17))
+((g42 or (not g14)) and (not g40))
 
 
-Generation: 39
+Generation: 3
 Best Individual:
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1042983595|0.16666667|
+Fitness: [f1064528107|0.9508197| f1056964608|0.5|
 Linking function: and
 Gene 0
-and.or.not.g8.g5.g40.g47.g37.g40.g5.g38
+not.g40.and.g46.and.g40.g14.g23.g2.g26.g27
 
-((g8 or g5) and (not g40))
+(not g40)
 
 
 Best Individual of Run:
-Found at Generation: 39
+Found at Generation: 3
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1042983595|0.16666667|
+Fitness: [f1064528107|0.9508197| f1056964608|0.5|
 Linking function: and
 Gene 0
-and.or.not.g8.g5.g40.g47.g37.g40.g5.g38
+not.g40.and.g46.and.g40.g14.g23.g2.g26.g27
 
-((g8 or g5) and (not g40))
+(not g40)
 
-Size of program: 6
-Variables used(count): g5(1), g8(1), g40(1)
+Size of program: 2
+Variables used(count): g40(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -4100,7 +4155,7 @@ Confusion Matrix:
                |----------------
             Yes|  13	|  1
 Actual Value   |----------------
-            No |  1	|  46
+            No |  2	|  45
                |----------------
 
 
@@ -4110,9 +4165,9 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  5	|  3
+            Yes|  6	|  2
 Actual Value   |----------------
-            No |  2	|  56
+            No |  28	|  30
                |----------------
 
 Observed	Computed
@@ -4159,7 +4214,7 @@ Observed	Computed
 1.0	0.0
 0.0	0.0
 0.0	1.0
-1.0	0.0
+1.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -4195,26 +4250,26 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
@@ -4224,28 +4279,28 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -4257,44 +4312,44 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1041385765|0.14285715|
+Fitness: [f1062052780|0.8032787| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-or.g20.and.and.g47.g16.g9.g16.g29.g37.g25
+not.and.or.g11.g11.g47.g4.g15.g2.g19.g46
 
-(g20 or ((g16 and g9) and g47))
+(not ((g11 or g47) and g11))
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1040187392|0.125|
+Fitness: [f1065353216|1.0| f1045220557|0.2|
 Linking function: and
 Gene 0
-or.and.g20.and.not.g19.g32.g33.g40.g43.g34
+or.not.g20.not.g41.g44.g2.g39.g32.g26.g34
 
-(((g19 and g32) and (not g33)) or g20)
+((not (not g41)) or g20)
 
 
 Best Individual of Run:
 Found at Generation: 1
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1040187392|0.125|
+Fitness: [f1065353216|1.0| f1045220557|0.2|
 Linking function: and
 Gene 0
-or.and.g20.and.not.g19.g32.g33.g40.g43.g34
+or.not.g20.not.g41.g44.g2.g39.g32.g26.g34
 
-(((g19 and g32) and (not g33)) or g20)
+((not (not g41)) or g20)
 
-Size of program: 8
-Variables used(count): g19(1), g20(1), g32(1), g33(1)
+Size of program: 5
+Variables used(count): g20(1), g41(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  15	|  3
+            Yes|  18	|  0
 Actual Value   |----------------
             No |  0	|  43
                |----------------
@@ -4306,9 +4361,9 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  12	|  29
+            Yes|  41	|  0
 Actual Value   |----------------
-            No |  5	|  20
+            No |  0	|  25
                |----------------
 
 Observed	Computed
@@ -4342,11 +4397,11 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
@@ -4354,7 +4409,7 @@ Observed	Computed
 1.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	0.0
@@ -4378,70 +4433,70 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
 1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+0.0	0.0
 0.0	0.0
 0.0	1.0
-0.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
 0.0	1.0
 1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
+0.0	1.0
+1.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -4453,26 +4508,37 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1065078180|0.9836066| f1038323257|0.11111111|
+Fitness: [f1065078180|0.9836066| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.or.or.or.g25.g14.g44.g2.g20.g8.g24
+or.g44.g43.or.g2.g30.g34.g22.g9.g41.g25
 
-(((g2 or g20) or g25) and (g14 or g44))
+(g44 or g43)
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1065078180|0.9836066| f1065353216|1.0|
+Linking function: and
+Gene 0
+g44.g42.and.or.or.g26.g40.g20.g23.g43.g16
+
+g44
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 1
 Evaluated: T
-Fitness: [f1065078180|0.9836066| f1038323257|0.11111111|
+Fitness: [f1065078180|0.9836066| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.or.or.or.g25.g14.g44.g2.g20.g8.g24
+g44.g42.and.or.or.g26.g40.g20.g23.g43.g16
 
-(((g2 or g20) or g25) and (g14 or g44))
+g44
 
-Size of program: 9
-Variables used(count): g2(1), g14(1), g20(1), g25(1), g44(1)
+Size of program: 1
+Variables used(count): g44(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -4560,7 +4626,7 @@ Observed	Computed
 0.0	1.0
 1.0	1.0
 
-1.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
@@ -4588,7 +4654,7 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -4638,37 +4704,37 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1042983595|0.16666667|
+Fitness: [f1064253071|0.93442625| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g45.and.not.g39.g16.g12.g49.g24.g4.g40
+not.not.g33.or.g44.g34.g48.g4.g40.g36.g6
 
-(g45 and ((not g16) and g39))
+(not (not g33))
 
 
-Generation: 3
+Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1040187392|0.125|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-not.not.and.not.and.g18.g7.g20.g13.g33.g27
+g33.and.g47.g41.and.g21.g27.g22.g12.g35.g26
 
-(not (not ((not g18) and (g7 and g20))))
+g33
 
 
 Best Individual of Run:
-Found at Generation: 3
+Found at Generation: 1
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1040187392|0.125|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-not.not.and.not.and.g18.g7.g20.g13.g33.g27
+g33.and.g47.g41.and.g21.g27.g22.g12.g35.g26
 
-(not (not ((not g18) and (g7 and g20))))
+g33
 
-Size of program: 8
-Variables used(count): g7(1), g18(1), g20(1)
+Size of program: 1
+Variables used(count): g33(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -4677,7 +4743,7 @@ Confusion Matrix:
                |----------------
             Yes|  2	|  3
 Actual Value   |----------------
-            No |  0	|  56
+            No |  1	|  55
                |----------------
 
 
@@ -4687,9 +4753,9 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  0	|  1
+            Yes|  1	|  0
 Actual Value   |----------------
-            No |  2	|  63
+            No |  48	|  17
                |----------------
 
 Observed	Computed
@@ -4721,7 +4787,7 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -4761,68 +4827,68 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
+0.0	1.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
+0.0	1.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -4834,68 +4900,57 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
+Fitness: [f1063152925|0.86885244| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-not.not.g6.g8.g34.g2.g44.g18.g32.g1.g9
+and.g6.or.g5.and.g47.g3.g42.g17.g46.g7
 
-(not (not g6))
+(g6 and (g5 or (g47 and g3)))
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1045220557|0.2|
+Fitness: [f1063427962|0.8852459| f1048576000|0.25|
 Linking function: and
 Gene 0
-and.or.g6.g31.g39.g15.g11.g10.g33.g35.g2
+and.g6.not.g5.and.g47.g3.g42.g17.g46.g4
 
-((g31 or g39) and g6)
+(g6 and (not g5))
 
 
-Generation: 4
+Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1041385765|0.14285715|
+Fitness: [f1063702998|0.90163934| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.or.g6.or.g34.g48.g13.g28.g47.g44.g10
+g6.and.or.g5.and.g47.g3.g42.g17.g46.g7
 
-(((g48 or g13) or g34) and g6)
-
-
-Generation: 5
-Best Individual:
-Evaluated: T
-Fitness: [f1064528107|0.9508197| f1045220557|0.2|
-Linking function: and
-Gene 0
-and.or.g17.g6.g6.g26.g12.g31.g29.g1.g32
-
-((g6 or g6) and g17)
+g6
 
 
 Best Individual of Run:
-Found at Generation: 5
+Found at Generation: 2
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1045220557|0.2|
+Fitness: [f1063702998|0.90163934| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.or.g17.g6.g6.g26.g12.g31.g29.g1.g32
+g6.and.or.g5.and.g47.g3.g42.g17.g46.g7
 
-((g6 or g6) and g17)
+g6
 
-Size of program: 5
-Variables used(count): g6(2), g17(1)
+Size of program: 1
+Variables used(count): g6(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  6	|  3
+            Yes|  9	|  0
 Actual Value   |----------------
-            No |  0	|  52
+            No |  6	|  46
                |----------------
 
 
@@ -4907,7 +4962,7 @@ Confusion Matrix:
                |----------------
             Yes|  0	|  0
 Actual Value   |----------------
-            No |  0	|  66
+            No |  4	|  62
                |----------------
 
 Observed	Computed
@@ -4915,14 +4970,7 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
 0.0	1.0
-1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -4930,6 +4978,13 @@ Observed	Computed
 1.0	0.0
 0.0	1.0
 1.0	0.0
+0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
 0.0	0.0
 0.0	1.0
 1.0	0.0
@@ -4937,12 +4992,9 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
+0.0	1.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -4950,12 +5002,15 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	1.0
-1.0	0.0
 0.0	0.0
 0.0	0.0
-1.0	0.0
+0.0	1.0
 1.0	0.0
 0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -4974,6 +5029,20 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 
+0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -5002,21 +5071,7 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -5052,35 +5107,46 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1062052780|0.8032787| f1041385765|0.14285715|
+Fitness: [f1061502707|0.7704918| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-and.g17.not.or.not.g14.g1.g37.g5.g35.g12
+not.not.not.or.g32.g19.g49.g0.g10.g47.g8
 
-(g17 and (not ((not g1) or g14)))
+(not (not (not (g32 or g19))))
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1062052780|0.8032787| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+or.or.and.g41.and.g35.g0.g31.g29.g41.g39
+
+((g41 or (g31 and g29)) or (g35 and g0))
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 1
 Evaluated: T
-Fitness: [f1062052780|0.8032787| f1041385765|0.14285715|
+Fitness: [f1062052780|0.8032787| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-and.g17.not.or.not.g14.g1.g37.g5.g35.g12
+or.or.and.g41.and.g35.g0.g31.g29.g41.g39
 
-(g17 and (not ((not g1) or g14)))
+((g41 or (g31 and g29)) or (g35 and g0))
 
-Size of program: 7
-Variables used(count): g1(1), g14(1), g17(1)
+Size of program: 9
+Variables used(count): g0(1), g29(1), g31(1), g35(1), g41(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  16	|  9
+            Yes|  21	|  4
 Actual Value   |----------------
-            No |  3	|  33
+            No |  8	|  28
                |----------------
 
 
@@ -5090,23 +5156,23 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  24	|  19
+            Yes|  39	|  4
 Actual Value   |----------------
-            No |  5	|  18
+            No |  21	|  2
                |----------------
 
 Observed	Computed
 0.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	0.0
-1.0	0.0
-0.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
+1.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 1.0	1.0
@@ -5118,29 +5184,29 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	0.0
+0.0	1.0
 1.0	0.0
-0.0	0.0
-0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
-1.0	0.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	0.0
+0.0	1.0
 0.0	0.0
+1.0	1.0
+1.0	0.0
 0.0	0.0
+0.0	1.0
+0.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
@@ -5159,71 +5225,71 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 
-0.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
 0.0	1.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
 1.0	0.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	0.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
 0.0	0.0
 0.0	1.0
-1.0	0.0
 1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
 0.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
 1.0	1.0
 0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-1.0	0.0
 1.0	1.0
 0.0	1.0
-1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	0.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	1.0
 0.0	1.0
 Maximum number of generations in this run: 50
@@ -5237,32 +5303,65 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1041385765|0.14285715|
+Fitness: [f1062327816|0.8196721| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.not.g13.not.or.g4.g8.g15.g11.g27.g11
+and.g21.or.g14.and.g42.g4.g12.g4.g22.g47
 
-((not (not (g4 or g8))) or g13)
+(g21 and (g14 or (g42 and g4)))
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1062877889|0.852459| f1040187392|0.125|
+Linking function: and
+Gene 0
+and.g21.or.not.and.g42.g4.g12.g4.g22.g0
+
+(g21 and ((not g42) or (g4 and g12)))
 
 
 Generation: 2
 Best Individual:
 Evaluated: T
+Fitness: [f1063427962|0.8852459| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+and.g12.g4.g22.g47.g42.g4.g12.g4.g22.g47
+
+(g12 and g4)
+
+
+Generation: 3
+Best Individual:
+Evaluated: T
+Fitness: [f1063978034|0.91803277| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+and.g36.g4.g12.g4.g36.g4.g12.g4.g22.g0
+
+(g36 and g4)
+
+
+Generation: 4
+Best Individual:
+Evaluated: T
 Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-g4.g26.g31.g6.g22.g12.g25.g31.g13.g22.g29
+g4.g12.g4.g22.g12.g42.g4.g12.g4.g22.g47
 
 g4
 
 
 Best Individual of Run:
-Found at Generation: 2
+Found at Generation: 4
 Evaluated: T
 Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-g4.g26.g31.g6.g22.g12.g25.g31.g13.g22.g29
+g4.g12.g4.g22.g12.g42.g4.g12.g4.g22.g47
 
 g4
 
@@ -5433,57 +5532,35 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1040187392|0.125|
+Fitness: [f1064253071|0.93442625| f1056964608|0.5|
 Linking function: and
 Gene 0
-and.not.or.g24.and.g47.g19.g45.g21.g12.g22
+not.g24.not.g8.and.g23.g12.g29.g34.g4.g8
 
-((not g24) and ((g19 and g45) or g47))
-
-
-Generation: 4
-Best Individual:
-Evaluated: T
-Fitness: [f1064528107|0.9508197| f1042983595|0.16666667|
-Linking function: and
-Gene 0
-or.not.not.g24.not.g41.g38.g44.g42.g24.g36
-
-((not g24) or (not (not g41)))
-
-
-Generation: 5
-Best Individual:
-Evaluated: T
-Fitness: [f1064803143|0.9672131| f1048576000|0.25|
-Linking function: and
-Gene 0
-or.g44.not.g24.not.g41.g38.g44.g42.g24.g36
-
-(g44 or (not g24))
+(not g24)
 
 
 Best Individual of Run:
-Found at Generation: 5
+Found at Generation: 0
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1048576000|0.25|
+Fitness: [f1064253071|0.93442625| f1056964608|0.5|
 Linking function: and
 Gene 0
-or.g44.not.g24.not.g41.g38.g44.g42.g24.g36
+not.g24.not.g8.and.g23.g12.g29.g34.g4.g8
 
-(g44 or (not g24))
+(not g24)
 
-Size of program: 4
-Variables used(count): g24(1), g44(1)
+Size of program: 2
+Variables used(count): g24(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  53	|  0
+            Yes|  50	|  3
 Actual Value   |----------------
-            No |  2	|  6
+            No |  1	|  7
                |----------------
 
 
@@ -5499,7 +5576,25 @@ Actual Value   |----------------
                |----------------
 
 Observed	Computed
+1.0	0.0
+0.0	1.0
 1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	0.0
@@ -5510,24 +5605,6 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -5541,8 +5618,8 @@ Observed	Computed
 1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
-1.0	1.0
+1.0	0.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -5640,57 +5717,90 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1059027380|0.6229508| f1036831949|0.1|
+Fitness: [f1058752344|0.60655737| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-and.and.not.or.and.g18.g46.g13.g2.g27.g0
+and.or.g2.and.g46.g4.g29.g3.g10.g29.g44
 
-(((g46 or g13) and (g2 and g27)) and (not g18))
+(((g4 and g29) or g46) and g2)
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1059577453|0.6557377| f1035611788|0.09090909|
+Fitness: [f1060127526|0.6885246| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-and.or.or.or.or.g49.g32.g17.g6.g3.g37
+or.or.g7.g7.and.g15.g12.g23.g36.g0.g26
 
-(((g17 or g6) or (g3 or g37)) and (g49 or g32))
+((g7 or (g15 and g12)) or g7)
 
 
-Generation: 17
+Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1060402562|0.704918| f1051372203|0.33333334|
+Fitness: [f1060402562|0.704918| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.g17.g37.and.g48.g13.g11.g33.g25.g30.g9
+or.or.g7.g7.and.g15.g40.g23.g3.g0.g26
 
-(g17 or g37)
+((g7 or (g15 and g40)) or g7)
+
+
+Generation: 10
+Best Individual:
+Evaluated: T
+Fitness: [f1060677598|0.72131145| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+or.or.and.g7.and.g15.g40.g23.g10.g29.g26
+
+((g7 or (g23 and g10)) or (g15 and g40))
+
+
+Generation: 25
+Best Individual:
+Evaluated: T
+Fitness: [f1061227671|0.75409836| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+or.or.and.g7.and.g15.g11.g19.g26.g34.g43
+
+((g7 or (g19 and g26)) or (g15 and g11))
+
+
+Generation: 30
+Best Individual:
+Evaluated: T
+Fitness: [f1061502707|0.7704918| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+or.or.and.g7.and.g15.g46.g19.g26.g34.g8
+
+((g7 or (g19 and g26)) or (g15 and g46))
 
 
 Best Individual of Run:
-Found at Generation: 17
+Found at Generation: 30
 Evaluated: T
-Fitness: [f1060402562|0.704918| f1051372203|0.33333334|
+Fitness: [f1061502707|0.7704918| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-or.g17.g37.and.g48.g13.g11.g33.g25.g30.g9
+or.or.and.g7.and.g15.g46.g19.g26.g34.g8
 
-(g17 or g37)
+((g7 or (g19 and g26)) or (g15 and g46))
 
-Size of program: 3
-Variables used(count): g17(1), g37(1)
+Size of program: 9
+Variables used(count): g7(1), g15(1), g19(1), g26(1), g46(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  28	|  3
+            Yes|  29	|  2
 Actual Value   |----------------
-            No |  15	|  15
+            No |  12	|  18
                |----------------
 
 
@@ -5700,58 +5810,58 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  23	|  2
+            Yes|  20	|  5
 Actual Value   |----------------
-            No |  20	|  21
+            No |  33	|  8
                |----------------
 
 Observed	Computed
-1.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
 0.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
 1.0	0.0
 1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-1.0	0.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 0.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
 1.0	0.0
+0.0	1.0
+1.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
 0.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	0.0
+1.0	1.0
+1.0	0.0
 0.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
@@ -5769,73 +5879,73 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-1.0	0.0
-1.0	1.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-0.0	1.0
-1.0	0.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	1.0
-0.0	1.0
-0.0	0.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
-0.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	0.0
-0.0	1.0
-0.0	1.0
-1.0	0.0
+1.0	1.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 0.0	0.0
 0.0	1.0
 1.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	0.0
+1.0	1.0
+0.0	1.0
+0.0	0.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+0.0	1.0
+0.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
 0.0	0.0
 0.0	1.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-1.0	0.0
 0.0	1.0
 0.0	1.0
 1.0	1.0
-0.0	0.0
 0.0	1.0
-1.0	1.0
+0.0	1.0
 1.0	0.0
-0.0	1.0
+1.0	1.0
 0.0	1.0
 0.0	0.0
 0.0	1.0
+0.0	0.0
 1.0	1.0
+1.0	1.0
+0.0	1.0
 1.0	0.0
 0.0	1.0
+0.0	0.0
+1.0	1.0
 1.0	1.0
 0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-0.0	1.0
+0.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -5847,44 +5957,44 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1048576000|0.25|
+Fitness: [f1064528107|0.9508197| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.and.g1.g14.or.g32.g0.g40.g48.g26.g14
+not.g32.g26.g48.g41.g29.g43.g16.g15.g3.g32
 
-(not (g1 and g14))
+(not g32)
 
 
-Generation: 3
+Generation: 6
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1056964608|0.5|
+Fitness: [f1064528107|0.9508197| f1065353216|1.0|
 Linking function: and
 Gene 0
-not.g14.g9.not.not.g32.g0.g35.g18.g38.g30
+g30.g26.g32.not.g41.g3.g43.g16.g15.g38.g36
 
-(not g14)
+g30
 
 
 Best Individual of Run:
-Found at Generation: 3
+Found at Generation: 6
 Evaluated: T
-Fitness: [f1065353216|1.0| f1056964608|0.5|
+Fitness: [f1064528107|0.9508197| f1065353216|1.0|
 Linking function: and
 Gene 0
-not.g14.g9.not.not.g32.g0.g35.g18.g38.g30
+g30.g26.g32.not.g41.g3.g43.g16.g15.g38.g36
 
-(not g14)
+g30
 
-Size of program: 2
-Variables used(count): g14(1)
+Size of program: 1
+Variables used(count): g30(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  58	|  0
+            Yes|  55	|  3
 Actual Value   |----------------
             No |  0	|  3
                |----------------
@@ -5902,13 +6012,13 @@ Actual Value   |----------------
                |----------------
 
 Observed	Computed
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -5923,7 +6033,7 @@ Observed	Computed
 1.0	1.0
 1.0	0.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
@@ -6046,7 +6156,7 @@ Evaluated: T
 Fitness: [f1065353216|1.0| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g13.or.not.g43.g41.g48.g24.g25.g19.g0
+not.g13.or.g3.not.g32.g10.g37.g5.g41.g40
 
 (not g13)
 
@@ -6057,7 +6167,7 @@ Evaluated: T
 Fitness: [f1065353216|1.0| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g13.or.not.g43.g41.g48.g24.g25.g19.g0
+not.g13.or.g3.not.g32.g10.g37.g5.g41.g40
 
 (not g13)
 
@@ -6231,7 +6341,7 @@ Evaluated: T
 Fitness: [f1065353216|1.0| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g35.or.or.g11.g29.g25.g47.g21.g14.g17
+not.g35.and.or.g39.g28.g32.g39.g2.g15.g7
 
 (not g35)
 
@@ -6242,7 +6352,7 @@ Evaluated: T
 Fitness: [f1065353216|1.0| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g35.or.or.g11.g29.g25.g47.g21.g14.g17
+not.g35.and.or.g39.g28.g32.g39.g2.g15.g7
 
 (not g35)
 
@@ -6413,32 +6523,43 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
+Fitness: [f1065353216|1.0| f1048576000|0.25|
+Linking function: and
+Gene 0
+and.not.g2.g2.g27.g35.g29.g14.g5.g37.g17
+
+((not g2) and g2)
+
+
+Generation: 7
+Best Individual:
+Evaluated: T
 Fitness: [f1065353216|1.0| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g17.g33.g8.or.g32.g40.g32.g29.g36.g37
+and.g43.g14.g27.g15.g28.g37.g35.g25.g15.g21
 
-(g17 and g33)
+(g43 and g14)
 
 
-Generation: 1
+Generation: 17
 Best Individual:
 Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g32.g47.g8.not.not.g13.g2.g32.g32.g28.g28
+g32.g33.and.or.g4.g31.g29.g15.g25.g5.g8
 
 g32
 
 
 Best Individual of Run:
-Found at Generation: 1
+Found at Generation: 17
 Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g32.g47.g8.not.not.g13.g2.g32.g32.g28.g28
+g32.g33.and.or.g4.g31.g29.g15.g25.g5.g8
 
 g32
 
@@ -6609,55 +6730,55 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1038323257|0.11111111|
+Fitness: [f1064528107|0.9508197| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.or.and.not.not.g22.g31.g33.g0.g21.g14
+and.g7.g41.not.g33.g7.g49.g49.g3.g26.g10
 
-(((not g33) or (not g0)) and (g22 and g31))
+(g7 and g41)
 
 
-Generation: 5
+Generation: 3
 Best Individual:
 Evaluated: T
-Fitness: [f1065078180|0.9836066| f1036831949|0.1|
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.or.and.or.not.g22.g31.g33.g29.g21.g14
+and.g15.g31.g13.not.g43.g21.g20.g15.g23.g15
 
-(((g33 or g29) or (not g21)) and (g22 and g31))
+(g15 and g31)
 
 
-Generation: 39
+Generation: 7
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1040187392|0.125|
+Fitness: [f1065078180|0.9836066| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g31.and.and.not.g29.g27.g18.g31.g6.g14
+and.g31.g7.or.g33.g7.g25.g19.g3.g26.g15
 
-(g31 and ((g29 and g27) and (not g18)))
+(g31 and g7)
 
 
 Best Individual of Run:
-Found at Generation: 39
+Found at Generation: 7
 Evaluated: T
-Fitness: [f1065353216|1.0| f1040187392|0.125|
+Fitness: [f1065078180|0.9836066| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g31.and.and.not.g29.g27.g18.g31.g6.g14
+and.g31.g7.or.g33.g7.g25.g19.g3.g26.g15
 
-(g31 and ((g29 and g27) and (not g18)))
+(g31 and g7)
 
-Size of program: 8
-Variables used(count): g18(1), g27(1), g29(1), g31(1)
+Size of program: 3
+Variables used(count): g7(1), g31(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  3	|  0
+            Yes|  2	|  1
 Actual Value   |----------------
             No |  0	|  58
                |----------------
@@ -6669,9 +6790,9 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  31	|  19
+            Yes|  3	|  47
 Actual Value   |----------------
-            No |  2	|  14
+            No |  3	|  13
                |----------------
 
 Observed	Computed
@@ -6702,7 +6823,7 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
@@ -6738,41 +6859,12 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
 0.0	1.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-0.0	0.0
-1.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
+0.0	0.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
 1.0	0.0
 0.0	0.0
 0.0	1.0
@@ -6781,30 +6873,59 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
+0.0	0.0
 1.0	0.0
 1.0	0.0
-1.0	1.0
 1.0	0.0
-1.0	1.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -6816,44 +6937,55 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1065078180|0.9836066| f1056964608|0.5|
+Fitness: [f1064253071|0.93442625| f1045220557|0.2|
 Linking function: and
 Gene 0
-not.g30.not.g7.g30.g0.g29.g3.g39.g37.g22
+or.g8.and.g45.g25.g48.g35.g41.g11.g9.g11
 
-(not g30)
+(g8 or (g45 and g25))
 
 
-Generation: 19
+Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1048576000|0.25|
+Fitness: [f1064253071|0.93442625| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-not.or.g17.g30.or.g47.g29.g25.g2.g47.g12
+and.g24.g14.or.and.g41.g23.g38.g40.g47.g17
 
-(not (g17 or g30))
+(g24 and g14)
+
+
+Generation: 2
+Best Individual:
+Evaluated: T
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
+Linking function: and
+Gene 0
+g14.or.and.g20.and.g38.g5.g26.g48.g5.g38
+
+g14
 
 
 Best Individual of Run:
-Found at Generation: 19
+Found at Generation: 2
 Evaluated: T
-Fitness: [f1065353216|1.0| f1048576000|0.25|
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-not.or.g17.g30.or.g47.g29.g25.g2.g47.g12
+g14.or.and.g20.and.g38.g5.g26.g48.g5.g38
 
-(not (g17 or g30))
+g14
 
-Size of program: 4
-Variables used(count): g17(1), g30(1)
+Size of program: 1
+Variables used(count): g14(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  5	|  0
+            Yes|  3	|  2
 Actual Value   |----------------
             No |  0	|  56
                |----------------
@@ -6867,7 +6999,7 @@ Confusion Matrix:
                |----------------
             Yes|  0	|  1
 Actual Value   |----------------
-            No |  1	|  64
+            No |  2	|  63
                |----------------
 
 Observed	Computed
@@ -6877,7 +7009,7 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
@@ -6892,7 +7024,7 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 1.0	0.0
-0.0	1.0
+0.0	0.0
 1.0	0.0
 0.0	0.0
 0.0	1.0
@@ -6935,7 +7067,7 @@ Observed	Computed
 0.0	0.0
 
 0.0	1.0
-0.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -7012,55 +7144,55 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064253071|0.93442625| f1056964608|0.5|
+Fitness: [f1063978034|0.91803277| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g43.and.g32.g23.g23.g41.g20.g33.g27.g44
+not.g8.not.g41.not.g17.g10.g29.g41.g13.g19
 
-(not g43)
+(not g8)
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1048576000|0.25|
+Fitness: [f1063978034|0.91803277| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g10.not.g2.g3.g3.g17.g23.g3.g33.g28
+g47.or.and.g12.not.g19.g14.g30.g19.g25.g13
 
-(g10 or (not g2))
+g47
 
 
-Generation: 2
+Generation: 5
 Best Individual:
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g5.g16.not.or.g5.g27.g15.g17.g2.g31
+g10.or.and.g12.g1.g47.g14.g30.g19.g4.g48
 
-(g5 or g16)
+g10
 
 
 Best Individual of Run:
-Found at Generation: 2
+Found at Generation: 5
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g5.g16.not.or.g5.g27.g15.g17.g2.g31
+g10.or.and.g12.g1.g47.g14.g30.g19.g4.g48
 
-(g5 or g16)
+g10
 
-Size of program: 3
-Variables used(count): g5(1), g16(1)
+Size of program: 1
+Variables used(count): g10(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  55	|  0
+            Yes|  53	|  2
 Actual Value   |----------------
             No |  2	|  4
                |----------------
@@ -7072,41 +7204,12 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  10	|  0
+            Yes|  1	|  9
 Actual Value   |----------------
-            No |  50	|  6
+            No |  0	|  56
                |----------------
 
 Observed	Computed
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
@@ -7116,8 +7219,37 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
@@ -7141,73 +7273,73 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-1.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
 1.0	0.0
-0.0	1.0
-0.0	1.0
 1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-0.0	1.0
+1.0	0.0
 0.0	0.0
-0.0	1.0
 0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-0.0	1.0
 0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
+1.0	0.0
 0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
 0.0	0.0
-0.0	1.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -7219,70 +7351,70 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1062052780|0.8032787| f1048576000|0.25|
+Fitness: [f1060677598|0.72131145| f1035611788|0.09090909|
 Linking function: and
 Gene 0
-and.not.g25.g33.and.g14.g10.g25.g8.g44.g34
+or.or.and.and.or.g29.g25.g34.g24.g45.g26
 
-((not g33) and g25)
+(((g34 and g24) or (g45 or g26)) or (g29 and g25))
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1062327816|0.8196721| f1051372203|0.33333334|
+Fitness: [f1062877889|0.852459| f1035611788|0.09090909|
 Linking function: and
 Gene 0
-not.not.g25.and.and.g25.g34.g40.g17.g16.g49
+or.or.and.and.or.g29.g25.g34.g24.g6.g34
 
-(not (not g25))
+(((g34 and g24) or (g6 or g34)) or (g29 and g25))
 
 
-Generation: 8
+Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1062602853|0.8360656| f1041385765|0.14285715|
+Fitness: [f1064803143|0.9672131| f1035611788|0.09090909|
 Linking function: and
 Gene 0
-and.or.g25.g5.or.g17.g22.g19.g45.g32.g22
+or.or.and.and.or.g29.g25.g34.g24.g20.g34
 
-((g5 or (g17 or g22)) and g25)
+(((g34 and g24) or (g20 or g34)) or (g29 and g25))
 
 
-Generation: 11
+Generation: 6
 Best Individual:
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1042983595|0.16666667|
+Fitness: [f1064803143|0.9672131| f1040187392|0.125|
 Linking function: and
 Gene 0
-or.g20.or.not.g25.g11.g22.g20.g27.g11.g8
+or.and.not.g29.or.g29.g25.g20.g32.g27.g24
 
-(g20 or ((not g11) or g25))
+((g29 and (g25 or g20)) or (not g29))
 
 
-Generation: 23
+Generation: 9
 Best Individual:
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1045220557|0.2|
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.g20.or.g25.g25.g11.g22.g20.g27.g11.g8
+or.g25.g20.g32.g27.g29.g25.g20.g32.g35.g24
 
-(g20 or (g25 or g25))
+(g25 or g20)
 
 
 Best Individual of Run:
-Found at Generation: 23
+Found at Generation: 9
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1045220557|0.2|
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.g20.or.g25.g25.g11.g22.g20.g27.g11.g8
+or.g25.g20.g32.g27.g29.g25.g20.g32.g35.g24
 
-(g20 or (g25 or g25))
+(g25 or g20)
 
-Size of program: 5
-Variables used(count): g20(1), g25(2)
+Size of program: 3
+Variables used(count): g20(1), g25(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -7448,57 +7580,90 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1062602853|0.8360656| f1038323257|0.11111111|
+Fitness: [f1062602853|0.8360656| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.g36.and.and.and.g24.g21.g25.g29.g40.g26
+and.g36.g47.or.not.g7.g49.g25.g13.g18.g24
 
-(g36 or ((g24 and g21) and (g25 and g29)))
+(g36 and g47)
 
 
-Generation: 1
+Generation: 4
 Best Individual:
 Evaluated: T
-Fitness: [f1062877889|0.852459| f1038323257|0.11111111|
+Fitness: [f1062877889|0.852459| f1036831949|0.1|
 Linking function: and
 Gene 0
-or.g36.and.and.and.g24.g21.g20.g23.g29.g26
+or.or.or.and.not.g36.g16.g25.g21.g1.g32
 
-(g36 or ((g24 and g21) and (g20 and g23)))
+(((g25 and g21) or (not g1)) or (g36 or g16))
 
 
-Generation: 6
+Generation: 5
 Best Individual:
 Evaluated: T
-Fitness: [f1063152925|0.86885244| f1051372203|0.33333334|
+Fitness: [f1063152925|0.86885244| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-or.g9.g36.and.and.g24.g21.g35.g32.g6.g18
+and.and.g47.g36.not.g9.g49.g25.g14.g18.g33
 
-(g9 or g36)
+((g36 and (not g9)) and g47)
+
+
+Generation: 14
+Best Individual:
+Evaluated: T
+Fitness: [f1063427962|0.8852459| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+and.and.g36.not.not.g9.g43.g25.g14.g22.g33
+
+(((not g9) and (not g43)) and g36)
+
+
+Generation: 18
+Best Individual:
+Evaluated: T
+Fitness: [f1063702998|0.90163934| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+and.and.not.not.g36.g9.g23.g25.g14.g22.g33
+
+(((not g23) and g36) and (not g9))
+
+
+Generation: 49
+Best Individual:
+Evaluated: T
+Fitness: [f1063702998|0.90163934| f1042983595|0.16666667|
+Linking function: and
+Gene 0
+and.g36.not.and.g9.g46.g39.g25.g14.g33.g21
+
+(g36 and (not (g9 and g46)))
 
 
 Best Individual of Run:
-Found at Generation: 6
+Found at Generation: 49
 Evaluated: T
-Fitness: [f1063152925|0.86885244| f1051372203|0.33333334|
+Fitness: [f1063702998|0.90163934| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-or.g9.g36.and.and.g24.g21.g35.g32.g6.g18
+and.g36.not.and.g9.g46.g39.g25.g14.g33.g21
 
-(g9 or g36)
+(g36 and (not (g9 and g46)))
 
-Size of program: 3
-Variables used(count): g9(1), g36(1)
+Size of program: 6
+Variables used(count): g9(1), g36(1), g46(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  30	|  2
+            Yes|  28	|  4
 Actual Value   |----------------
-            No |  6	|  23
+            No |  2	|  27
                |----------------
 
 
@@ -7508,34 +7673,15 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  25	|  1
+            Yes|  21	|  5
 Actual Value   |----------------
             No |  0	|  40
                |----------------
 
 Observed	Computed
 1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	0.0
-0.0	1.0
 1.0	1.0
-0.0	0.0
-0.0	0.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -7544,19 +7690,38 @@ Observed	Computed
 1.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
+0.0	0.0
 0.0	0.0
 0.0	1.0
 1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
@@ -7578,10 +7743,10 @@ Observed	Computed
 1.0	0.0
 
 0.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
@@ -7616,13 +7781,6 @@ Observed	Computed
 1.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	0.0
@@ -7633,16 +7791,23 @@ Observed	Computed
 1.0	1.0
 1.0	0.0
 0.0	0.0
-0.0	0.0
+0.0	1.0
+1.0	0.0
 0.0	0.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
 1.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
@@ -7655,33 +7820,55 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1041385765|0.14285715|
+Fitness: [f1064253071|0.93442625| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-not.not.not.and.not.g46.g10.g32.g31.g22.g25
+or.g47.g28.and.g35.g23.g16.g30.g27.g27.g17
 
-(not (not (not ((not g10) and g46))))
+(g47 or g28)
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1064253071|0.93442625| f1056964608|0.5|
+Linking function: and
+Gene 0
+not.g32.and.or.g20.g29.g48.g47.g37.g39.g39
+
+(not g32)
+
+
+Generation: 16
+Best Individual:
+Evaluated: T
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
+Linking function: and
+Gene 0
+g10.and.not.g21.not.g29.g48.g47.g18.g39.g39
+
+g10
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 16
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1041385765|0.14285715|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-not.not.not.and.not.g46.g10.g32.g31.g22.g25
+g10.and.not.g21.not.g29.g48.g47.g18.g39.g39
 
-(not (not (not ((not g10) and g46))))
+g10
 
-Size of program: 7
-Variables used(count): g10(1), g46(1)
+Size of program: 1
+Variables used(count): g10(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  56	|  1
+            Yes|  54	|  3
 Actual Value   |----------------
             No |  1	|  3
                |----------------
@@ -7695,11 +7882,11 @@ Confusion Matrix:
                |----------------
             Yes|  0	|  0
 Actual Value   |----------------
-            No |  8	|  58
+            No |  1	|  65
                |----------------
 
 Observed	Computed
-1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -7740,7 +7927,7 @@ Observed	Computed
 0.0	1.0
 1.0	0.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -7764,8 +7951,6 @@ Observed	Computed
 
 1.0	0.0
 0.0	1.0
-0.0	1.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -7794,7 +7979,6 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -7817,17 +8001,20 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
@@ -7840,57 +8027,90 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1061777744|0.78688526| f1038323257|0.11111111|
+Fitness: [f1061502707|0.7704918| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.or.and.g28.and.g37.g14.g2.g14.g8.g26
+or.g28.not.and.not.g47.g34.g38.g18.g11.g17
 
-((g28 or (g2 and g14)) or (g37 and g14))
+(g28 or (not ((not g34) and g47)))
 
 
-Generation: 7
+Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1062052780|0.8032787| f1045220557|0.2|
+Fitness: [f1062052780|0.8032787| f1048576000|0.25|
 Linking function: and
 Gene 0
-not.not.and.g40.g28.g17.g1.g46.g12.g12.g41
+or.g28.not.g35.not.g47.g34.g38.g18.g11.g17
 
-(not (not (g40 and g28)))
+(g28 or (not g35))
 
 
-Generation: 46
+Generation: 3
 Best Individual:
 Evaluated: T
-Fitness: [f1062327816|0.8196721| f1051372203|0.33333334|
+Fitness: [f1062602853|0.8360656| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-and.g28.g1.g26.not.g37.g24.g45.g1.g48.g35
+and.g28.or.and.or.g16.g38.g38.g18.g11.g44
 
-(g28 and g1)
+(g28 and ((g16 and g38) or (g38 or g18)))
+
+
+Generation: 6
+Best Individual:
+Evaluated: T
+Fitness: [f1062877889|0.852459| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+and.g28.or.and.or.g16.g38.g25.g18.g11.g1
+
+(g28 and ((g16 and g38) or (g25 or g18)))
+
+
+Generation: 11
+Best Individual:
+Evaluated: T
+Fitness: [f1063152925|0.86885244| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+and.g28.or.and.or.g12.g38.g25.g18.g11.g1
+
+(g28 and ((g12 and g38) or (g25 or g18)))
+
+
+Generation: 14
+Best Individual:
+Evaluated: T
+Fitness: [f1063427962|0.8852459| f1038323257|0.11111111|
+Linking function: and
+Gene 0
+and.g28.or.and.and.g12.g38.g1.g18.g11.g1
+
+(g28 and ((g12 and g38) or (g1 and g18)))
 
 
 Best Individual of Run:
-Found at Generation: 46
+Found at Generation: 14
 Evaluated: T
-Fitness: [f1062327816|0.8196721| f1051372203|0.33333334|
+Fitness: [f1063427962|0.8852459| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-and.g28.g1.g26.not.g37.g24.g45.g1.g48.g35
+and.g28.or.and.and.g12.g38.g1.g18.g11.g1
 
-(g28 and g1)
+(g28 and ((g12 and g38) or (g1 and g18)))
 
-Size of program: 3
-Variables used(count): g1(1), g28(1)
+Size of program: 9
+Variables used(count): g1(1), g12(1), g18(1), g28(1), g38(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  23	|  5
+            Yes|  22	|  6
 Actual Value   |----------------
-            No |  6	|  27
+            No |  1	|  32
                |----------------
 
 
@@ -7902,7 +8122,7 @@ Confusion Matrix:
                |----------------
             Yes|  0	|  1
 Actual Value   |----------------
-            No |  22	|  43
+            No |  9	|  56
                |----------------
 
 Observed	Computed
@@ -7915,41 +8135,41 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
 1.0	0.0
 0.0	0.0
-1.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-1.0	0.0
-1.0	0.0
-0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
 0.0	0.0
 0.0	1.0
 1.0	0.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	0.0
-1.0	1.0
+1.0	0.0
+0.0	1.0
+0.0	0.0
 0.0	1.0
 1.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
 1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	1.0
+1.0	0.0
+1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -7970,32 +8190,13 @@ Observed	Computed
 1.0	1.0
 
 1.0	0.0
-1.0	1.0
+1.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
 0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
-0.0	0.0
-0.0	0.0
-0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
@@ -8007,21 +8208,16 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-0.0	1.0
-0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
-0.0	1.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
@@ -8029,11 +8225,35 @@ Observed	Computed
 0.0	0.0
 0.0	1.0
 0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	1.0
 0.0	0.0
 0.0	0.0
 0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	1.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
+0.0	0.0
 0.0	0.0
 0.0	0.0
 Maximum number of generations in this run: 50
@@ -8047,46 +8267,68 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1062877889|0.852459| f1056964608|0.5|
+Fitness: [f1062877889|0.852459| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-not.g13.or.and.g17.g11.g9.g40.g48.g33.g38
+or.g36.g11.not.g7.g46.g11.g5.g30.g5.g41
 
-(not g13)
+(g36 or g11)
 
 
-Generation: 1
+Generation: 12
 Best Individual:
 Evaluated: T
-Fitness: [f1063152925|0.86885244| f1041385765|0.14285715|
+Fitness: [f1063152925|0.86885244| f1045220557|0.2|
 Linking function: and
 Gene 0
-not.not.and.not.not.g8.g13.g6.g35.g49.g24
+and.g46.or.g36.g11.g46.g12.g5.g46.g9.g42
 
-(not (not ((not g8) and (not g13))))
+(g46 and (g36 or g11))
+
+
+Generation: 19
+Best Individual:
+Evaluated: T
+Fitness: [f1063427962|0.8852459| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+and.or.or.g36.g11.g46.g5.g7.g29.g37.g40
+
+((g36 or g11) and (g46 or g5))
+
+
+Generation: 22
+Best Individual:
+Evaluated: T
+Fitness: [f1063702998|0.90163934| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+and.or.or.g36.g11.g46.g3.g7.g39.g9.g11
+
+((g36 or g11) and (g46 or g3))
 
 
 Best Individual of Run:
-Found at Generation: 1
+Found at Generation: 22
 Evaluated: T
-Fitness: [f1063152925|0.86885244| f1041385765|0.14285715|
+Fitness: [f1063702998|0.90163934| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-not.not.and.not.not.g8.g13.g6.g35.g49.g24
+and.or.or.g36.g11.g46.g3.g7.g39.g9.g11
 
-(not (not ((not g8) and (not g13))))
+((g36 or g11) and (g46 or g3))
 
 Size of program: 7
-Variables used(count): g8(1), g13(1)
+Variables used(count): g3(1), g11(1), g36(1), g46(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  47	|  0
+            Yes|  45	|  2
 Actual Value   |----------------
-            No |  8	|  6
+            No |  4	|  10
                |----------------
 
 
@@ -8096,15 +8338,20 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  30	|  1
+            Yes|  28	|  3
 Actual Value   |----------------
-            No |  34	|  1
+            No |  15	|  20
                |----------------
 
 Observed	Computed
+0.0	1.0
 0.0	0.0
 0.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
 0.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
@@ -8112,39 +8359,34 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+0.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 0.0	1.0
-0.0	1.0
+1.0	0.0
 1.0	1.0
-0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	0.0
+0.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -8165,72 +8407,72 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-1.0	0.0
+1.0	1.0
 0.0	0.0
+1.0	0.0
+1.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
+0.0	1.0
+0.0	0.0
+0.0	0.0
 0.0	1.0
 0.0	1.0
-0.0	1.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
 1.0	1.0
-0.0	1.0
-0.0	1.0
-1.0	1.0
-0.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
-0.0	1.0
+1.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 0.0	1.0
-1.0	1.0
+1.0	0.0
+0.0	1.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+0.0	1.0
+1.0	0.0
+0.0	1.0
+0.0	1.0
+1.0	0.0
 0.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
@@ -8243,32 +8485,43 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1065078180|0.9836066| f1040187392|0.125|
+Fitness: [f1064528107|0.9508197| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.not.and.and.not.g28.g43.g14.g41.g13.g35
+not.g47.or.or.not.g13.g12.g36.g7.g42.g24
 
-(not (not ((g28 and g43) and (not g14))))
+(not g47)
 
 
-Generation: 3
+Generation: 4
+Best Individual:
+Evaluated: T
+Fitness: [f1064528107|0.9508197| f1065353216|1.0|
+Linking function: and
+Gene 0
+g8.or.or.or.and.g13.g10.g36.g7.g42.g19
+
+g8
+
+
+Generation: 19
 Best Individual:
 Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g43.g8.g42.and.or.g27.g41.g44.g32.g18.g20
+g43.g0.g33.g39.g33.g13.g17.g0.g33.g39.g33
 
 g43
 
 
 Best Individual of Run:
-Found at Generation: 3
+Found at Generation: 19
 Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g43.g8.g42.and.or.g27.g41.g44.g32.g18.g20
+g43.g0.g33.g39.g33.g13.g17.g0.g33.g39.g33
 
 g43
 
@@ -8439,26 +8692,37 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1048576000|0.25|
+Fitness: [f1063427962|0.8852459| f1042983595|0.16666667|
 Linking function: and
 Gene 0
-and.not.g29.g0.g22.g44.g44.g27.g25.g25.g3
+or.not.g33.or.g0.g20.g12.g1.g30.g24.g39
 
-((not g0) and g29)
+((not (g0 or g20)) or g33)
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1063978034|0.91803277| f1065353216|1.0|
+Linking function: and
+Gene 0
+g19.or.and.not.and.g24.g19.g5.g16.g8.g27
+
+g19
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 1
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1048576000|0.25|
+Fitness: [f1063978034|0.91803277| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.not.g29.g0.g22.g44.g44.g27.g25.g25.g3
+g19.or.and.not.and.g24.g19.g5.g16.g8.g27
 
-((not g0) and g29)
+g19
 
-Size of program: 4
-Variables used(count): g0(1), g29(1)
+Size of program: 1
+Variables used(count): g19(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -8467,7 +8731,7 @@ Confusion Matrix:
                |----------------
             Yes|  31	|  2
 Actual Value   |----------------
-            No |  1	|  27
+            No |  3	|  25
                |----------------
 
 
@@ -8504,12 +8768,12 @@ Observed	Computed
 0.0	1.0
 1.0	1.0
 1.0	0.0
-1.0	0.0
-0.0	1.0
+1.0	1.0
+0.0	0.0
 0.0	1.0
 1.0	1.0
-1.0	0.0
-0.0	0.0
+1.0	1.0
+0.0	1.0
 0.0	1.0
 1.0	0.0
 0.0	0.0
@@ -8546,8 +8810,8 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-0.0	0.0
-1.0	1.0
+0.0	1.0
+1.0	0.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
@@ -8624,43 +8888,32 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1040187392|0.125|
+Fitness: [f1064528107|0.9508197| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g33.or.not.and.g27.g20.g44.g42.g20.g8
+and.g33.g45.g11.and.g2.g13.g7.g8.g44.g20
 
-(g33 and ((not g27) or (g20 and g44)))
+(g33 and g45)
 
 
 Generation: 2
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1051372203|0.33333334|
-Linking function: and
-Gene 0
-not.not.g33.not.g43.g13.g31.g37.g32.g14.g3
-
-(not (not g33))
-
-
-Generation: 4
-Best Individual:
-Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g33.not.and.or.g21.g42.g7.g7.g39.g6.g26
+g33.and.g2.and.g45.g2.g13.g7.g7.g44.g20
 
 g33
 
 
 Best Individual of Run:
-Found at Generation: 4
+Found at Generation: 2
 Evaluated: T
 Fitness: [f1065353216|1.0| f1065353216|1.0|
 Linking function: and
 Gene 0
-g33.not.and.or.g21.g42.g7.g7.g39.g6.g26
+g33.and.g2.and.g45.g2.g13.g7.g7.g44.g20
 
 g33
 
@@ -8831,21 +9084,32 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
+Fitness: [f1063702998|0.90163934| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+or.g19.g26.g42.and.g45.g43.g23.g48.g32.g9
+
+(g19 or g26)
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
 Fitness: [f1065078180|0.9836066| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g17.or.not.not.g37.g46.g36.g45.g41.g43
+not.g17.or.or.and.g0.g20.g11.g33.g11.g44
 
 (not g17)
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 1
 Evaluated: T
 Fitness: [f1065078180|0.9836066| f1056964608|0.5|
 Linking function: and
 Gene 0
-not.g17.or.not.not.g37.g46.g36.g45.g41.g43
+not.g17.or.or.and.g0.g20.g11.g33.g11.g44
 
 (not g17)
 
@@ -9019,23 +9283,34 @@ Evaluated: T
 Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g38.g13.g14.not.g23.g32.g8.g15.g39.g43
+and.g38.g13.g18.g7.g21.g43.g0.g0.g37.g11
 
 (g38 and g13)
+
+
+Generation: 2
+Best Individual:
+Evaluated: T
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
+Linking function: and
+Gene 0
+g13.not.not.or.and.g8.g47.g30.g11.g4.g14
+
+g13
 
 
 Best Individual of Run:
-Found at Generation: 0
+Found at Generation: 2
 Evaluated: T
-Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
+Fitness: [f1064803143|0.9672131| f1065353216|1.0|
 Linking function: and
 Gene 0
-and.g38.g13.g14.not.g23.g32.g8.g15.g39.g43
+g13.not.not.or.and.g8.g47.g30.g11.g4.g14
 
-(g38 and g13)
+g13
 
-Size of program: 3
-Variables used(count): g13(1), g38(1)
+Size of program: 1
+Variables used(count): g13(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -9201,37 +9476,59 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1065078180|0.9836066| f1038323257|0.11111111|
+Fitness: [f1063152925|0.86885244| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.and.g12.or.and.g37.g34.g26.g12.g44.g40
+or.not.not.and.g44.g2.g24.g15.g26.g32.g2
 
-(((g37 or g34) and (g26 and g12)) or g12)
+((not (g2 and g24)) or (not g44))
 
 
-Generation: 16
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+or.g12.g43.or.g31.g31.g39.g10.g8.g42.g45
+
+(g12 or g43)
+
+
+Generation: 2
+Best Individual:
+Evaluated: T
+Fitness: [f1065078180|0.9836066| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+and.g12.g47.or.g49.g9.g39.g10.g33.g5.g35
+
+(g12 and g47)
+
+
+Generation: 4
 Best Individual:
 Evaluated: T
 Fitness: [f1065353216|1.0| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.g12.g14.g23.or.g1.g48.g1.g39.g48.g4
+or.g12.g41.or.g31.g31.g39.g10.g36.g5.g45
 
-(g12 or g14)
+(g12 or g41)
 
 
 Best Individual of Run:
-Found at Generation: 16
+Found at Generation: 4
 Evaluated: T
 Fitness: [f1065353216|1.0| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.g12.g14.g23.or.g1.g48.g1.g39.g48.g4
+or.g12.g41.or.g31.g31.g39.g10.g36.g5.g45
 
-(g12 or g14)
+(g12 or g41)
 
 Size of program: 3
-Variables used(count): g12(1), g14(1)
+Variables used(count): g12(1), g41(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -9252,7 +9549,7 @@ Confusion Matrix:
                |----------------
             Yes|  58	|  0
 Actual Value   |----------------
-            No |  2	|  6
+            No |  4	|  4
                |----------------
 
 Observed	Computed
@@ -9320,7 +9617,7 @@ Observed	Computed
 1.0	1.0
 
 1.0	1.0
-0.0	1.0
+0.0	0.0
 0.0	0.0
 0.0	1.0
 1.0	1.0
@@ -9350,7 +9647,7 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -9373,19 +9670,19 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	0.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
-1.0	0.0
+1.0	1.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
-1.0	0.0
+1.0	1.0
 Maximum number of generations in this run: 50
 Size of population in this run: 256
 Number of genes per chromosome: 1
@@ -9397,37 +9694,37 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1045220557|0.2|
+Fitness: [f1064803143|0.9672131| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-or.or.g10.g21.g12.g40.g43.g8.g37.g33.g22
+or.g11.g29.g21.g0.g16.g8.g42.g38.g27.g12
 
-((g21 or g12) or g10)
+(g11 or g29)
 
 
 Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1065353216|1.0| f1051372203|0.33333334|
+Fitness: [f1065353216|1.0| f1056964608|0.5|
 Linking function: and
 Gene 0
-or.g10.g35.g11.or.g26.g1.g44.g10.g35.g11
+not.g32.g19.not.g45.g32.g19.g5.g30.g0.g21
 
-(g10 or g35)
+(not g32)
 
 
 Best Individual of Run:
 Found at Generation: 1
 Evaluated: T
-Fitness: [f1065353216|1.0| f1051372203|0.33333334|
+Fitness: [f1065353216|1.0| f1056964608|0.5|
 Linking function: and
 Gene 0
-or.g10.g35.g11.or.g26.g1.g44.g10.g35.g11
+not.g32.g19.not.g45.g32.g19.g5.g30.g0.g21
 
-(g10 or g35)
+(not g32)
 
-Size of program: 3
-Variables used(count): g10(1), g35(1)
+Size of program: 2
+Variables used(count): g32(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -9446,9 +9743,9 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  10	|  55
+            Yes|  0	|  65
 Actual Value   |----------------
-            No |  1	|  0
+            No |  0	|  1
                |----------------
 
 Observed	Computed
@@ -9515,19 +9812,9 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-0.0	1.0
-1.0	1.0
-0.0	1.0
+0.0	0.0
 1.0	0.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	0.0
-1.0	0.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-1.0	1.0
+0.0	0.0
 1.0	0.0
 1.0	0.0
 1.0	0.0
@@ -9549,14 +9836,24 @@ Observed	Computed
 1.0	0.0
 1.0	0.0
 1.0	0.0
-1.0	1.0
 1.0	0.0
 1.0	0.0
 1.0	0.0
-1.0	1.0
-1.0	1.0
 1.0	0.0
-1.0	1.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
 1.0	0.0
 1.0	0.0
 1.0	0.0
@@ -9593,44 +9890,66 @@ Problem type: logical
 Generation: 0
 Best Individual:
 Evaluated: T
+Fitness: [f1063427962|0.8852459| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+and.g18.g11.or.g48.g2.g24.g26.g26.g36.g15
+
+(g18 and g11)
+
+
+Generation: 1
+Best Individual:
+Evaluated: T
+Fitness: [f1063978034|0.91803277| f1051372203|0.33333334|
+Linking function: and
+Gene 0
+and.g18.g47.not.not.g27.g22.g44.g26.g41.g46
+
+(g18 and g47)
+
+
+Generation: 2
+Best Individual:
+Evaluated: T
 Fitness: [f1064253071|0.93442625| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g29.g18.and.not.g32.g49.g8.g10.g21.g25
+not.not.g18.g40.or.g38.g44.g44.g38.g14.g29
 
-(g29 and g18)
+(not (not g18))
 
 
-Generation: 36
+Generation: 3
 Best Individual:
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1051372203|0.33333334|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g23.g18.g4.g6.g16.g23.g37.g6.g38.g5
+g18.and.g47.not.g11.g2.g24.g26.g44.g17.g36
 
-(g23 or g18)
+g18
 
 
 Best Individual of Run:
-Found at Generation: 36
+Found at Generation: 3
 Evaluated: T
-Fitness: [f1064528107|0.9508197| f1051372203|0.33333334|
+Fitness: [f1064253071|0.93442625| f1065353216|1.0|
 Linking function: and
 Gene 0
-or.g23.g18.g4.g6.g16.g23.g37.g6.g38.g5
+g18.and.g47.not.g11.g2.g24.g26.g44.g17.g36
 
-(g23 or g18)
+g18
 
-Size of program: 3
-Variables used(count): g18(1), g23(1)
+Size of program: 1
+Variables used(count): g18(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  27	|  0
+            Yes|  26	|  1
 Actual Value   |----------------
             No |  3	|  31
                |----------------
@@ -9644,7 +9963,7 @@ Confusion Matrix:
                |----------------
             Yes|  24	|  0
 Actual Value   |----------------
-            No |  2	|  40
+            No |  1	|  41
                |----------------
 
 Observed	Computed
@@ -9689,7 +10008,7 @@ Observed	Computed
 1.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
 1.0	1.0
 1.0	0.0
 0.0	0.0
@@ -9743,7 +10062,7 @@ Observed	Computed
 0.0	0.0
 0.0	0.0
 0.0	0.0
-0.0	1.0
+0.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	0.0
@@ -9792,56 +10111,67 @@ Evaluated: T
 Fitness: [f1062052780|0.8032787| f1051372203|0.33333334|
 Linking function: and
 Gene 0
-and.g2.g1.and.or.g30.g13.g37.g23.g39.g32
+or.g34.g38.g34.g11.g9.g11.g5.g28.g4.g24
 
-(g2 and g1)
+(g34 or g38)
 
 
-Generation: 2
+Generation: 1
 Best Individual:
 Evaluated: T
-Fitness: [f1062877889|0.852459| f1041385765|0.14285715|
+Fitness: [f1062602853|0.8360656| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-or.or.g2.and.g41.g39.g41.g9.g28.g0.g4
+or.g2.or.and.g32.g3.g33.g39.g31.g44.g25
 
-(((g39 and g41) or g41) or g2)
+(g2 or ((g3 and g33) or g32))
 
 
-Generation: 15
+Generation: 3
 Best Individual:
 Evaluated: T
-Fitness: [f1063152925|0.86885244| f1041385765|0.14285715|
+Fitness: [f1063152925|0.86885244| f1038323257|0.11111111|
 Linking function: and
 Gene 0
-and.or.g10.g16.or.g12.g8.g32.g2.g20.g35
+and.or.g2.or.and.g40.g44.g39.g5.g24.g14
 
-((g16 or (g12 or g8)) and g10)
+(((g40 or g44) or (g39 and g5)) and g2)
 
 
-Generation: 46
+Generation: 12
 Best Individual:
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1048576000|0.25|
+Fitness: [f1063427962|0.8852459| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-not.and.g28.g26.g9.g28.g23.g19.g45.g5.g39
+and.or.or.g26.g2.g3.g10.g39.g5.g24.g24
 
-(not (g28 and g26))
+((g26 or g2) and (g3 or g10))
+
+
+Generation: 19
+Best Individual:
+Evaluated: T
+Fitness: [f1063702998|0.90163934| f1041385765|0.14285715|
+Linking function: and
+Gene 0
+and.or.or.g26.g2.g20.g10.g25.g5.g34.g24
+
+((g26 or g2) and (g20 or g10))
 
 
 Best Individual of Run:
-Found at Generation: 46
+Found at Generation: 19
 Evaluated: T
-Fitness: [f1063978034|0.91803277| f1048576000|0.25|
+Fitness: [f1063702998|0.90163934| f1041385765|0.14285715|
 Linking function: and
 Gene 0
-not.and.g28.g26.g9.g28.g23.g19.g45.g5.g39
+and.or.or.g26.g2.g20.g10.g25.g5.g34.g24
 
-(not (g28 and g26))
+((g26 or g2) and (g20 or g10))
 
-Size of program: 4
-Variables used(count): g26(1), g28(1)
+Size of program: 7
+Variables used(count): g2(1), g10(1), g20(1), g26(1)
 
 ***** TRAINING data results *****
 Confusion Matrix: 
@@ -9850,7 +10180,7 @@ Confusion Matrix:
                |----------------
             Yes|  47	|  0
 Actual Value   |----------------
-            No |  5	|  9
+            No |  6	|  8
                |----------------
 
 
@@ -9860,36 +10190,28 @@ Confusion Matrix:
                 Predicted Value
                |  Yes	|  No
                |----------------
-            Yes|  46	|  0
+            Yes|  5	|  41
 Actual Value   |----------------
-            No |  0	|  20
+            No |  3	|  17
                |----------------
 
 Observed	Computed
 0.0	1.0
 1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-0.0	1.0
-1.0	1.0
 1.0	0.0
 0.0	1.0
-1.0	0.0
-0.0	1.0
+1.0	1.0
 1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+0.0	1.0
 1.0	1.0
 0.0	1.0
 1.0	1.0
+1.0	1.0
+0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
@@ -9900,19 +10222,27 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
 1.0	0.0
 0.0	1.0
 1.0	1.0
+1.0	1.0
+1.0	1.0
+1.0	1.0
+0.0	1.0
+1.0	1.0
 1.0	0.0
+0.0	1.0
 0.0	0.0
 0.0	1.0
 0.0	0.0
-0.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
+1.0	0.0
 0.0	1.0
 1.0	1.0
 1.0	1.0
@@ -9929,70 +10259,70 @@ Observed	Computed
 1.0	1.0
 1.0	1.0
 
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+0.0	0.0
 1.0	1.0
 1.0	1.0
 1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
 1.0	0.0
-0.0	1.0
 1.0	0.0
-0.0	1.0
 1.0	1.0
-1.0	1.0
+0.0	0.0
 1.0	0.0
-0.0	1.0
 1.0	1.0
 1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	0.0
-0.0	1.0
-1.0	1.0
+0.0	0.0
 1.0	0.0
 0.0	0.0
-0.0	1.0
-1.0	1.0
-1.0	1.0
-1.0	1.0
+1.0	0.0
+1.0	0.0
 1.0	0.0
 0.0	0.0
-0.0	1.0
 1.0	0.0
-0.0	1.0
-1.0	1.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
 1.0	0.0
 0.0	0.0
-0.0	1.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
 1.0	1.0
+1.0	0.0
+1.0	1.0
+1.0	1.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0
+0.0	0.0
+1.0	0.0
+1.0	0.0
+0.0	0.0
+0.0	0.0
+1.0	0.0

@@ -10,14 +10,15 @@ parent.0 =                       geneexpression.params
 # ========================
 generations =			50
 pop.subpop.0.size =     256
+select.tournament.size = 10
 
 # Fitness related parameters
 # ========================
 pop.subpop.0.species.fitness = edu.mapi.aamas.ge.fitness.SubsumptionFitness  
 
 # Subsumption fitness parameters
-multi.fitness.subsumption.subthreshold.0 = 1.0
-multi.fitness.subsumption.maxloss.0 = 0.0
+multi.fitness.subsumption.subthreshold.0 = 0.90
+multi.fitness.subsumption.maxloss.0 = 0.05
 
 # Weighted fitness parameters
 simple.fitness.weighted.accuracy_weight = 1.0

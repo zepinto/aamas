@@ -24,6 +24,7 @@ import ec.util.Parameter;
  */
 public class GraphvizDecorator extends StatsPrinterDecorator {
 
+	private static final String P_INPUT_FILENAME = "gep.species.symbolset.terminalfilename";
 	/* Graphviz identifier parameter */
 	public static final String P_GRAPHVIZ = "graphviz";
 	/* graph filename parameter */
@@ -45,7 +46,7 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 		// pass on the torch
 		decoratedResultPrinter.postEvaluationStatistics(state, ind);
 	}
-	
+
 	public void finalStatistics(EvolutionState state, Individual[] ind) {
 		// do my own thing
 		myPrintStatistics(state, ind);
@@ -133,8 +134,9 @@ public class GraphvizDecorator extends StatsPrinterDecorator {
 	 * @param state
 	 */
 	private void writeGraphFileHeader(EvolutionState state) {
-		state.output
-				.println("digraph \"g\" {\n", Output.V_NO_GENERAL, graphlog);
+		state.output.println(String.format("digraph \"%s\" {\n",
+				state.parameters.getString(new Parameter(P_INPUT_FILENAME),
+						null)), Output.V_NO_GENERAL, graphlog);
 	}
 
 	/**

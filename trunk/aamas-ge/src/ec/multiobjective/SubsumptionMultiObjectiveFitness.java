@@ -9,7 +9,8 @@ import ec.util.Parameter;
  * adds the concept of subsumption to the basic multi-objective fitness
  * mechanism.
  * 
- * Here, the various fitness measures in the are order
+ * Higher order (lower index) fitness criteria subsume lower order criteria
+ * until a specified threshold is reached.
  * 
  * 
  * @author Rui Meireles
@@ -48,37 +49,15 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness {
 		Parameter def = defaultBase();
 		for (int i = 0; i < subsumptionThreshold.length; i++) {
 			String iString = String.format("%d", i);
-			subsumptionThreshold[i] = state.parameters.getDouble(base.push(
-					P_SUBTHRESHOLD).push(iString), def.push(P_SUBTHRESHOLD)
-					.push(iString), 0, 1);
+			if ((subsumptionThreshold[i] = state.parameters.getDouble(base
+					.push(P_SUBTHRESHOLD).push(iString), def.push(
+					P_SUBTHRESHOLD).push(iString), 0, 1)) < 0)
+				subsumptionThreshold[i] = 0; // insure we do not get a
+			// negative value
 			if ((maxLoss[i] = state.parameters.getDouble(base.push(P_MAXLOSS)
 					.push(iString), def.push(P_MAXLOSS).push(iString), 0, 1)) < 0)
 				maxLoss[i] = 0; // insure we do not get a negative maxLoss
 		}
-	}
-
-	/**
-	 * Returns true if I'm equivalent in fitness (neither better nor worse) to
-	 * _fitness. The rule I'm using is this: If we are equal in all criteria,
-	 * then equivalentTo is true, otherwise it is false.
-	 */
-
-	@Override
-	public boolean equivalentTo(Fitness _fitness) {
-
-		MultiObjectiveFitness moFitness = toMultiObjectiveFitness(_fitness);
-
-		for (int i = 0; i <
-		// just to be safe...
-		Math.min(multifitness.length, moFitness.multifitness.length); i++) {
-			if (multifitness[i] != moFitness.multifitness[i])
-				return false;
-			// we only care about lower priority measures when the higher ones
-			// are properly satisfied
-			if (multifitness[i] < subsumptionThreshold[i])
-				break;
-		}
-		return true;
 	}
 
 	/**
@@ -107,8 +86,7 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness {
 
 			// we only care about lower priority measures when the higher ones
 			// are properly satisfied
-			if (multifitness[i] < subsumptionThreshold[i]
-					|| moFitness.multifitness[i] < subsumptionThreshold[i])
+			if (multifitness[i] < subsumptionThreshold[i])
 				break;
 
 			// two ways to be beaten...
@@ -135,7 +113,7 @@ public class SubsumptionMultiObjectiveFitness extends MultiObjectiveFitness {
 									"betterThan function: Unexpected fitness object of type %s (expecting %s).",
 									_fitness.getClass().getName(),
 									MultiObjectiveFitness.class.getName()));
-		MultiObjectiveFitness moFitness = (MultiObjectiveFitness) _fitness;
-		return moFitness;
+
+		return (MultiObjectiveFitness) _fitness;
 	}
 }
