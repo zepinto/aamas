@@ -39,7 +39,7 @@ public class RDecorator extends StatsPrinterDecorator {
 	 * variables whose value don't change during a run are defined here so we
 	 * only need to compute them once
 	 */
-	String problemDesc = null, fitnessDesc = null, operatorsDesc = null;
+	String problemDesc = null;
 	long nGenerations = 0, popSize = 0, runid = 0, tournamentSize = 0;
 
 	public RDecorator() {
@@ -83,6 +83,7 @@ public class RDecorator extends StatsPrinterDecorator {
 				String gene = GEPSymbolSet2.getDependentGene();
 				String fitnessDesc = ((IFitness) ind[x].fitness)
 						.getDescription();
+				String operatorsDesc = GEPSymbolSet2.getFunctionsDesc();
 				double accuracy = ((IFitness) ind[x].fitness).getAccuracy();
 				long treeSize = ind[x].size();
 
@@ -153,7 +154,6 @@ public class RDecorator extends StatsPrinterDecorator {
 				.getLong(new Parameter(P_POP_SIZE), null);
 		this.tournamentSize = state.parameters.getLong(new Parameter(
 				P_TOURNAMENT_SIZE), null);
-		this.operatorsDesc = GEPSymbolSet2.getFunctionsDesc();
 
 		// create the file handler
 		File outFile = state.parameters.getFile(base.push(P_DECORATOR)
