@@ -1,199 +1,149 @@
 Problem	Run	Gene	Fitness	Operators	NGenerations	PopSize	TournSize	Generation	Accuracy	Size	Depth
-data/p4.txt	1	g0	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.721311	7	5
-data/p4.txt	1	g0	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.967213	1	1
-data/p4.txt	1	g0	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	1	1
-data/p4.txt	1	g1	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.934426	3	2
-data/p4.txt	1	g1	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	3	2
-data/p4.txt	1	g2	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.885246	9	4
-data/p4.txt	1	g2	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.901639	6	4
-data/p4.txt	1	g2	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.901639	5	4
-data/p4.txt	1	g2	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	5	4
-data/p4.txt	1	g3	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.868852	9	4
-data/p4.txt	1	g3	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.918033	8	4
-data/p4.txt	1	g3	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.950820	1	1
-data/p4.txt	1	g3	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.950820	1	1
-data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.836066	8	4
-data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.885246	8	4
-data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.918033	7	4
-data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	5	0.934426	7	5
-data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	7	5
-data/p4.txt	1	g5	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.901639	2	2
-data/p4.txt	1	g5	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.918033	2	2
-data/p4.txt	1	g5	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	7	0.934426	1	1
-data/p4.txt	1	g5	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	1	1
-data/p4.txt	1	g6	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.852459	6	4
-data/p4.txt	1	g6	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.868852	3	3
-data/p4.txt	1	g6	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	10	0.901639	3	2
-data/p4.txt	1	g6	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	3	2
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.737705	8	4
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.754098	11	4
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.770492	7	4
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	6	0.836066	9	5
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	9	0.868852	8	5
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	21	0.918033	8	5
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	24	0.918033	6	4
-data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.918033	6	4
-data/p4.txt	1	g8	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	1.000000	3	2
-data/p4.txt	1	g8	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	1.000000	1	1
-data/p4.txt	1	g8	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	1	1
-data/p4.txt	1	g9	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.885246	2	2
-data/p4.txt	1	g9	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.885246	2	2
-data/p4.txt	1	g10	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.950820	8	5
-data/p4.txt	1	g10	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	9	0.983607	1	1
-data/p4.txt	1	g10	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.983607	1	1
-data/p4.txt	1	g11	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.901639	3	3
-data/p4.txt	1	g11	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	5	0.901639	1	1
-data/p4.txt	1	g11	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	1	1
-data/p4.txt	1	g12	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.868852	2	2
-data/p4.txt	1	g12	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.967213	2	2
-data/p4.txt	1	g12	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	2	2
-data/p4.txt	1	g13	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.950820	2	2
-data/p4.txt	1	g13	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.950820	2	2
-data/p4.txt	1	g14	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.950820	3	2
-data/p4.txt	1	g14	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	8	0.967213	3	2
-data/p4.txt	1	g14	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	13	0.967213	1	1
-data/p4.txt	1	g14	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	1	1
-data/p4.txt	1	g15	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.885246	7	4
-data/p4.txt	1	g15	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.918033	6	5
-data/p4.txt	1	g15	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	6	0.967213	3	2
-data/p4.txt	1	g15	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	3	2
-data/p4.txt	1	g16	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.868852	7	4
-data/p4.txt	1	g16	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.885246	7	4
-data/p4.txt	1	g16	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	7	0.901639	3	2
-data/p4.txt	1	g16	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	3	2
-data/p4.txt	1	g17	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.885246	7	4
-data/p4.txt	1	g17	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.950820	7	4
-data/p4.txt	1	g17	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.950820	7	4
-data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.737705	9	4
-data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.770492	9	4
-data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	5	0.786885	9	4
-data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	9	0.803279	9	4
-data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	13	0.819672	11	4
-data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	27	0.836066	11	4
-data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.836066	11	4
-data/p4.txt	1	g19	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.803279	9	4
-data/p4.txt	1	g19	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.868852	4	3
-data/p4.txt	1	g19	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.967213	2	2
-data/p4.txt	1	g19	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	2	2
-data/p4.txt	1	g20	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.868852	8	4
-data/p4.txt	1	g20	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.950820	7	4
-data/p4.txt	1	g20	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.950820	2	2
-data/p4.txt	1	g20	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.950820	2	2
-data/p4.txt	1	g21	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.803279	6	4
-data/p4.txt	1	g21	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	1.000000	5	4
-data/p4.txt	1	g21	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	5	4
-data/p4.txt	1	g22	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.983607	3	2
-data/p4.txt	1	g22	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.983607	1	1
-data/p4.txt	1	g22	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.983607	1	1
-data/p4.txt	1	g23	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.934426	3	3
-data/p4.txt	1	g23	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.934426	1	1
-data/p4.txt	1	g23	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	1	1
-data/p4.txt	1	g24	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.868852	7	4
-data/p4.txt	1	g24	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.885246	4	3
-data/p4.txt	1	g24	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.901639	1	1
-data/p4.txt	1	g24	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	1	1
-data/p4.txt	1	g25	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.770492	6	5
-data/p4.txt	1	g25	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.803279	9	4
-data/p4.txt	1	g25	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.803279	9	4
-data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.819672	7	4
-data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.852459	8	4
-data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.885246	3	2
-data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.918033	3	2
-data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	5	0.967213	1	1
-data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	1	1
-data/p4.txt	1	g27	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.934426	2	2
-data/p4.txt	1	g27	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	2	2
-data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.606557	7	4
-data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.688525	7	4
-data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.704918	7	4
-data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	11	0.721311	9	4
-data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	26	0.754098	9	4
-data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	31	0.770492	9	4
-data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.770492	9	4
-data/p4.txt	1	g29	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.950820	2	2
-data/p4.txt	1	g29	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	7	0.950820	1	1
-data/p4.txt	1	g29	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.950820	1	1
-data/p4.txt	1	g30	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	1.000000	2	2
-data/p4.txt	1	g30	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	2	2
-data/p4.txt	1	g31	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	1.000000	2	2
-data/p4.txt	1	g31	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	2	2
-data/p4.txt	1	g32	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	1.000000	4	3
-data/p4.txt	1	g32	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	8	1.000000	3	2
-data/p4.txt	1	g32	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	18	1.000000	1	1
-data/p4.txt	1	g32	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	1	1
-data/p4.txt	1	g33	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.950820	3	2
-data/p4.txt	1	g33	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.967213	3	2
-data/p4.txt	1	g33	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	8	0.983607	3	2
-data/p4.txt	1	g33	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.983607	3	2
-data/p4.txt	1	g34	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.934426	5	3
-data/p4.txt	1	g34	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.934426	3	2
-data/p4.txt	1	g34	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.967213	1	1
-data/p4.txt	1	g34	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	1	1
-data/p4.txt	1	g35	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.918033	2	2
-data/p4.txt	1	g35	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.918033	1	1
-data/p4.txt	1	g35	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	6	0.934426	1	1
-data/p4.txt	1	g35	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	1	1
-data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.721311	11	4
-data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.852459	11	4
-data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.967213	11	4
-data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	7	0.967213	8	4
-data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	10	0.967213	3	2
-data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	3	2
-data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.836066	3	2
-data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	5	0.852459	10	4
-data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	6	0.868852	6	4
-data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	15	0.885246	7	4
-data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	19	0.901639	7	4
-data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	6	4
-data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	6	4
-data/p4.txt	1	g38	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.934426	3	2
-data/p4.txt	1	g38	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.934426	2	2
-data/p4.txt	1	g38	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	17	0.934426	1	1
-data/p4.txt	1	g38	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	1	1
-data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.770492	7	5
-data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.803279	4	3
-data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.836066	9	4
-data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	7	0.852459	9	4
-data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	12	0.868852	9	4
-data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	15	0.885246	9	4
-data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.885246	9	4
-data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.852459	3	2
-data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	13	0.868852	5	3
-data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	20	0.885246	7	3
-data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	23	0.901639	7	3
-data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	7	3
-data/p4.txt	1	g41	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.950820	2	2
-data/p4.txt	1	g41	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	5	0.950820	1	1
-data/p4.txt	1	g41	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	20	1.000000	1	1
-data/p4.txt	1	g41	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	1	1
-data/p4.txt	1	g42	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.885246	6	4
-data/p4.txt	1	g42	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.918033	1	1
-data/p4.txt	1	g42	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.918033	1	1
-data/p4.txt	1	g43	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.950820	3	2
-data/p4.txt	1	g43	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	1.000000	1	1
-data/p4.txt	1	g43	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	1	1
-data/p4.txt	1	g44	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.901639	3	2
-data/p4.txt	1	g44	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.983607	2	2
-data/p4.txt	1	g44	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.983607	2	2
-data/p4.txt	1	g45	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.967213	3	2
-data/p4.txt	1	g45	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.967213	1	1
-data/p4.txt	1	g45	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.967213	1	1
-data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.868852	7	4
-data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.967213	3	2
-data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.983607	3	2
-data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	5	1.000000	3	2
-data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	3	2
-data/p4.txt	1	g47	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.967213	3	2
-data/p4.txt	1	g47	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	1.000000	2	2
-data/p4.txt	1	g47	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	1.000000	2	2
-data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.885246	3	2
-data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.918033	3	2
-data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	3	0.934426	3	3
-data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.934426	1	1
-data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.934426	1	1
-data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	1	0.803279	3	2
-data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	2	0.836066	7	4
-data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	4	0.868852	9	4
-data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	13	0.885246	7	3
-data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	20	0.901639	7	3
-data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05		50	256	10	50	0.901639	7	3
+data/p4.txt	1	g0	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.721311	7	5
+data/p4.txt	1	g0	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.967213	1	1
+data/p4.txt	1	g1	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.934426	3	2
+data/p4.txt	1	g2	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.885246	9	4
+data/p4.txt	1	g2	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.901639	6	4
+data/p4.txt	1	g2	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.901639	5	4
+data/p4.txt	1	g3	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.868852	9	4
+data/p4.txt	1	g3	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.918033	8	4
+data/p4.txt	1	g3	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.950820	1	1
+data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.836066	8	4
+data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.885246	8	4
+data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.918033	7	4
+data/p4.txt	1	g4	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	5	0.934426	7	5
+data/p4.txt	1	g5	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.901639	2	2
+data/p4.txt	1	g5	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.918033	2	2
+data/p4.txt	1	g5	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	7	0.934426	1	1
+data/p4.txt	1	g6	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.852459	6	4
+data/p4.txt	1	g6	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.868852	3	3
+data/p4.txt	1	g6	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	10	0.901639	3	2
+data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.737705	8	4
+data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.754098	11	4
+data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.770492	7	4
+data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	6	0.836066	9	5
+data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	9	0.868852	8	5
+data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	21	0.918033	8	5
+data/p4.txt	1	g7	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	24	0.918033	6	4
+data/p4.txt	1	g8	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	1.000000	3	2
+data/p4.txt	1	g8	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	1.000000	1	1
+data/p4.txt	1	g9	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.885246	2	2
+data/p4.txt	1	g10	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.950820	8	5
+data/p4.txt	1	g10	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	9	0.983607	1	1
+data/p4.txt	1	g11	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.901639	3	3
+data/p4.txt	1	g11	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	5	0.901639	1	1
+data/p4.txt	1	g12	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.868852	2	2
+data/p4.txt	1	g12	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.967213	2	2
+data/p4.txt	1	g13	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.950820	2	2
+data/p4.txt	1	g14	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.950820	3	2
+data/p4.txt	1	g14	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	8	0.967213	3	2
+data/p4.txt	1	g14	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	13	0.967213	1	1
+data/p4.txt	1	g15	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.885246	7	4
+data/p4.txt	1	g15	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.918033	6	5
+data/p4.txt	1	g15	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	6	0.967213	3	2
+data/p4.txt	1	g16	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.868852	7	4
+data/p4.txt	1	g16	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.885246	7	4
+data/p4.txt	1	g16	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	7	0.901639	3	2
+data/p4.txt	1	g17	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.885246	7	4
+data/p4.txt	1	g17	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.950820	7	4
+data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.737705	9	4
+data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.770492	9	4
+data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	5	0.786885	9	4
+data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	9	0.803279	9	4
+data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	13	0.819672	11	4
+data/p4.txt	1	g18	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	27	0.836066	11	4
+data/p4.txt	1	g19	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.803279	9	4
+data/p4.txt	1	g19	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.868852	4	3
+data/p4.txt	1	g19	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.967213	2	2
+data/p4.txt	1	g20	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.868852	8	4
+data/p4.txt	1	g20	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.950820	7	4
+data/p4.txt	1	g20	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.950820	2	2
+data/p4.txt	1	g21	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.803279	6	4
+data/p4.txt	1	g21	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	1.000000	5	4
+data/p4.txt	1	g22	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.983607	3	2
+data/p4.txt	1	g22	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.983607	1	1
+data/p4.txt	1	g23	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.934426	3	3
+data/p4.txt	1	g23	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.934426	1	1
+data/p4.txt	1	g24	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.868852	7	4
+data/p4.txt	1	g24	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.885246	4	3
+data/p4.txt	1	g24	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.901639	1	1
+data/p4.txt	1	g25	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.770492	6	5
+data/p4.txt	1	g25	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.803279	9	4
+data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.819672	7	4
+data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.852459	8	4
+data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.885246	3	2
+data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.918033	3	2
+data/p4.txt	1	g26	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	5	0.967213	1	1
+data/p4.txt	1	g27	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.934426	2	2
+data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.606557	7	4
+data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.688525	7	4
+data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.704918	7	4
+data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	11	0.721311	9	4
+data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	26	0.754098	9	4
+data/p4.txt	1	g28	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	31	0.770492	9	4
+data/p4.txt	1	g29	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.950820	2	2
+data/p4.txt	1	g29	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	7	0.950820	1	1
+data/p4.txt	1	g30	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	1.000000	2	2
+data/p4.txt	1	g31	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	1.000000	2	2
+data/p4.txt	1	g32	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	1.000000	4	3
+data/p4.txt	1	g32	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	8	1.000000	3	2
+data/p4.txt	1	g32	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	18	1.000000	1	1
+data/p4.txt	1	g33	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.950820	3	2
+data/p4.txt	1	g33	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.967213	3	2
+data/p4.txt	1	g33	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	8	0.983607	3	2
+data/p4.txt	1	g34	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.934426	5	3
+data/p4.txt	1	g34	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.934426	3	2
+data/p4.txt	1	g34	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.967213	1	1
+data/p4.txt	1	g35	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.918033	2	2
+data/p4.txt	1	g35	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.918033	1	1
+data/p4.txt	1	g35	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	6	0.934426	1	1
+data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.721311	11	4
+data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.852459	11	4
+data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.967213	11	4
+data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	7	0.967213	8	4
+data/p4.txt	1	g36	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	10	0.967213	3	2
+data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.836066	3	2
+data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	5	0.852459	10	4
+data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	6	0.868852	6	4
+data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	15	0.885246	7	4
+data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	19	0.901639	7	4
+data/p4.txt	1	g37	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	50	0.901639	6	4
+data/p4.txt	1	g38	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.934426	3	2
+data/p4.txt	1	g38	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.934426	2	2
+data/p4.txt	1	g38	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	17	0.934426	1	1
+data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.770492	7	5
+data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.803279	4	3
+data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.836066	9	4
+data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	7	0.852459	9	4
+data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	12	0.868852	9	4
+data/p4.txt	1	g39	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	15	0.885246	9	4
+data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.852459	3	2
+data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	13	0.868852	5	3
+data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	20	0.885246	7	3
+data/p4.txt	1	g40	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	23	0.901639	7	3
+data/p4.txt	1	g41	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.950820	2	2
+data/p4.txt	1	g41	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	5	0.950820	1	1
+data/p4.txt	1	g41	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	20	1.000000	1	1
+data/p4.txt	1	g42	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.885246	6	4
+data/p4.txt	1	g42	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.918033	1	1
+data/p4.txt	1	g43	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.950820	3	2
+data/p4.txt	1	g43	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	1.000000	1	1
+data/p4.txt	1	g44	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.901639	3	2
+data/p4.txt	1	g44	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.983607	2	2
+data/p4.txt	1	g45	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.967213	3	2
+data/p4.txt	1	g45	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.967213	1	1
+data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.868852	7	4
+data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.967213	3	2
+data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.983607	3	2
+data/p4.txt	1	g46	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	5	1.000000	3	2
+data/p4.txt	1	g47	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.967213	3	2
+data/p4.txt	1	g47	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	1.000000	2	2
+data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.885246	3	2
+data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.918033	3	2
+data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	3	0.934426	3	3
+data/p4.txt	1	g48	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.934426	1	1
+data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	1	0.803279	3	2
+data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	2	0.836066	7	4
+data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	4	0.868852	9	4
+data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	13	0.885246	7	3
+data/p4.txt	1	g49	type=Subsumption,minAccuracy=0.9,maxLoss=0.05	AndOrNot	50	256	10	20	0.901639	7	3
